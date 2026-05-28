@@ -25,6 +25,8 @@ export interface Book {
 }
 
 export const DEFAULT_WALLPAPERS = {
+  hermetism_base:
+    "https://wayofhermes.com/wp-content/uploads/2022/08/hermes_trimegistus.jpg",
   genesis:
     "https://santhatela.com.br/wp-content/uploads/2017/06/michelangelo-criacao-adao-d.jpg",
   patriarchs:

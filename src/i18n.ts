@@ -283,12 +283,28 @@ const resources = {
   },
 };
 
+// Auto-detect browser language if the user hasn't explicitly set their preferred language yet.
+// This corrects situations where the app previously cached an incorrect default.
+if (typeof window !== "undefined") {
+  const manualSet = localStorage.getItem("i18n_lang_manually_set");
+  if (!manualSet) {
+    const navLang = window.navigator.language;
+    if (navLang.startsWith("pt")) {
+      localStorage.setItem("i18nextLng", "pt");
+    } else {
+      localStorage.setItem("i18nextLng", "en");
+    }
+  }
+}
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
     fallbackLng: "en",
+    supportedLngs: ["en", "pt"],
+    load: "languageOnly",
     interpolation: {
       escapeValue: false,
     },
