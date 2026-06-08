@@ -65,6 +65,8 @@ export const DEFAULT_WALLPAPERS = {
     "https://images.squarespace-cdn.com/content/v1/6027387fa69d7d4425a64dbf/11228a3e-d423-4dd1-8ea5-bdf894562de0/Mohammed_kaaba_1315_wide.jpeg",
   qumran:
     "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/gettyimages-544273540?_a=BAVMn6DY0",
+  conspiracy:
+    "/wallpapers/conspiracy.png",
 } as const;
 
 export type BibleTheme = keyof typeof DEFAULT_WALLPAPERS | string;
