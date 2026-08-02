@@ -20,6 +20,11 @@ export interface Book {
   name: string;
   sub?: string;
   tags: string[];
+  procedencia?: string;
+  observacao?: string;
+  isbn?: string;
+  tipo?: string;
+  foco?: string;
   isQ?: boolean;
   savedVerses?: SavedVerse[];
 }
