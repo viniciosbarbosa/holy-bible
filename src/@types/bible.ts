@@ -26,6 +26,7 @@ export interface Book {
   tipo?: string;
   foco?: string;
   isQ?: boolean;
+  page?: number;
   savedVerses?: SavedVerse[];
 }
 

@@ -212,6 +212,23 @@ export const EditBookModal = () => {
                       placeholder={t("modal.book_sub")}
                       rows={2}
                     />
+
+                    <div className="mt-4 flex gap-4 items-center">
+                      <label className="text-[10px] text-bible-gold uppercase tracking-[0.2em] font-cinzel ml-2">
+                        Página:
+                      </label>
+                      <input
+                        type="number"
+                        value={activeBook.page !== undefined ? activeBook.page : ""}
+                        onChange={(e) =>
+                          updateBook(activePhaseId, activeBook.id, {
+                            page: e.target.value ? Number(e.target.value) : undefined,
+                          })
+                        }
+                        className="bg-transparent text-sm font-serif text-bible-text border-b border-bible-border/30 focus:border-bible-gold outline-none pb-1 transition-all w-24"
+                        placeholder="Nenhuma"
+                      />
+                    </div>
                   </header>
 
                   <div className="space-y-4">

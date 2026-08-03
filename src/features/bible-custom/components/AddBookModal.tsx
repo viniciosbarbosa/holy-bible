@@ -14,6 +14,7 @@ export const AddBookModal = () => {
   
   const [name, setName] = useState("");
   const [sub, setSub] = useState("");
+  const [page, setPage] = useState("");
   const [tags, setTags] = useState<string[]>([]);
 
   const allExistingTags = useMemo(() => {
@@ -32,6 +33,7 @@ export const AddBookModal = () => {
       name,
       sub,
       tags,
+      page: page ? Number(page) : undefined,
     });
     
     reset();
@@ -40,6 +42,7 @@ export const AddBookModal = () => {
   const reset = () => {
     setName("");
     setSub("");
+    setPage("");
     setTags([]);
     closeAllModals();
   };
@@ -116,6 +119,19 @@ export const AddBookModal = () => {
                       className="w-full bg-bible-dark/50 border border-bible-border/30 rounded-2xl px-6 py-4 text-bible-text outline-none focus:border-bible-gold transition-all font-serif italic resize-none"
                       placeholder="Ex: Ensinamentos secretos..."
                       rows={3}
+                    />
+                  </div>
+
+                  <div className="space-y-4">
+                    <label className="text-[10px] text-bible-gold uppercase tracking-[0.2em] font-cinzel ml-2">
+                      Página <span className="opacity-40 italic">({t("modal.optional")})</span>
+                    </label>
+                    <input
+                      type="number"
+                      value={page}
+                      onChange={(e) => setPage(e.target.value)}
+                      className="w-full bg-bible-dark/50 border border-bible-border/30 rounded-2xl px-6 py-4 text-bible-text outline-none focus:border-bible-gold transition-all font-serif"
+                      placeholder="Ex: 112"
                     />
                   </div>
                 </div>

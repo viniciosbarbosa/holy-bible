@@ -40,7 +40,7 @@ export const CANON_DATA: Phase[] = [
         id: "b0_5",
         num: "0e",
         name: "Dogma e Ritual da Alta Magia",
-        sub: "Éliphas Lévi — O compêndio absoluto das correspondências e das leis da vontade aplicada",
+        sub: "Éliphas Lévi — O compêndio absoluto das correspondências e das leis da vontade applied",
         tags: ["ocultismo", "teoria", "carrinho"],
       },
       {
@@ -64,6 +64,22 @@ export const CANON_DATA: Phase[] = [
         sub: "Três Iniciados — Os sete princípios herméticos que regem a verdade oculta e as leis da mente",
         tags: ["hermetismo", "base", "carrinho"],
       },
+      {
+        id: "b0_9",
+        num: "0i",
+        name: "O Discurso sobre a Oitava e a Nona",
+        sub: "Tratado Hermético de Nag Hammadi sobre a ascensão mística às esferas celestes (NH VI, 6)",
+        tags: ["hermetismo", "nag hammadi", "gnose"],
+        page: 277,
+      },
+      {
+        id: "b0_stern_intro",
+        num: "0j",
+        name: "Bíblia Judaica Completa: Introdução Exegética",
+        sub: "David H. Stern — O Tanakh judeu vs. AT cristão, a judaicidade da B'rit Hadashah e o Nome Divino",
+        tags: ["base", "stern", "exegese"],
+        page: 13,
+      },
     ],
   },
   {
@@ -76,8 +92,9 @@ export const CANON_DATA: Phase[] = [
         id: "b1",
         num: "1",
         name: "Gênesis 1–5",
-        sub: "Criação, Adão e Eva, Caim e Abel, genealogia",
-        tags: ["b201", "cnbb"],
+        sub: "Criação, Adão e Eva, Caim e Abel, genealogia (B'reshit)",
+        tags: ["b201", "cnbb", "stern"],
+        page: 57,
       },
       {
         id: "b1_comp",
@@ -89,101 +106,121 @@ export const CANON_DATA: Phase[] = [
       {
         id: "b2",
         num: "2",
-        name: "Adão e Eva I",
-        sub: "",
+        name: "Adão e Eva I (O Conflito de Adão e Eva com Satã)",
+        sub: "Tradição apócrifa etíope/cristã sobre a saída do Éden",
         tags: ["b201", "v1"],
+        page: 13,
       },
       {
         id: "b3",
         num: "3",
         name: "Adão e Eva II",
-        sub: "",
+        sub: "Continuação da narrativa dos patriarcas antediluvianos",
         tags: ["b201", "v1"],
+        page: 79,
       },
       {
         id: "b4",
         num: "4",
         name: "Adão e Eva III",
-        sub: "",
-        tags: ["b201"],
+        sub: "Relatos da morte e testamento dos primeiros pais",
+        tags: ["b201", "v3"],
+        page: 444,
       },
       {
         id: "b5",
         num: "5",
-        name: "Vida Adae et Evae",
-        sub: "Versão latina",
-        tags: ["b201"],
+        name: "Vita Adae et Evae",
+        sub: "Versão latina da vida de Adão e Eva",
+        tags: ["b201", "v1"],
+        page: 575,
       },
       {
         id: "b6",
         num: "6",
         name: "Eslavo Vita Adae et Evae",
-        sub: "Versão eslava",
-        tags: ["b201"],
+        sub: "Versão eslava sobre a penitência nos rios do Paraíso",
+        tags: ["b201", "v1"],
+        page: 576,
       },
       {
         id: "b7",
         num: "7",
         name: "Livro de Adão",
-        sub: "O Conflito de Adão e Eva com Satã (V1)",
+        sub: "O Conflito de Adão e Eva com Satã",
         tags: ["v3"],
+        page: 13,
       },
       {
         id: "b7b",
         num: "7b",
         name: "Testamento de Adão",
-        sub: "(V1)",
+        sub: "Horas de oração da noite e do dia e profecia do Messias",
         tags: ["v3"],
       },
       {
         id: "b7c",
         num: "7c",
         name: "Apocalipse de Adão",
-        sub: "Revelação gnóstica de Adão a seu filho Sete",
+        sub: "Revelação gnóstica de Adão a seu filho Sete (NH V, 5)",
         tags: ["b201", "v1", "nag hammadi"],
+        page: 239,
       },
       {
         id: "b8",
         num: "8",
         name: "Gênesis 6–11",
         sub: "Vigilantes, Noé, Dilúvio, Torre de Babel",
-        tags: ["b201", "cnbb"],
+        tags: ["b201", "cnbb", "stern"],
+        page: 57,
       },
       {
         id: "b9",
         num: "9",
         name: "Narração do Dilúvio — Epopéia de Gilgamesh",
-        sub: "Paralelo mesopotâmico ao dilúvio bíblico",
+        sub: "Paralelo mesopotâmico ao dilúvio bíblico (Utnapishtim)",
         tags: ["v1"],
+        page: 165,
       },
       {
         id: "b10",
         num: "10",
-        name: "1 Enoch",
+        name: "1 Enoch (Livro de Enoque Etiópico)",
         sub: "Vigilantes, Parábolas, Astronomia, Sonhos, Epístola",
         tags: ["b201", "v1"],
+        page: 259,
       },
       {
         id: "b11",
         num: "11",
-        name: "2 Enoch",
-        sub: "",
+        name: "2 Enoch (Livro dos Segredos de Enoque)",
+        sub: "Ascensão através dos 7 céus e o segredo da Criação",
         tags: ["b201", "v1"],
+        page: 105,
       },
-      { id: "b12", num: "12", name: "3 Enoch", sub: "", tags: ["b201"] },
+      {
+        id: "b12",
+        num: "12",
+        name: "3 Enoch (Livro Hebraico de Enoque)",
+        sub: "A transformação de Enoque no anjo Metatron",
+        tags: ["b201"],
+        page: 567,
+      },
       {
         id: "b12b",
         num: "12b",
-        name: "O Livro dos Segredos de Enoque (V1)",
-        sub: "",
+        name: "As Viagens de Enoque",
+        sub: "Seções ampliadas dos relatos de viagens celestes",
         tags: ["v1"],
+        page: 268,
       },
       {
         id: "b13",
         num: "13",
         name: "O Livro dos Gigantes",
-        sub: "",
+        sub: "Fragmentos da tradição dos Nephilim e seus sonhos",
         tags: ["b201"],
+        page: 575,
       },
     ],
   },
@@ -198,7 +235,8 @@ export const CANON_DATA: Phase[] = [
         num: "14",
         name: "Gênesis 12–25",
         sub: "Abraão, Ló, Isaque, aliança",
-        tags: ["b201", "cnbb"],
+        tags: ["b201", "cnbb", "stern"],
+        page: 57,
       },
       {
         id: "b14_comp",
@@ -210,162 +248,3323 @@ export const CANON_DATA: Phase[] = [
       {
         id: "b15",
         num: "15",
-        name: "Jubileus",
-        sub: "Reescrita do Gênesis com calendário e anjos",
+        name: "Jubileus (O Livro dos Jubileus)",
+        sub: "Reescrita do Gênesis com calendário solar e divisão por jubileus",
         tags: ["b201", "v1"],
+        page: 425,
       },
       {
         id: "b16",
         num: "16",
         name: "Testamento de Abraão",
-        sub: "A morte e o julgamento da alma do patriarca",
+        sub: "A morte, a carruagem de fogo e o julgamento das almas",
         tags: ["b201", "v1"],
+        page: 169,
       },
       {
         id: "b17",
         num: "17",
         name: "Apocalipse de Abraão",
-        sub: "Visão celestial e conversão",
+        sub: "Visão celestial, a queda da idolatria e o trono divino",
         tags: ["v1"],
+        page: 825,
       },
       {
         id: "b18",
         num: "18",
         name: "Livro de Abraão",
-        sub: "Versão expandida das tradições abraâmicas",
+        sub: "Versão expandida das tradições e da astronomia abraâmica",
         tags: ["v3"],
+        page: 36,
       },
       {
         id: "b19",
         num: "19",
         name: "Caverna dos Tesouros",
-        sub: "Tradição siríaca das histórias patriarcais (V1)",
+        sub: "Tradição siríaca da genealogia dos patriarcas até Cristo",
         tags: ["v1"],
+        page: 199,
       },
       {
         id: "b20",
         num: "20",
         name: "Conto dos Patriarcas",
+        sub: "Narrativas tradicionais sobre a vida dos pais do deserto",
+        tags: ["v1"],
+        page: 149,
+      },
+      {
+        id: "b21",
+        num: "21",
+        name: "Gênesis 26–36",
+        sub: "Isaque, Jacó, Esaú e as doze tribos",
+        tags: ["b201", "cnbb", "stern"],
+        page: 57,
+      },
+      {
+        id: "b22",
+        num: "22",
+        name: "Testamentos Finais dos 12 Patriarcas",
+        sub: "Exortações éticas e messiânicas dos filhos de Jacó",
+        tags: ["b201", "v1"],
+        page: 335,
+      },
+      {
+        id: "b23",
+        num: "23",
+        name: "Testamento de Rúben",
+        sub: "Da intenção e pensamentos",
+        tags: ["b201", "v1"],
+        page: 335,
+      },
+      {
+        id: "b24",
+        num: "24",
+        name: "Testamento de Simeão",
+        sub: "Da inveja e do ciúme",
+        tags: ["b201", "v1"],
+        page: 339,
+      },
+      {
+        id: "b25",
+        num: "25",
+        name: "Testamento de Levi",
+        sub: "Do sacerdócio e da presunção",
+        tags: ["b201", "v1"],
+        page: 342,
+      },
+      {
+        id: "b26",
+        num: "26",
+        name: "Testamento de Judá",
+        sub: "Da valentia, cobiça e luxúria",
+        tags: ["b201", "v1"],
+        page: 355,
+      },
+      {
+        id: "b27",
+        num: "27",
+        name: "Testamento de Issacar",
+        sub: "Da simplicidade de coração",
+        tags: ["b201", "v1"],
+        page: 364,
+      },
+      {
+        id: "b28",
+        num: "28",
+        name: "Testamento de Zebulom",
+        sub: "Da compaixão e misericórdia",
+        tags: ["b201", "v1"],
+        page: 367,
+      },
+      {
+        id: "b29",
+        num: "29",
+        name: "Testamento de Dan",
+        sub: "Da raiva e da mentira",
+        tags: ["b201", "v1"],
+        page: 371,
+      },
+      {
+        id: "b30",
+        num: "30",
+        name: "Testamento de Naftali",
+        sub: "Da bondade natural",
+        tags: ["b201", "v1"],
+        page: 374,
+      },
+      {
+        id: "b31",
+        num: "31",
+        name: "Testamento de Gad",
+        sub: "Do ódio e seu antídoto",
+        tags: ["b201", "v1"],
+        page: 378,
+      },
+      {
+        id: "b32",
+        num: "32",
+        name: "Testamento de Aser",
+        sub: "Do duplo aspecto da maldade e virtude",
+        tags: ["b201", "v1"],
+        page: 383,
+      },
+      {
+        id: "b33",
+        num: "33",
+        name: "Testamento de José",
+        sub: "Da castidade e paciência",
+        tags: ["b201", "v1"],
+        page: 387,
+      },
+      {
+        id: "b34",
+        num: "34",
+        name: "Testamento de Benjamin",
+        sub: "Da reta intenção e mente pura",
+        tags: ["b201", "v1"],
+        page: 390,
+      },
+      {
+        id: "b35",
+        num: "35",
+        name: "Gênesis 37–50",
+        sub: "José no Egito e a bênção dos patriarcas",
+        tags: ["b201", "cnbb", "stern"],
+        page: 57,
+      },
+      {
+        id: "b36",
+        num: "36",
+        name: "José e Asenath",
+        sub: "A conversão e o casamento da filha do sacerdote egípcio com José",
+        tags: ["v1"],
+        page: 451,
+      },
+      {
+        id: "b37",
+        num: "37",
+        name: "Livro de Jasher (Livro de Jasar)",
+        sub: "Crônica histórica expandida mencionada em Josué e Samuel",
+        tags: ["v2"],
+        page: 10,
+      },
+      {
+        id: "b38",
+        num: "38",
+        name: "Escada de Jacó",
+        sub: "Expansão da visão de Betel e as ordens angelicais",
+        tags: ["missing"],
+      },
+      {
+        id: "b39",
+        num: "39",
+        name: "Testamento de Jó",
+        sub: "Expansão apócrifa com hinos de suas filhas",
+        tags: ["missing"],
+      },
+      {
+        id: "b40",
+        num: "40",
+        name: "Pseudo-Filo — Antiguidades Bíblicas",
+        sub: "Reescrita da história sagrada de Adão a Saul",
+        tags: ["missing"],
+      },
+    ],
+  },
+  {
+    id: "f3",
+    num: "3",
+    title: "ÊXODO & A LEI",
+    theme: "exodus",
+    books: [
+      {
+        id: "b41",
+        num: "41",
+        name: "Êxodo (Sh'mot)",
+        sub: "Libertação do Egito e a outorga no Sinai",
+        tags: ["b201", "cnbb", "stern"],
+        page: 112,
+      },
+      {
+        id: "b42",
+        num: "42",
+        name: "Janes e Jambres",
+        sub: "O livro dos magos do Faraó que resistiram a Moisés",
+        tags: ["b201"],
+        page: 624,
+      },
+      {
+        id: "b43",
+        num: "43",
+        name: "Levítico (Vayikra)",
+        sub: "Código de santidade e rituais de sacrifício",
+        tags: ["b201", "cnbb", "stern"],
+        page: 158,
+      },
+      {
+        id: "b44",
+        num: "44",
+        name: "Números (B'midbar)",
+        sub: "A jornada no deserto e a contagem das tribos",
+        tags: ["b201", "cnbb", "stern"],
+        page: 192,
+      },
+      {
+        id: "b45",
+        num: "45",
+        name: "Deuteronômio (D'varim)",
+        sub: "O Shemá, a recapitulação da Lei e a morte de Moisés",
+        tags: ["b201", "cnbb", "stern"],
+        page: 240,
+      },
+      {
+        id: "b46",
+        num: "46",
+        name: "Testamento de Moisés (Assunção de Moisés)",
+        sub: "Profecias finais de Moisés a Josué antes de seu sepultamento",
+        tags: ["b201", "v1"],
+        page: 191,
+      },
+      {
+        id: "b47",
+        num: "47",
+        name: "Apocalipse de Moisés",
+        sub: "Relato grego da criação e da queda humana",
+        tags: ["b201", "v1"],
+        page: 540,
+      },
+      {
+        id: "b48",
+        num: "48",
+        name: "Seleções do Livro de Moisés",
+        sub: "Traduções e visões intertestamentais",
+        tags: ["v3"],
+        page: 50,
+      },
+      {
+        id: "b49",
+        num: "49",
+        name: "Fragmentos de uma Obra Zadoquita",
+        sub: "Regras do sacerdócio remanescente",
+        tags: ["b201", "v3"],
+        page: 536,
+      },
+      {
+        id: "b50",
+        num: "50",
+        name: "Documento de Damasco",
+        sub: "Manuscritos do Mar Morto — Exortação e leis da comunidade",
+        tags: ["v3"],
+        page: 142,
+      },
+    ],
+  },
+  {
+    id: "f4",
+    num: "4",
+    title: "MANUSCRITOS DO MAR MORTO",
+    theme: "qumran",
+    books: [
+      {
+        id: "b51",
+        num: "51",
+        name: "Regra da Comunidade (1QS)",
+        sub: "Serek ha-Yahad — Regras de conduta da comunidade esênia de Qumran",
+        tags: ["missing"],
+      },
+      {
+        id: "b52",
+        num: "52",
+        name: "Pergaminho da Guerra (1QM)",
+        sub: "Milhamah — A guerra dos Filhos da Luz contra os Filhos das Trevas",
+        tags: ["missing"],
+      },
+      {
+        id: "b53",
+        num: "53",
+        name: "Hinos de Ação de Graças (1QH)",
+        sub: "Hodayot — Cânticos e composições poéticas de agradecimento",
+        tags: ["missing"],
+      },
+      {
+        id: "b54",
+        num: "54",
+        name: "Pergaminho do Templo (11QT)",
+        sub: "A legislação ideal sobre o espaço sacro e o Templo",
+        tags: ["missing"],
+      },
+      {
+        id: "b55",
+        num: "55",
+        name: "Apócrifo de Gênesis (1QapGen)",
+        sub: "Versão em aramaico expandida das histórias dos patriarcas",
+        tags: ["missing"],
+      },
+    ],
+  },
+  {
+    id: "f5",
+    num: "5",
+    title: "CONQUISTA & JUÍZES",
+    theme: "conquest_and_judges",
+    books: [
+      {
+        id: "b56",
+        num: "56",
+        name: "Josué (Y'hoshua)",
+        sub: "Conquistas de Canaã",
+        tags: ["b201", "cnbb", "stern"],
+        page: 284,
+      },
+      {
+        id: "b57",
+        num: "57",
+        name: "Juízes (Shof'tim)",
+        sub: "A era dos libertadores e líderes de Israel",
+        tags: ["b201", "cnbb", "stern"],
+        page: 310,
+      },
+      {
+        id: "b58",
+        num: "58",
+        name: "Rute (Rut)",
+        sub: "A história da ancestral moabita do Rei Davi",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1078,
+      },
+      {
+        id: "b59",
+        num: "59",
+        name: "A História de Ahikar",
+        sub: "Provérbios e sabedoria da Mesopotâmia integrada ao ambiente judaico",
+        tags: ["b201"],
+        page: 642,
+      },
+      {
+        id: "b60",
+        num: "60",
+        name: "Eldad e Modad",
+        sub: "Profecia dos dois anciãos no acampamento",
+        tags: ["b201"],
+        page: 617,
+      },
+      {
+        id: "b61",
+        num: "61",
+        name: "Melchizedek (Qumran)",
+        sub: "Relato esênio do Sacerdote-Rei e Juiz celeste no Fim dos Tempos",
+        tags: ["v1"],
+        page: 159,
+      },
+      {
+        id: "b61_nh",
+        num: "61b",
+        name: "Melquisedeque (Nag Hammadi)",
+        sub: "Revelação gnóstica sobre Jesus Cristo como o Sumo Sacerdote Melquisedeque (NH IX, 1)",
+        tags: ["nag hammadi", "gnose"],
+        page: 370,
+      },
+    ],
+  },
+  {
+    id: "f6",
+    num: "6",
+    title: "REINO DE ISRAEL & TRADIÇÕES ATRIBUÍDAS",
+    theme: "kingdom",
+    books: [
+      {
+        id: "b62",
+        num: "62",
+        name: "1 Samuel (Sh'mu'el Alef)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 337,
+      },
+      {
+        id: "b63",
+        num: "63",
+        name: "2 Samuel (Sh'mu'el Bet)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 372,
+      },
+      {
+        id: "b64",
+        num: "64",
+        name: "1 Reis (M'lakhim Alef)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 403,
+      },
+      {
+        id: "b65",
+        num: "65",
+        name: "2 Reis (M'lakhim Bet)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 436,
+      },
+      {
+        id: "b66",
+        num: "66",
+        name: "1 Crônicas (Divrei-HaYamim Alef)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1172,
+      },
+      {
+        id: "b67",
+        num: "67",
+        name: "2 Crônicas (Divrei-HaYamim Bet)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1201,
+      },
+      {
+        id: "b68",
+        num: "68",
+        name: "Testamento de Salomão",
+        sub: "Sobre o anel selo, domínio dos demônios e construção do Templo",
+        tags: ["missing"],
+      },
+      {
+        id: "b68_grim1",
+        num: "68b",
+        name: "A clavícula de Salomão",
+        sub: "S. L. MacGregor Mathers — Estudo analítico-textual do manual ritualístico medieval",
+        tags: ["grimorio", "solomon", "carrinho"],
+      },
+      {
+        id: "b68_grim2",
+        num: "68c",
+        name: "Goetia",
+        sub: "Humberto Maggi — Estudo das chaves de evocação e controle simbólico dos 72 espíritos",
+        tags: ["grimorio", "goetia", "carrinho"],
+      },
+      {
+        id: "b68_grim3",
+        num: "68d",
+        name: "Grimorium Verum",
+        sub: "Frater Goya — Análise técnica das correntes e hierarquias da tradição salomônica",
+        tags: ["grimorio", "pratica", "carrinho"],
+      },
+    ],
+  },
+  {
+    id: "f7",
+    num: "7",
+    title: "EXÍLIO, RETORNO & DEUTEROCANÔNICOS",
+    theme: "exile",
+    books: [
+      {
+        id: "b69",
+        num: "69",
+        name: "1 Esdras ('Ezra Alef)",
+        sub: "Cânon Grego/Septuaginta",
+        tags: ["b201", "cnbb"],
+        page: 447,
+      },
+      {
+        id: "b70",
+        num: "70",
+        name: "2 Esdras",
+        sub: "Textos de Esdras e Neemias unificados",
+        tags: ["b201"],
+        page: 453,
+      },
+      {
+        id: "b71",
+        num: "71",
+        name: "4 Esdras (Apocalipse de Esdras)",
+        sub: "Visões apocalípticas do profeta sobre o destino da humanidade",
+        tags: ["v3"],
+        page: 198,
+      },
+      {
+        id: "b71b",
+        num: "71b",
+        name: "Palavra e Revelação de Esdras",
+        sub: "O Santo Profeta e Amado de Deus",
+        tags: ["v3"],
+        page: 82,
+      },
+      {
+        id: "b72",
+        num: "72",
+        name: "Neemias (NechemYah)",
+        sub: "Reconstrução dos muros de Jerusalém",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1154,
+      },
+      {
+        id: "b73",
+        num: "73",
+        name: "Carta de Aristeias",
+        sub: "Relato da tradução da Septuaginta pelos 72 sábios",
+        tags: ["v3"],
+        page: 89,
+      },
+      {
+        id: "b74",
+        num: "74",
+        name: "Tobias",
+        sub: "História de Tobit, o anjo Rafael e o demônio Asmodeu",
+        tags: ["b201", "cnbb"],
+        page: 504,
+      },
+      {
+        id: "b75",
+        num: "75",
+        name: "Judite",
+        sub: "A heroína judaica que degolou Holofernes",
+        tags: ["b201", "cnbb"],
+        page: 519,
+      },
+      {
+        id: "b76",
+        num: "76",
+        name: "Ester + Adições em Ester",
+        sub: "Edição canônica com os capítulos adicionais gregos",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1118,
+      },
+      {
+        id: "b77",
+        num: "77",
+        name: "Susana",
+        sub: "Adição ao Livro de Daniel sobre o julgamento sábio",
+        tags: ["b201", "cnbb"],
+        page: 527,
+      },
+      {
+        id: "b78",
+        num: "78",
+        name: "Bel e o Dragão",
+        sub: "Desmistificação da idolatria por Daniel em Babilônia",
+        tags: ["b201", "cnbb"],
+        page: 504,
+      },
+      {
+        id: "b79",
+        num: "79",
+        name: "1 Macabeus",
+        sub: "A revolta judaica contra Ântioco Epifanes",
+        tags: ["b201", "cnbb"],
+        page: 464,
+      },
+      {
+        id: "b80",
+        num: "80",
+        name: "2 Macabeus",
+        sub: "Martírio dos sete irmãos e teologia da ressurreição",
+        tags: ["b201", "cnbb"],
+        page: 472,
+      },
+      {
+        id: "b81",
+        num: "81",
+        name: "3 Macabeus",
+        sub: "Perseguição aos judeus em Alexandria sob Ptolomeu IV",
+        tags: ["b201", "v3"],
+        page: 257,
+      },
+      {
+        id: "b82",
+        num: "82",
+        name: "4 Macabeus",
+        sub: "Discurso filosófico sobre a razão dominando as paixões",
+        tags: ["b201", "v3"],
+        page: 278,
+      },
+      {
+        id: "b83",
+        num: "83",
+        name: "1 Meqabyan",
+        sub: "Livros dos Macabeus da Bíblia Etíope",
+        tags: ["b201"],
+        page: 580,
+      },
+      {
+        id: "b84",
+        num: "84",
+        name: "2 Meqabyan",
+        sub: "",
+        tags: ["b201"],
+        page: 596,
+      },
+      {
+        id: "b85",
+        num: "85",
+        name: "3 Meqabyan",
+        sub: "",
+        tags: ["b201"],
+        page: 608,
+      },
+      {
+        id: "b86",
+        num: "86",
+        name: "Sabedoria de Salomão",
+        sub: "Tratado deuterocanônico de sabedoria helenística",
+        tags: ["missing", "cnbb"],
+        page: 902,
+      },
+    ],
+  },
+  {
+    id: "f8",
+    num: "8",
+    title: "SABEDORIA & POESIA",
+    theme: "wisdom",
+    books: [
+      {
+        id: "b87",
+        num: "87",
+        name: "Jó (Iyov)",
+        sub: "O enigma do sofrimento do justo",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1026,
+      },
+      {
+        id: "b88",
+        num: "88",
+        name: "Salmos 1–72 (Tehillim I & II)",
+        sub: "Cânticos de Davi e dos filhos de Coré",
+        tags: ["b201", "cnbb", "stern"],
+        page: 835,
+      },
+      {
+        id: "b89",
+        num: "89",
+        name: "Salmos 73–150 (Tehillim III, IV & V)",
+        sub: "Cânticos de Asafe e Salmos de Romagem",
+        tags: ["b201", "cnbb", "stern"],
+        page: 835,
+      },
+      {
+        id: "b89_comp",
+        num: "89b",
+        name: "O livro dos esplendores",
+        sub: "Éliphas Lévi — O mistério hierático e a interpretação cabalística dos salmos",
+        tags: ["cabala", "esoterismo", "carrinho"],
+      },
+      {
+        id: "b90",
+        num: "90",
+        name: "Salmos de Salomão",
+        sub: "18 Salmos apócrifos de cunho messiânico",
+        tags: ["b201"],
+        page: 652,
+      },
+      {
+        id: "b91",
+        num: "91",
+        name: "Salmos Adicionais (Salmo 151 ao 155)",
+        sub: "Salmos apócrifos preservados em siríaco e no Mar Morto",
+        tags: ["b201"],
+        page: 534,
+      },
+      {
+        id: "b92",
+        num: "92",
+        name: "Odes de Salomão",
+        sub: "42 hinos poéticos do misticismo cristão primitivo",
+        tags: ["b201", "v2"],
+        page: 317,
+      },
+      {
+        id: "b93",
+        num: "93",
+        name: "O Hino da Pérola",
+        sub: "Poema gnóstico de resgate da alma contido nos Atos de Tomé",
+        tags: ["v1", "gnose"],
+        page: 397,
+      },
+      {
+        id: "b94",
+        num: "94",
+        name: "Provérbios (Mishlei)",
+        sub: "Sabedoria prática de Salomão e Agur",
+        tags: ["b201", "cnbb", "stern"],
+        page: 977,
+      },
+      {
+        id: "b95",
+        num: "95",
+        name: "Eclesiastes (Kohelet)",
+        sub: "A vaidade das coisas e a busca pelo sentido sob o sol",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1092,
+      },
+      {
+        id: "b96",
+        num: "96",
+        name: "Cântico dos Cânticos (Shir-HaShirim)",
+        sub: "Poesia de amor alusiva à união mística da alma com o Criador",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1078,
+      },
+      {
+        id: "b97",
+        num: "97",
+        name: "Sirach (Eclesiástico / Ben Sira)",
+        sub: "Sabedoria ética do sacerdócio judaico",
+        tags: ["b201", "cnbb"],
+        page: 504,
+      },
+      {
+        id: "b98",
+        num: "98",
+        name: "Sobre a Origem do Mundo",
+        sub: "Tratado cosmogônico sobre o Caos, Sophia e o Demiurgo Yaldabaoth (NH II, 5)",
+        tags: ["v1", "gnose", "nag hammadi"],
+        page: 150,
+      },
+      {
+        id: "b99",
+        num: "99",
+        name: "As Frases do Sexto (Sentenças de Sextus)",
+        sub: "Provérbios éticos e ascéticos cristãos (NH XII, 1)",
+        tags: ["b201", "nag hammadi"],
+        page: 424,
+      },
+      {
+        id: "b100",
+        num: "100",
+        name: "As Tradições de Matias",
+        sub: "Fragmentos da tradição oral atribuída ao apóstolo Matias",
+        tags: ["b201"],
+        page: 744,
+      },
+    ],
+  },
+  {
+    id: "f9",
+    num: "9",
+    title: "PROFETAS MAIORES",
+    theme: "prophets",
+    books: [
+      {
+        id: "b101",
+        num: "101",
+        name: "Isaías 1–39 (Yesha'yahu I)",
+        sub: "Oráculos de juízo contra Judá e as nações",
+        tags: ["b201", "cnbb", "stern"],
+        page: 469,
+      },
+      {
+        id: "b102",
+        num: "102",
+        name: "Isaías 40–66 (Yesha'yahu II)",
+        sub: "O Livro do Consolo e os cânticos do Servo Sofredor",
+        tags: ["b201", "cnbb", "stern"],
+        page: 469,
+      },
+      {
+        id: "b102_comp",
+        num: "102b",
+        name: "Magus: Tratado Completo de Alquimia e Filosofia Oculta",
+        sub: "Francis Barrett — Enciclopédia clássica de síntese magística",
+        tags: ["ocultismo", "enciclopedia", "carrinho"],
+      },
+      {
+        id: "b103",
+        num: "103",
+        name: "Ascensão de Isaías",
+        sub: "A visão dos sete céus e a crucificação do Amado",
+        tags: ["b201", "v1"],
+        page: 131,
+      },
+      {
+        id: "b103b",
+        num: "103b",
+        name: "Martírio de Isaías",
+        sub: "O relato do profeta sendo serrado ao meio pelo Rei Manassés",
+        tags: ["v1"],
+        page: 155,
+      },
+      {
+        id: "b104",
+        num: "104",
+        name: "Jeremias (Yirmeyahu)",
+        sub: "Profecias da queda de Jerusalém e a Nova Aliança",
+        tags: ["b201", "cnbb", "stern"],
+        page: 584,
+      },
+      {
+        id: "b105",
+        num: "105",
+        name: "Carta de Jeremias",
+        sub: "Alerta contra a idolatria babilônica",
+        tags: ["b201", "cnbb"],
+        page: 488,
+      },
+      {
+        id: "b106",
+        num: "106",
+        name: "Lamentações (Eikhah)",
+        sub: "Elegias pela destruição do Primeiro Templo",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1088,
+      },
+      {
+        id: "b107",
+        num: "107",
+        name: "Baruque 1 · 2 · 3",
+        sub: "Escritos do secretário de Jeremias no exílio",
+        tags: ["b201", "cnbb"],
+        page: 489,
+      },
+      {
+        id: "b108",
+        num: "108",
+        name: "Oração de Azarias",
+        sub: "Adição ao livro de Daniel no forno ardente",
+        tags: ["b201", "v3"],
+        page: 645,
+      },
+      {
+        id: "b109",
+        num: "109",
+        name: "Ezequiel (Yechezkel)",
+        sub: "Visões do Carro Divino (Merkavah) e da restauração do Templo",
+        tags: ["b201", "cnbb", "stern"],
+        page: 681,
+      },
+      {
+        id: "b110",
+        num: "110",
+        name: "Daniel (Dani'el)",
+        sub: "Visões apocalípticas dos quatro impérios e o Filho do Homem",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1125,
+      },
+      {
+        id: "b111",
+        num: "111",
+        name: "4 Baruc (Paraleipomena Jeremiou)",
+        sub: "Expansão sobre Abimeleque e a destruição de Jerusalém",
+        tags: ["missing"],
+      },
+      {
+        id: "b112",
+        num: "112",
+        name: "Vida dos Profetas",
+        sub: "Tradições biográficas e locais de sepultamento dos profetas",
+        tags: ["missing"],
+      },
+    ],
+  },
+  {
+    id: "f10",
+    num: "10",
+    title: "PROFETAS MENORES & ORÁCULOS",
+    theme: "minor_prophets",
+    books: [
+      {
+        id: "b113",
+        num: "113",
+        name: "Oséias (Hoshe'a)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 746,
+      },
+      {
+        id: "b114",
+        num: "114",
+        name: "Joel (Yo'el)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 763,
+      },
+      {
+        id: "b115",
+        num: "115",
+        name: "Amós ('Amos)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 770,
+      },
+      {
+        id: "b116",
+        num: "116",
+        name: "Obadias ('Ovadyah)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 783,
+      },
+      {
+        id: "b117",
+        num: "117",
+        name: "Jonas (Yonah)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 786,
+      },
+      {
+        id: "b118",
+        num: "118",
+        name: "Miquéias (Mikhah)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 789,
+      },
+      {
+        id: "b119",
+        num: "119",
+        name: "Naum (Nachum)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 800,
+      },
+      {
+        id: "b120",
+        num: "120",
+        name: "Habacuque (Havakuk)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 800,
+      },
+      {
+        id: "b121",
+        num: "121",
+        name: "Sofonias (Tz'fanyah)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 805,
+      },
+      {
+        id: "b122",
+        num: "122",
+        name: "Ageu (Hagai)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 811,
+      },
+      {
+        id: "b123",
+        num: "123",
+        name: "Zacarias (Z'kharyah)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 819,
+      },
+      {
+        id: "b124",
+        num: "124",
+        name: "Malaquias (Mal'akhi)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 830,
+      },
+      {
+        id: "b125",
+        num: "125",
+        name: "Oração de Manassés",
+        sub: "A oração de arrependimento do rei mais ímpio de Judá",
+        tags: ["b201"],
+        page: 501,
+      },
+      {
+        id: "b126",
+        num: "126",
+        name: "Oráculos Sibilinos I–XIV",
+        sub: "Profecias greco-romanas adaptadas pela comunidade judaico-cristã",
+        tags: ["b201"],
+        page: 653,
+      },
+    ],
+  },
+  {
+    id: "f11",
+    num: "11",
+    title: "ENTRE OS TESTAMENTOS",
+    theme: "intertestamental",
+    div: "PERÍODO INTERTESTAMENTAL",
+    books: [
+      {
+        id: "b127",
+        num: "127",
+        name: "A Ascensão de Isaías (Revisão)",
+        sub: "",
+        tags: ["b201"],
+        page: 131,
+      },
+      {
+        id: "b128",
+        num: "128",
+        name: "Testamento de Moisés (Revisão)",
+        sub: "",
+        tags: ["b201"],
+        page: 623,
+      },
+      {
+        id: "b129",
+        num: "129",
+        name: "Livro de Adão (V.3)",
+        sub: "",
+        tags: ["v3"],
+        page: 13,
+      },
+      {
+        id: "b130",
+        num: "130",
+        name: "Testamento de Isaac",
+        sub: "Visões patriarcais do inferno e paraíso",
+        tags: ["v1"],
+      },
+      {
+        id: "b131",
+        num: "131",
+        name: "Testamento de Jacó",
+        sub: "Tradição mística do fim da vida de Jacó",
+        tags: ["v1"],
+      },
+      {
+        id: "b131_stern_prophecies",
+        num: "131b",
+        name: "Profecias do Tanakh Cumpridas por Yeshua",
+        sub: "David H. Stern — Mapeamento exegético das profecias messiânicas e continuísmo do pacto",
+        tags: ["stern", "messianico", "exegese"],
+        page: 43,
+      },
+    ],
+  },
+  {
+    id: "f12",
+    num: "12",
+    title: "INFÂNCIA DE JESUS",
+    theme: "infancy",
+    div: "NOVO TESTAMENTO & APÓCRIFOS CRISTÃOS",
+    books: [
+      {
+        id: "b132",
+        num: "132",
+        name: "Protevangelho de Tiago",
+        sub: "O nascimento, pureza e vida da Virgem Maria",
+        tags: ["b201", "v1"],
+        page: 517,
+      },
+      {
+        id: "b133",
+        num: "133",
+        name: "Evangelho da Natividade de Maria",
+        sub: "Tradição latina sobre a descendência de Davi",
+        tags: ["b201", "v2"],
+        page: 347,
+      },
+      {
+        id: "b134",
+        num: "134",
+        name: "Evangelho do Pseudo-Mateus",
+        sub: "Milagres na fuga para o Egito com dragões e palmeiras",
+        tags: ["b201", "v1"],
+        page: 475,
+      },
+      {
+        id: "b135",
+        num: "135",
+        name: "Evangelho da Infância de Tomé",
+        sub: "Milagres e prodígios do menino Jesus dos 5 aos 12 anos",
+        tags: ["b201", "v1"],
+        page: 503,
+      },
+      {
+        id: "b136",
+        num: "136",
+        name: "Fragmentos de Tomé",
+        sub: "Textos suplementares da infância",
+        tags: ["b201"],
+        page: 701,
+      },
+      {
+        id: "b137",
+        num: "137",
+        name: "Evangelho Árabe da Infância",
+        sub: "Mágicos, faixas de pano e prodígios no Egito",
+        tags: ["v1"],
+        page: 435,
+      },
+      {
+        id: "b138",
+        num: "138",
+        name: "Evangelho Armênio da Infância",
+        sub: "Os reis magos Baltazar, Melquior e Gaspar",
+        tags: ["v1"],
+        page: 451,
+      },
+      {
+        id: "b139",
+        num: "139",
+        name: "História de José, o Carpinteiro",
+        sub: "Relato de Jesus sobre a morte santa de seu pai adotivo",
+        tags: ["b201", "v1"],
+        page: 431,
+      },
+      {
+        id: "b140",
+        num: "140",
+        name: "Cartas de Herodes e Pilatos",
+        sub: "Correspondência apócrifa sobre os eventos em Jerusalém",
+        tags: ["b201"],
+        page: 728,
+      },
+    ],
+  },
+  {
+    id: "f13",
+    num: "13",
+    title: "MINISTÉRIO DE JESUS — OS EVANGELHOS",
+    theme: "gospels",
+    books: [
+      {
+        id: "b141",
+        num: "141",
+        name: "Mateus 1–13 (Mattityahu I)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1235,
+      },
+      {
+        id: "b142",
+        num: "142",
+        name: "Mateus 14–28 (Mattityahu II)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1235,
+      },
+      {
+        id: "b143",
+        num: "143",
+        name: "Marcos (Markos)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1270,
+      },
+      {
+        id: "b144",
+        num: "144",
+        name: "Evangelho Secreto de Marcos",
+        sub: "Excerto descoberto no Mosteiro de Mar Saba",
+        tags: ["b201", "v3"],
+        page: 724,
+      },
+      {
+        id: "b145",
+        num: "145",
+        name: "Lucas (Lukas I)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1290,
+      },
+      {
+        id: "b146",
+        num: "146",
+        name: "Lucas (Lukas II)",
+        sub: "",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1290,
+      },
+      {
+        id: "b147",
+        num: "147",
+        name: "João 1–12 (Yochanan I)",
+        sub: "O Verbo, os sinais e os discursos em Jerusalém",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1326,
+      },
+      {
+        id: "b148",
+        num: "148",
+        name: "João 13–21 (Yochanan II)",
+        sub: "O lava-pés, a Paixão e as aparições da ressurreição",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1326,
+      },
+      {
+        id: "b149",
+        num: "149",
+        name: "Narrativa da Paixão Pré-Markan",
+        sub: "Fonte primitiva dos relatos da crucifixão",
+        tags: ["b201"],
+        page: 708,
+      },
+      {
+        id: "b150",
+        num: "150",
+        name: "Epístolas de Jesus e Abgarus",
+        sub: "Troca de cartas entre o Rei de Edessa e Jesus",
+        tags: ["b201", "v1"],
+        page: 710,
+      },
+      {
+        id: "b151",
+        num: "151",
+        name: "Evangelho dos Hebreus",
+        sub: "Citado pelos Pais da Igreja; escrito em hebraico",
+        tags: ["b201"],
+        page: 740,
+      },
+      {
+        id: "b152",
+        num: "152",
+        name: "Evangelho dos Ebionitas",
+        sub: "Evangelho vegetariano da seita judaico-cristã",
+        tags: ["b201"],
+        page: 741,
+      },
+      {
+        id: "b153",
+        num: "153",
+        name: "Evangelho dos Nazarenos",
+        sub: "Variante judaico-aramaica do Evangelho de Mateus",
+        tags: ["b201"],
+        page: 741,
+      },
+      {
+        id: "b154",
+        num: "154",
+        name: "Evangelho de Egerton",
+        sub: "Fragmentos papiráceos de um evangelho desconhecido",
+        tags: ["b201"],
+        page: 737,
+      },
+      {
+        id: "b155",
+        num: "155",
+        name: "Evangelho de Oxirrinco (P.Oxy 840/1224)",
+        sub: "Ditos de Jesus sobre a pureza ritual e o Templo",
+        tags: ["b201"],
+        page: 735,
+      },
+      {
+        id: "b156",
+        num: "156",
+        name: "Diálogo do Salvador",
+        sub: "Conversações esotéricas pós-ressurreição (NH III, 5)",
+        tags: ["b201", "nag hammadi"],
+        page: 211,
+      },
+      {
+        id: "b157",
+        num: "157",
+        name: "Evangelho Segundo Pedro",
+        sub: "Relato da ressurreição com a cruz falante",
+        tags: ["b201", "v1", "v2"],
+        page: 571,
+      },
+      {
+        id: "b158",
+        num: "158",
+        name: "A Vingança do Salvador",
+        sub: "Lenda medieval do imperador Tito punindo Jerusalém",
+        tags: ["b201", "v1"],
+        page: 737,
+      },
+    ],
+  },
+  {
+    id: "f14",
+    num: "14",
+    title: "CICLO DE PILATOS & PÓS-RESSURREIÇÃO",
+    theme: "passion",
+    books: [
+      {
+        id: "b159",
+        num: "159",
+        name: "Evangelho de Nicodemus (Atos de Pilatos)",
+        sub: "O julgamento perante Pilatos e o testemunho das testemunhas",
+        tags: ["v1"],
+        page: 535,
+      },
+      {
+        id: "b160",
+        num: "160",
+        name: "Descida ao Inferno (Versão Grega)",
+        sub: "Cristo quebrando os portões do Hades e libertando os patriarcas",
+        tags: ["v1"],
+        page: 543,
+      },
+      {
+        id: "b161",
+        num: "161",
+        name: "Descida ao Inferno (Versão Latina)",
+        sub: "Relato estendido da vitória de Cristo sobre a Morte e Satã",
+        tags: ["v1"],
+        page: 563,
+      },
+      {
+        id: "b162",
+        num: "162",
+        name: "Ciclo de Pilatos (Relatório de Pilatos)",
+        sub: "Cartas e relatórios oficiais enviados a Roma",
+        tags: ["v1"],
+        page: 721,
+      },
+      {
+        id: "b162_lentulus",
+        num: "162b",
+        name: "Carta de Lentulus a Tibério César",
+        sub: "Descrição física e retrato facial de Jesus enviada ao Senado",
+        tags: ["v1"],
+        page: 721,
+      },
+      {
+        id: "b163",
+        num: "163",
+        name: "Condenação de Pilatos (Mora de Pilatos)",
+        sub: "A execução de Pilatos por ordem do Imperador",
+        tags: ["v1"],
+        page: 731,
+      },
+      {
+        id: "b164",
+        num: "164",
+        name: "Cartas do Senhor",
+        sub: "Correspondências místicas atribuídas ao Salvador",
+        tags: ["v1"],
+        page: 753,
+      },
+      {
+        id: "b165",
+        num: "165",
+        name: "Declarações de José de Arimatéia",
+        sub: "O relato sobre os dois ladrões (Gestas e Dimas) e a cruz",
+        tags: ["v1"],
+        page: 747,
+      },
+      {
+        id: "b166",
+        num: "166",
+        name: "A Narrativa de José de Arimatéia",
+        sub: "Adições sobre o sepultamento e a prisão de José",
+        tags: ["b201"],
+        page: 693,
+      },
+      {
+        id: "b167",
+        num: "167",
+        name: "Discurso Sobre o Domingo",
+        sub: "O Dia Santo do Senhor entre todos os outros",
+        tags: ["v1"],
+        page: 755,
+      },
+      {
+        id: "b168",
+        num: "168",
+        name: "Apócrifos da Assunção (Transitus Mariae)",
+        sub: "A dormição e assunção da Virgem Maria",
+        tags: ["v1"],
+        page: 759,
+      },
+      {
+        id: "b169",
+        num: "169",
+        name: "Passagem da Virgem Maria",
+        sub: "Tradição do apóstolo João sobre a partida da Mãe de Deus",
+        tags: ["v1"],
+        page: 771,
+      },
+      {
+        id: "b170",
+        num: "170",
+        name: "Agrapha Extra-Evangelho",
+        sub: "Compilação de ditos não canônicos de Jesus preservados pelos Pais",
+        tags: ["v1"],
+        page: 593,
+      },
+      {
+        id: "b171",
+        num: "171",
+        name: "Ressurreição de Cristo (Bartolomeu)",
+        sub: "Perguntas de Bartolomeu à Maria sobre a anunciação e a ressurreição",
+        tags: ["b201"],
+        page: 691,
+      },
+      {
+        id: "b172",
+        num: "172",
+        name: "Evangelho de Bartolomeu",
+        sub: "Revelação dos mistérios do abismo e a natureza de Beliar",
+        tags: ["b201", "v1"],
+        page: 723,
+      },
+    ],
+  },
+  {
+    id: "f15",
+    num: "15",
+    title: "ATOS & MISSÃO APOSTÓLICA",
+    theme: "acts",
+    books: [
+      {
+        id: "b173",
+        num: "173",
+        name: "Atos 1–12 (Pentecostes e Igreja Primitiva)",
+        sub: "A expansão do Evangelho em Jerusalém e Samaria",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1352,
+      },
+      {
+        id: "b174",
+        num: "174",
+        name: "Atos 13–28 (Viagens Paulinas)",
+        sub: "A missão aos gentios até a prisão de Paulo em Roma",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1352,
+      },
+      {
+        id: "b175",
+        num: "175",
+        name: "Atos 29 (Manuscrito Sonnini)",
+        sub: "Relato da suposta viagem de Paulo à Espanha e Grã-Bretanha",
+        tags: ["v3"],
+        page: 313,
+      },
+      {
+        id: "b176",
+        num: "176",
+        name: "Atos de Pedro e os 12 Apóstolos",
+        sub: "Visão allegórica da pérola na cidade de Lithargoel (NH VI, 1)",
+        tags: ["b201", "nag hammadi"],
+        page: 247,
+      },
+      {
+        id: "b177",
+        num: "177",
+        name: "Atos de Pedro",
+        sub: "O confronto com Simão Mago e a crucificação de cabeça para baixo",
+        tags: ["v3"],
+        page: 412,
+      },
+      {
+        id: "b178",
+        num: "178",
+        name: "Atos de Pedro e André",
+        sub: "Milagres dos apóstolos na terra dos canibais",
+        tags: ["v3"],
+        page: 459,
+      },
+      {
+        id: "b179",
+        num: "179",
+        name: "Atos de Pedro e Paulo",
+        sub: "O martírio conjunto dos dois pilares da Igreja em Roma",
+        tags: ["v3"],
+        page: 624,
+      },
+      {
+        id: "b180",
+        num: "180",
+        name: "Atos de Paulo e Tecla",
+        sub: "A história da discípula de Paulo que escapou dos leões",
+        tags: ["v3"],
+        page: 388,
+      },
+      {
+        id: "b181",
+        num: "181",
+        name: "Atos de André",
+        sub: "Pregação e martírio do apóstolo André na cruz em X",
+        tags: ["b201", "v3"],
+        page: 582,
+      },
+      {
+        id: "b182",
+        num: "182",
+        name: "Atos de André e Matias",
+        sub: "Resgate de Matias da prisão na cidade dos antropófagos",
+        tags: ["v3"],
+        page: 331,
+      },
+      {
+        id: "b183",
+        num: "183",
+        name: "Atos de João",
+        sub: "Visões docéticas do corpo de Cristo e a Dança do Círculo",
+        tags: ["v3"],
+        page: 338,
+      },
+      {
+        id: "b184",
+        num: "184",
+        name: "Atos de Tomé",
+        sub: "A viagem de Tomé à Índia e o casamento espiritual",
+        tags: ["v3"],
+        page: 462,
+      },
+      {
+        id: "b185",
+        num: "185",
+        name: "Consumação de Tomé",
+        sub: "O martírio de Tomé transpassado por lanças reais",
+        tags: ["v3"],
+        page: 401,
+      },
+      {
+        id: "b186",
+        num: "186",
+        name: "Atos de Barnabé",
+        sub: "Viagens operadas por Barnabé e João Marcos em Chipre",
+        tags: ["v3"],
+        page: 405,
+      },
+      {
+        id: "b187",
+        num: "187",
+        name: "Atos e Martírio de São Mateus",
+        sub: "Pregação e milagres de Mateus na Etiópia",
+        tags: ["v3"],
+        page: 318,
+      },
+      {
+        id: "b188",
+        num: "188",
+        name: "Martírio de Mateus",
+        sub: "O confronto com o rei Fulvano e a fogueira sacra",
+        tags: ["v3"],
+        page: 778,
+      },
+      {
+        id: "b189",
+        num: "189",
+        name: "Xantipe, Polixena e Rebeca",
+        sub: "A conversão e aventuras das santas mulheres na era apostólica",
+        tags: ["v3"],
+        page: 554,
+      },
+      {
+        id: "b190",
+        num: "190",
+        name: "Atos do Santo Apóstolo Evangelista João",
+        sub: "Relato suplementar de Procoro sobre os milagres em Éfeso",
+        tags: ["v3"],
+        page: 615,
+      },
+      {
+        id: "b191",
+        num: "191",
+        name: "Ensino de Tadeu",
+        sub: "A missão de Judas Tadeu em Edessa e a cura do Rei Abgar",
+        tags: ["v3"],
+        page: 650,
+      },
+      {
+        id: "b192",
+        num: "192",
+        name: "Livro de João Evangelista",
+        sub: "Revelações apócrifas sobre o fim dos tempos",
+        tags: ["v3"],
+        page: 650,
+      },
+      {
+        id: "b193",
+        num: "193",
+        name: "Atos de Perpétua e Felicidade",
+        sub: "Diário do martírio das santas no anfiteatro de Cartago",
+        tags: ["b201"],
+        page: 688,
+      },
+      {
+        id: "b194",
+        num: "194",
+        name: "A Pregação de Pedro (Kerygma Petrou)",
+        sub: "Doutrina apologética de Pedro sobre o Deus Único",
+        tags: ["b201"],
+        page: 693,
+      },
+    ],
+  },
+  {
+    id: "f16",
+    num: "16",
+    title: "CARTAS DE PAULO",
+    theme: "epistles",
+    books: [
+      {
+        id: "b195",
+        num: "195",
+        name: "Gálatas",
+        sub: "A defesa da liberdade cristã e a justificativa pela fé",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1438,
+      },
+      {
+        id: "b196",
+        num: "196",
+        name: "1 Tessalonicenses",
+        sub: "A consolação da Vinda do Senhor e o arrebata mento",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1451,
+      },
+      {
+        id: "b197",
+        num: "197",
+        name: "2 Tessalonicenses",
+        sub: "A revelação do Homem da Iniquidade (Anticristo)",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1454,
+      },
+      {
+        id: "b198",
+        num: "198",
+        name: "1 Coríntios",
+        sub: "Os dons do Espírito, o Amor e a ordem na Igreja",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1406,
+      },
+      {
+        id: "b199",
+        num: "199",
+        name: "2 Coríntios",
+        sub: "O ministério da reconciliação e o espinho na carne",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1422,
+      },
+      {
+        id: "b200",
+        num: "200",
+        name: "III Coríntios",
+        sub: "Carta apócrifa respondendo a heresia gnostica sobre a ressurreição",
+        tags: ["v3"],
+        page: 315,
+      },
+      {
+        id: "b201",
+        num: "201",
+        name: "Romanos",
+        sub: "A grande exposição da teologia da salvação",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1388,
+      },
+      {
+        id: "b202",
+        num: "202",
+        name: "Filipenses",
+        sub: "A epístola da alegria e a kénosis (esvaziamento) de Cristo",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1447,
+      },
+      {
+        id: "b203",
+        num: "203",
+        name: "Colossenses",
+        sub: "A supremacia absoluta de Cristo sobre as potestades",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1447,
+      },
+      {
+        id: "b204",
+        num: "204",
+        name: "Filemão",
+        sub: "Intercessão pelo escravo fugitivo Onésimo",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1465,
+      },
+      {
+        id: "b205",
+        num: "205",
+        name: "Efésios",
+        sub: "O mistério da Igreja e a Armadura de Deus",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1443,
+      },
+      {
+        id: "b206",
+        num: "206",
+        name: "1 Timóteo",
+        sub: "Instruções pastorais sobre o governo da Igreja",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1456,
+      },
+      {
+        id: "b207",
+        num: "207",
+        name: "2 Timóteo",
+        sub: "O testamento final de Paulo no cárcere mamertino",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1460,
+      },
+      {
+        id: "b208",
+        num: "208",
+        name: "Tito",
+        sub: "A ordenação de presbíteros e a sã doutrina em Creta",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1463,
+      },
+      {
+        id: "b209",
+        num: "209",
+        name: "Hebreus",
+        sub: "Cristo como Sumo Sacerdote segundo a ordem de Melquisedeque",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1466,
+      },
+      {
+        id: "b210",
+        num: "210",
+        name: "Laodicenses",
+        sub: "Epístola apócrifa aos Laodicenses preservada na Vulgata",
+        tags: ["b201", "v3"],
+        page: 679,
+      },
+      {
+        id: "b211",
+        num: "211",
+        name: "Epístolas a Sêneca",
+        sub: "14 cartas trocadas entre Paulo e o filósofo estóico Sêneca",
+        tags: ["b201", "v2"],
+        page: 358,
+      },
+      {
+        id: "b212",
+        num: "212",
+        name: "Prece de Paulo",
+        sub: "Oração esotérica de abertura do Codex Jung (NH I, 1)",
+        tags: ["v3", "nag hammadi"],
+        page: 38,
+      },
+    ],
+  },
+  {
+    id: "f17",
+    num: "17",
+    title: "CARTAS GERAIS, APOCALIPSES & REVELAÇÃO",
+    theme: "apocalypse",
+    books: [
+      {
+        id: "b213",
+        num: "213",
+        name: "Tiago (Ya'akov)",
+        sub: "A fé demonstrada pelas obras e o controle da língua",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1481,
+      },
+      {
+        id: "b214",
+        num: "214",
+        name: "1 Pedro (1 Kefa)",
+        sub: "Consolo aos peregrinos na dispersão sob sofrimento",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1485,
+      },
+      {
+        id: "b215",
+        num: "215",
+        name: "2 Pedro (2 Kefa)",
+        sub: "Alerta contra falsos mestres e a promessa do Novo Céu",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1490,
+      },
+      {
+        id: "b216",
+        num: "216",
+        name: "1 João (1 Yochanan)",
+        sub: "Deus é Luz, Deus é Amor e o teste da verdade",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1493,
+      },
+      {
+        id: "b217",
+        num: "217",
+        name: "2 João (2 Yochanan)",
+        sub: "A Senhora Eleita e o perigo do anticristo",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1497,
+      },
+      {
+        id: "b218",
+        num: "218",
+        name: "3 João (3 Yochanan)",
+        sub: "Elogio a Gaio e repreensão ao orgulhoso Diótrefes",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1498,
+      },
+      {
+        id: "b219",
+        num: "219",
+        name: "Judas (Y'hudah)",
+        sub: "A batalha pela fé e a citação do Livro de Enoque",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1499,
+      },
+      {
+        id: "b220",
+        num: "220",
+        name: "Epístola dos Apóstolos",
+        sub: "Testamento dos Onze Apóstolos sobre os sinais do fim",
+        tags: ["v3"],
+        page: 672,
+      },
+      {
+        id: "b221",
+        num: "221",
+        name: "Carta de Pedro à Felipe",
+        sub: "Revelação mística no Monte das Oliveiras (NH VIII, 2)",
+        tags: ["v3", "nag hammadi"],
+        page: 364,
+      },
+      {
+        id: "b222",
+        num: "222",
+        name: "Epístola de Barnabé",
+        sub: "Alegorização das leis do Antigo Testamento",
+        tags: ["v3"],
+        page: 733,
+      },
+      {
+        id: "b223",
+        num: "223",
+        name: "Revelação (Apocalipse) 1–11",
+        sub: "As cartas às Sete Igrejas, o Cordeiro e os Sete Selos",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1501,
+      },
+      {
+        id: "b224",
+        num: "224",
+        name: "Revelação 12–22",
+        sub: "A Mulher e o Dragão, Babilônia e a Nova Jerusalém",
+        tags: ["b201", "cnbb", "stern"],
+        page: 1501,
+      },
+      {
+        id: "b225",
+        num: "225",
+        name: "João o Teólogo",
+        sub: "Revelação Apócrifa de São João sobre o fim dos tempos",
+        tags: ["v3"],
+        page: 781,
+      },
+      {
+        id: "b226",
+        num: "226",
+        name: "Apocalipse de Pedro",
+        sub: "Visão detalhada dos castigos do inferno e glória dos justos",
+        tags: ["v1", "nag hammadi"],
+        page: 317,
+      },
+      {
+        id: "b227",
+        num: "227",
+        name: "Apocalipse de Paulo",
+        sub: "Ascensão do apóstolo através dos 10 céus (NH V, 2)",
+        tags: ["v3", "nag hammadi"],
+        page: 221,
+      },
+      {
+        id: "b228",
+        num: "228",
+        name: "Apocalipse de Baruch",
+        sub: "Visões sobre a destruição do Templo e o mundo vindouro",
+        tags: ["v1"],
+        page: 785,
+      },
+      {
+        id: "b229",
+        num: "229",
+        name: "Apocalipse de Elias",
+        sub: "A batalha dos profetas contra o Filho da Iniquidade",
+        tags: ["v1"],
+        page: 851,
+      },
+      {
+        id: "b230",
+        num: "230",
+        name: "Apocalipse de Tomé",
+        sub: "Os sete dias de terror que antecedem a Segunda Vinda",
+        tags: ["v1"],
+        page: 879,
+      },
+    ],
+  },
+  {
+    id: "f18",
+    num: "18",
+    title: "PAIS DA IGREJA & TEXTOS APOSTÓLICOS",
+    theme: "fathers",
+    books: [
+      {
+        id: "b231",
+        num: "231",
+        name: "O Didachê",
+        sub: "O Ensino dos Doze Apóstolos aos Gentios — O Caminho da Vida e da Morte",
+        tags: ["b201", "v1"],
+        page: 744,
+      },
+      {
+        id: "b232",
+        num: "232",
+        name: "Pastor de Hermas",
+        sub: "Livros das Visões, Mandamentos e Similitudes",
+        tags: ["v2"],
+        page: 430,
+      },
+      {
+        id: "b233",
+        num: "233",
+        name: "1 Clemente",
+        sub: "Carta de Clemente de Roma aos Coríntios exortando a paz",
+        tags: ["b201", "v2"],
+        page: 363,
+      },
+      {
+        id: "b234",
+        num: "234",
+        name: "2 Clemente",
+        sub: "Antiga homilia cristã sobre o combate espiritual",
+        tags: ["b201", "v2"],
+        page: 394,
+      },
+      {
+        id: "b235",
+        num: "235",
+        name: "Apócrifo de Tiago",
+        sub: "Ensinamentos secretos de Jesus a Tiago e Pedro (NH I, 2)",
+        tags: ["b201", "v3", "nag hammadi"],
+        page: 40,
+      },
+      {
+        id: "b236",
+        num: "236",
+        name: "Inácio de Antioquia",
+        sub: "Sete cartas aos Efésios, Magnésios, Trales, Romanos, Filadelfianos, Esmirniotas e Policarpo",
+        tags: ["b201", "v2"],
+        page: 401,
+      },
+      {
+        id: "b237",
+        num: "237",
+        name: "Policarpo aos Filipenses",
+        sub: "Epístola de conselho e exortação contra as heresias",
+        tags: ["b201", "v2"],
+        page: 430,
+      },
+      {
+        id: "b238",
+        num: "238",
+        name: "Martírio de Inácio",
+        sub: "Relato das correntes e da viagem de Inácio para as feras em Roma",
+        tags: ["b201"],
+        page: 721,
+      },
+      {
+        id: "b239",
+        num: "239",
+        name: "Martírio de Policarpo",
+        sub: "O martírio do bispo de Esmirna atado à fogueira",
+        tags: ["b201"],
+        page: 729,
+      },
+      {
+        id: "b240",
+        num: "240",
+        name: "Tertuliano (Mártires, Sobre a Paciência e Oração)",
+        sub: "Escritos apologéticos e éticos do pai latino",
+        tags: ["b201", "v1"],
+        page: 720,
+      },
+      {
+        id: "b241",
+        num: "241",
+        name: "Carta de Pilatos",
+        sub: "Relatório de Pilatos enviada ao Imperador Cláudio",
+        tags: ["b201"],
+        page: 689,
+      },
+      {
+        id: "b242",
+        num: "242",
+        name: "Oração de Ação de Graças",
+        sub: "Oração mística de encerramento do Asclepios (NH VI, 7)",
+        tags: ["b201", "nag hammadi"],
+        page: 283,
+      },
+      {
+        id: "b243",
+        num: "243",
+        name: "Epifânio sobre a Justiça",
+        sub: "Tratado moral sobre a lei divinamente infusa",
+        tags: ["b201"],
+        page: 775,
+      },
+      {
+        id: "b244",
+        num: "244",
+        name: "Credos Ecumênicos",
+        sub: "Credo Niceno-Constantinopolitano, Credo dos Apóstolos e Atanasiano",
+        tags: ["b201"],
+        page: 742,
+      },
+    ],
+  },
+  {
+    id: "f19",
+    num: "19",
+    title: "GNOSE & TEXTOS ESOTÉRICOS",
+    theme: "gnosis",
+    div: "TEXTOS GNÓSTICOS",
+    books: [
+      {
+        id: "b245",
+        num: "245",
+        name: "Evangelho de Tomé",
+        sub: "114 ditos secretos de Jesus (NH II, 2)",
+        tags: ["b201", "v1", "gnose", "nag hammadi"],
+        page: 112,
+      },
+      {
+        id: "b246",
+        num: "246",
+        name: "Fragmentos Gregos de Tomé",
+        sub: "Papiros de Oxirrinco (P.Oxy 1, 654, 655)",
+        tags: ["b201", "gnose"],
+        page: 701,
+      },
+      {
+        id: "b247",
+        num: "247",
+        name: "Evangelho de Filipe",
+        sub: "Tratado sacramental e o mistério da Câmara Nupcial (NH II, 3)",
+        tags: ["b201", "v1", "gnose", "nag hammadi"],
+        page: 124,
+      },
+      {
+        id: "b248",
+        num: "248",
+        name: "Evangelho de Maria Madalena",
+        sub: "Gnose mística e o diálogo sobre o ascenso da alma (BG 8502, 1)",
+        tags: ["v1", "gnose"],
+        page: 440,
+      },
+      {
+        id: "b248b",
+        num: "248b",
+        name: "Excertos do Evangelho de Maria",
+        sub: "Papiro Rylands 463 e Oxyrhynchus 3525",
+        tags: ["v1", "gnose"],
+        page: 586,
+      },
+      {
+        id: "b249",
+        num: "249",
+        name: "Evangelho de Judas",
+        sub: "Tradição cainita a partir do Codex Tchacos",
+        tags: ["v1", "gnose"],
+        page: 531,
+      },
+      {
+        id: "b250",
+        num: "250",
+        name: "Evangelho de Valentino",
+        sub: "Expressão maior da gnose poética das emanações",
+        tags: ["v1", "gnose"],
+        page: 649,
+      },
+      {
+        id: "b251",
+        num: "251",
+        name: "Evangelho da Verdade",
+        sub: "Tratado profundo atribuído a Valentino (NH I, 3)",
+        tags: ["b201", "v1", "gnose", "nag hammadi"],
+        page: 47,
+      },
+      {
+        id: "b252",
+        num: "252",
+        name: "Evangelho dos Egípcios",
+        sub: "O Livro Sagrado do Grande Espírito Invisível (NH III, 2)",
+        tags: ["b201", "gnose", "nag hammadi"],
+        page: 182,
+      },
+      {
+        id: "b253",
+        num: "253",
+        name: "Apócrifo de João",
+        sub: "O Livro Secreto de João e a teogonia da Luz (NH II, 1)",
+        tags: ["b201", "v3", "gnose", "nag hammadi"],
+        page: 97,
+      },
+      {
+        id: "b254",
+        num: "254",
+        name: "Thomas Contendor",
+        sub: "Livro de Tomé o Contendor aos atletas espirituais (NH II, 7)",
+        tags: ["b201", "v3", "gnose", "nag hammadi"],
+        page: 174,
+      },
+      {
+        id: "b255",
+        num: "255",
+        name: "Tratado Grande Seth",
+        sub: "O Segundo Tratado do Grande Seth sobre o Cristo celeste (NH VII, 2)",
+        tags: ["b201", "gnose", "nag hammadi"],
+        page: 309,
+      },
+      {
+        id: "b256",
+        num: "256",
+        name: "Basilides",
+        sub: "Fragmentos heresiológicos de Abraxas e as 365 esferas",
+        tags: ["b201", "gnose"],
+        page: 774,
+      },
+      {
+        id: "b257",
+        num: "257",
+        name: "Livro de Marcião",
+        sub: "O Evangelho do Deus Estrangeiro (Antíteses)",
+        tags: ["b201", "gnose"],
+        page: 772,
+      },
+      {
+        id: "b258",
+        num: "258",
+        name: "Livro de Sindos",
+        sub: "Textos heréticos de correntes gnósticas primitivas",
+        tags: ["b201", "gnose"],
+        page: 773,
+      },
+      {
+        id: "b259",
+        num: "259",
+        name: "Fonte Q",
+        sub: "Reconstrução hipotética da coleção de ditos de Jesus",
+        tags: ["b201", "gnose"],
+        page: 769,
+      },
+      {
+        id: "b260",
+        num: "260",
+        name: "Pistis Sophia Comentada",
+        sub: "Samael Aun Weor — O código da gnose com chaves interpretativas",
+        tags: ["gnose", "esoterismo", "carrinho"],
+      },
+      {
+        id: "b261",
+        num: "261",
+        name: "Evangelho Nestoriano",
+        sub: "José Alves de Araújo Filho — Ensinamentos alternativos do Oriente",
+        tags: ["gnose", "carrinho"],
+      },
+      {
+        id: "b262",
+        num: "262",
+        name: "Trovão: Mente Perfeita",
+        sub: "Poema revelatório de voz feminina divina (NH VI, 2)",
+        tags: ["v1", "gnose", "nag hammadi"],
+        page: 254,
+      },
+      {
+        id: "b263",
+        num: "263",
+        name: "Hipóstase dos Arcontes",
+        sub: "A natureza e origem das autoridades cósmicas (NH II, 4)",
+        tags: ["gnose", "nag hammadi"],
+        page: 142,
+      },
+      {
+        id: "b264",
+        num: "264",
+        name: "Protennoia Trimórfica",
+        sub: "As três descidas do Primeiro Pensamento (NH XIII, 1)",
+        tags: ["v1", "gnose", "nag hammadi"],
+        page: 430,
+      },
+      {
+        id: "b265",
+        num: "265",
+        name: "Tratado Tripartite",
+        sub: "Cosmologia valentiniana completa em três partes (NH I, 5)",
+        tags: ["gnose", "nag hammadi"],
+        page: 63,
+      },
+      {
+        id: "b266",
+        num: "266",
+        name: "Exegese sobre a Alma",
+        sub: "Alegoria da queda e resgate místico da alma humana (NH II, 6)",
+        tags: ["gnose", "nag hammadi"],
+        page: 166,
+      },
+      {
+        id: "b267",
+        num: "267",
+        name: "Sofia de Jesus Cristo",
+        sub: "Instruções do Salvador aos discípulos (NH III, 4)",
+        tags: ["gnose", "nag hammadi"],
+        page: 191,
+      },
+      {
+        id: "b268",
+        num: "268",
+        name: "Testemunho da Verdade",
+        sub: "Crítica radical ao martírio cego e ao Demiurgo (NH IX, 3)",
+        tags: ["gnose", "nag hammadi"],
+        page: 379,
+      },
+      {
+        id: "b269",
+        num: "269",
+        name: "Zostrianos",
+        sub: "Apocalipse e ascensão mística de Zostrianos (NH VIII, 1)",
+        tags: ["gnose", "nag hammadi"],
+        page: 342,
+      },
+      {
+        id: "b269_add1",
+        num: "269b",
+        name: "As Três Estelas de Sete",
+        sub: "Hinos de adoração e revelações da linhagem sethiana pura (NH VII, 5)",
+        tags: ["gnose", "sethiano", "nag hammadi"],
+        page: 336,
+      },
+      {
+        id: "b269_add2",
+        num: "269c",
+        name: "O Alógenes",
+        sub: "O Estrangeiro e sua transcendência mental além do Demiurgo (NH XI, 3)",
+        tags: ["gnose", "revelacao", "nag hammadi"],
+        page: 412,
+      },
+      {
+        id: "b269_parafrase",
+        num: "269d",
+        name: "A Paráfrase de Shem",
+        sub: "Revelação cosmogônica profunda sobre as forças da Luz e Trevas (NH VII, 1)",
+        tags: ["gnose", "nag hammadi"],
+        page: 292,
+      },
+      {
+        id: "b269_exposicao",
+        num: "269e",
+        name: "Uma Exposição Valentiniana",
+        sub: "Tratado teológico e ritualístico sobre a Unção, Batismo e Eucaristia (NH XI, 2)",
+        tags: ["gnose", "nag hammadi"],
+        page: 405,
+      },
+      {
+        id: "b269_silvanus",
+        num: "269f",
+        name: "Os Ensinamentos de Silvanus",
+        sub: "Instruções éticas e contemplativas de sabedoria cristã-gnóstica (NH VII, 4)",
+        tags: ["gnose", "nag hammadi"],
+        page: 322,
+      },
+    ],
+  },
+  {
+    id: "f20",
+    num: "20",
+    title: "GNOSE COMO PONTE",
+    theme: "bridge",
+    div: "TRANSIÇÃO ISLÃ",
+    books: [
+      {
+        id: "b270",
+        num: "270",
+        name: "Gnósticos: Escrituras apócrifas Setianas",
+        sub: "José Alves de Araújo Filho — Linhagem herética de Sete",
+        tags: ["gnose", "ponte", "carrinho"],
+      },
+      {
+        id: "b271",
+        num: "271",
+        name: "Ele Não Morreu na Cruz",
+        sub: "José Alves de Araújo Filho — Relato revisionista sobre a crucificação",
+        tags: ["ponte", "revisionismo", "carrinho"],
+      },
+      {
+        id: "b272",
+        num: "272",
+        name: "O Famigerado Apóstolo Paulo",
+        sub: "José Alves de Araújo Filho — Crítica estrutural ao dogma romano",
+        tags: ["ponte", "critica", "carrinho"],
+      },
+      {
+        id: "b273",
+        num: "273",
+        name: "EUTAOGNOSE: A Religião dos Anjos",
+        sub: "José Alves de Araújo Filho — Cosmologia e hierarquias intermediárias",
+        tags: ["ponte", "misticismo", "carrinho"],
+      },
+      {
+        id: "b273_comp",
+        num: "273b",
+        name: "O grande arcano ou o occultismo revelado",
+        sub: "Éliphas Lévi — A luz astral e o fechamento do entendimento ocidental",
+        tags: ["ocultismo", "síntese", "carrinho"],
+      },
+    ],
+  },
+  {
+    id: "f21",
+    num: "21",
+    title: "A REVELAÇÃO DE MAOMÉ E O MISTICISMO ISLÂMICO",
+    theme: "islam",
+    div: "TRANSIÇÃO ISLÃ E ESOTERISMO ORIENTAL",
+    books: [
+      {
+        id: "b274",
+        num: "274",
+        name: "O Evangelho de Barnabé",
+        sub: "Josúe Alves de Araújo Filho — Aproximação da figura profética ao Islã",
+        tags: ["ponte", "apocrifo", "carrinho"],
+        procedencia: "Catálogo Original",
+      },
+      {
+        id: "b275",
+        num: "275",
+        name: "O ALCORÃO",
+        sub: "Texto sagrado central do Islã sob viés exegético",
+        tags: ["ponte", "base"],
+        procedencia: "Catálogo Original",
+      },
+      {
+        id: "b276",
+        num: "276",
+        name: "Sirah Nabawi",
+        sub: "Ibn Hisham — Biografia tradicional do Profeta Muhammad",
+        tags: ["missing", "ponte"],
+        procedencia: "Catálogo Original",
+      },
+      {
+        id: "b276_sufi1",
+        num: "276b",
+        name: "A Epístola da Unidade (Risalat al-Ahadivyah)",
+        sub: "Ibn Arabi — Não-dualidade (Wahdat al-Wujud) no Sufismo",
+        isbn: "978-8571740136",
+        tags: ["sufismo", "teosofia", "carrinho"],
+      },
+      {
+        id: "b276_sufi2",
+        num: "276c",
+        name: "O Tabernáculo das Luzes (Mishkat al-Anwar)",
+        sub: "Al-Ghazali — Análise hermética do Versículo da Luz do Alcorão",
+        isbn: "978-8571740068",
+        tags: ["sufismo", "gnose", "carrinho"],
+      },
+      {
+        id: "b276_sufi3",
+        num: "276d",
+        name: "O Islã Espiritual: Sufismo, Xiismo e Gnose",
+        sub: "Henry Corbin — O mistério do 12º Imam Oculto e o corpo de luz",
+        isbn: "978-8532616890",
+        tags: ["xiismo", "gnose", "carrinho"],
+      },
+      {
+        id: "b276_sufi4",
+        num: "276e",
+        name: "A Filosofia Iluminativa (Hikmat al-Ishraq)",
+        sub: "Suhrawardi — Fusão de Hermetismo, Zoroatrismo e Islã",
+        tags: ["ocultismo", "hermetismo"],
+        observacao: "Obra de circulação estrita",
+      },
+      {
+        id: "b276_sufi5",
+        num: "276f",
+        name: "A Doutrina Sufi do Homem Perfeito",
+        sub: "Abdul Karim al-Jili — Arquétipo do Homem Cósmico unificador",
+        tags: ["sufismo", "teosofia"],
+      },
+      {
+        id: "b276_crit1",
+        num: "276g",
+        name: "Hagarism: The Making of the Islamic World",
+        sub: "Patricia Crone / Michael Cook — Análise historiográfica crítica",
+        isbn: "978-0521297547",
+        tags: ["critica", "revisionismo"],
+      },
+      {
+        id: "b276_crit2",
+        num: "276h",
+        name: "A Farsa da Ortodoxia: Como os Califas moldaram o Alcorão",
+        sub: "Estudos Historiográficos — Investigação das reformas de Uthman",
+        tags: ["critica", "revisionismo"],
+      },
+    ],
+  },
+  {
+    id: "f22",
+    num: "22",
+    title: "CONSPIRAÇÕES, GEOPOLÍTICA OCULTA E SIONISMO",
+    theme: "conspiracy",
+    div: "MACRO-CONSPIRAÇÕES E GENEALOGIA CÓSMICA",
+    books: [
+      {
+        id: "b277",
+        num: "277",
+        name: "Prisma de Lira",
+        sub: "Lyssa Royal — Origem dos Liranos, Pleiadianos e a árvore cósmica",
+        tags: ["ufologia", "carrinho"],
+        isbn: "978-8572420074",
+      },
+      {
+        id: "b278",
+        num: "278",
+        name: "Mensageiros do Amanhecer",
+        sub: "Barbara Marciniak — Ensinamentos das Plêiades",
+        tags: ["ufologia", "carrinho"],
+        isbn: "978-8531507755",
+      },
+      {
+        id: "b279",
+        num: "279",
+        name: "Os Anunnakis | Os Deuses Astronautas",
+        sub: "Zecharia Sitchin — Intervenção genética alienígena na Suméria",
+        tags: ["ufologia", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788537008669",
+      },
+      {
+        id: "b280",
+        num: "280",
+        name: "O Livro Perdido de Enki",
+        sub: "Zecharia Sitchin — A história sob a ótica das divindades de Nibiru",
+        tags: ["ufologia", "carrinho"],
+        isbn: "978-8531513220",
+      },
+      {
+        id: "b281",
+        num: "281",
+        name: "O Mistério de Sírius",
+        sub: "Robert Temple — Conexão dos Sirianos com a tribo Dogon",
+        tags: ["ufologia", "carrinho"],
+        isbn: "978-0593013458",
+      },
+      {
+        id: "b282",
+        num: "282",
+        name: "O Livro Dos Senhores Do Mundo",
+        sub: "Robert Charroux — Antigos astronautas e os donos ocultos do planeta",
+        tags: ["ufologia", "carrinho"],
+        procedencia: "Catálogo Original",
+        observacao: "Edição Difusão Européia",
+      },
+      {
+        id: "b283",
+        num: "283",
+        name: "O Mito de Hiperbórea",
+        sub: "Evgueni Golovin / Julius Evola — O continente perdido do norte",
+        tags: ["esoterismo", "carrinho"],
+      },
+      {
+        id: "b284",
+        num: "284",
+        name: "Agartha: O Mundo Subterrâneo",
+        sub: "Raymond Bernard — Teoria da Terra Oca e o diário de Byrd",
+        tags: ["esoterismo", "carrinho"],
+        isbn: "978-0205201105",
+      },
+      {
+        id: "b285",
+        num: "285",
+        name: "O Rei do Mundo",
+        sub: "René Guénon — Análise metafísica sobre o reino de Shambhala/Agartha",
+        tags: ["esoterismo", "carrinho"],
+        isbn: "978-8531505676",
+      },
+      {
+        id: "b286",
+        num: "286",
+        name: "Os Nazistas E O Ocultismo",
+        sub: "Paul Roland — Thule, SS e o misticismo do Terceiro Reich",
+        tags: ["ocultismo", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788537004753",
+      },
+      {
+        id: "b287",
+        num: "287",
+        name: "The Hunt for Zero Point (O mistério do Sino)",
+        sub: "Nick Cook — Discos voadores nazistas e Die Glocke",
+        tags: ["ocultismo", "carrinho"],
+        isbn: "978-0099414988",
+      },
+      {
+        id: "b288",
+        num: "288",
+        name: "Hitler Culpado Ou Inocente",
+        sub: "Sérgio Oliveira — Literatura revisionista histórica",
+        tags: ["revisionismo", "carrinho"],
+        procedencia: "Catálogo Original",
+      },
+      {
+        id: "b289",
+        num: "289",
+        name: "S.o.s Para Alemanha",
+        sub: "S.S. Castan — Revisionismo pós-guerra",
+        tags: ["revisionismo", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "8572460020",
+      },
+      {
+        id: "b290",
+        num: "290",
+        name: "Protocolos Dos Sábios De Sião",
+        sub: "Anônimo — Controle geopolítico e finanças globais",
+        tags: ["geopolitica", "carrinho"],
+        procedencia: "Catálogo Original",
+      },
+      {
+        id: "b291",
+        num: "291",
+        name: "O Judeu Internacional",
+        sub: "Henry Ford — Análise de influência econômica e cultural",
+        tags: ["geopolitica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "0123456789",
+      },
+      {
+        id: "b292",
+        num: "292",
+        name: "Os Rothschild: Retrato Duma Família",
+        sub: "Frederic Morton — História da dinastia bancária",
+        tags: ["geopolitica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "0123456789",
+      },
+      {
+        id: "b293",
+        num: "293",
+        name: "A Dinastia Rothschild",
+        sub: "Herbert Lottman — Bastidores das decisões políticas globais",
+        tags: ["geopolitica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788525421289",
+      },
+      {
+        id: "b294",
+        num: "294",
+        name: "A Invenção Do Povo Judeu",
+        sub: "Shlomo Sand — Estudo historiográfico crítico sobre mitos fundadores",
+        tags: ["geopolitica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788502134775",
+      },
+      {
+        id: "b295",
+        num: "295",
+        name: "Sionismo X Revisionismo",
+        sub: "Sérgio Oliveira — Estudos revisionistas sobre o sionismo",
+        tags: ["revisionismo", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9789898249104",
+      },
+      {
+        id: "b296",
+        num: "296",
+        name: "Os Judeus, O Dinheiro E O Mundo",
+        sub: "Jacques Attali — História econômica global",
+        tags: ["geopolitica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "8574131806",
+      },
+      {
+        id: "b297",
+        num: "297",
+        name: "O Waterloo De Israel?",
+        sub: "David Duke — Geopolítica antisionista do Oriente Médio",
+        tags: ["geopolitica", "carrinho"],
+        procedencia: "Catálogo Original",
+        observacao: "Editora Revisão (2001)",
+      },
+      {
+        id: "b298",
+        num: "298",
+        name: "Conspiração Global / Maçonaria, Illuminatis",
+        sub: "David Icke — Teoria reptiliana e sociedades secretas",
+        tags: ["conspiracao", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9789898249005",
+      },
+      {
+        id: "b299",
+        num: "299",
+        name: "O Maior Segredo",
+        sub: "David Icke — Matriz energética de controle global",
+        tags: ["conspiracao", "carrinho"],
+        isbn: "978-0953820405",
+      },
+      {
+        id: "b300",
+        num: "300",
+        name: "O Governo Secreto Illuminati",
+        sub: "Jim Marrs — Das pirâmides ao Grupo Bilderberg",
+        tags: ["conspiracao", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788573749953",
+      },
+      {
+        id: "b301",
+        num: "301",
+        name: "Os Illuminatis E A Grande Conspiração Global",
+        sub: "Estrutura hierárquica das ordens ocultas",
+        tags: ["conspiracao", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9789723321593",
+      },
+      {
+        id: "b302",
+        num: "302",
+        name: "Sociedades Secretas E Movimentos Subversivos",
+        sub: "Facções esotéricas e revoluções históricas",
+        tags: ["conspiracao", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9781805401278",
+      },
+      {
+        id: "b303",
+        num: "303",
+        name: "Maçonaria Illuminati",
+        sub: "Michael Howard — Infiltração nas lojas maçônicas continentais",
+        tags: ["conspiracao", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "8570018738",
+      },
+      {
+        id: "b304",
+        num: "304",
+        name: "O Livro Negro Do Cristianismo",
+        sub: "Inquisições, massacres e repressão do livre pensamento",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788500019647",
+      },
+      {
+        id: "b305",
+        num: "305",
+        name: "Dinheiro, Deuses E Poder",
+        sub: "Noenio Spinola — Finanças globais e instituições religiosas",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788520010570",
+      },
+      {
+        id: "b306",
+        num: "306",
+        name: "A Farsa Do Dízimo Cristão",
+        sub: "Ivan Toro Rua — Análise teológica e financeira crítica",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "0123456789",
+      },
+      {
+        id: "b307",
+        num: "307",
+        name: "Babilônia: A Religião Dos Mistérios",
+        sub: "Ralph Woodrow — Símbolos pagãos no catolicismo",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+      },
+      {
+        id: "b308",
+        num: "308",
+        name: "Os Enganos Do Cristianismo Pagão / Os Mistérios De Mitras",
+        sub: "Fusão do culto solar de Mitras com a Igreja Primitiva",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788573747669",
+      },
+      {
+        id: "b309",
+        num: "309",
+        name: "Seja Feita A Vossa Vontade",
+        sub: "G. Colby / C. Dennet — Religião evangélica como ferramenta geopolítica na Amazônia",
+        tags: ["geopolitica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "8501045322",
+      },
+      {
+        id: "b310",
+        num: "310",
+        name: "O Diabo No Século XIX",
+        sub: "Dr. Bataille / Leo Taxil — Embuste histórico sobre rituais luciferianos",
+        tags: ["ocultismo", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "0123456789",
+      },
+      {
+        id: "b311",
+        num: "311",
+        name: "O Anticristo - Poder Oculto Por Trás Da N.O.M.",
+        sub: "Fusão de sistema político e religioso unificado",
+        tags: ["conspiracao", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788527610865",
+      },
+      {
+        id: "b312",
+        num: "312",
+        name: "Dos Judeus E Suas Mentiras",
+        sub: "Martinho Lutero — Raízes históricas do antijudaísmo protestante",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "0123456789",
+      },
+      {
+        id: "b313",
+        num: "313",
+        name: "Os Servos Do Talmud",
+        sub: "Luiz Amaral — Análise polêmica das leis rabínicas",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788590535713",
+      },
+      {
+        id: "b314",
+        num: "314",
+        name: "Lúcifer O Primeiro Anjo",
+        sub: "Marcelo Hipólito — O arquétipo do portador da luz",
+        tags: ["misticismo", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "978852903950",
+      },
+      {
+        id: "b315",
+        num: "315",
+        name: "Lilith A Primeira Eva",
+        sub: "Siegmund Hurwitz — Historiografia do aspecto feminino sombrio",
+        tags: ["misticismo", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788586671685",
+      },
+      {
+        id: "b316",
+        num: "316",
+        name: "O Livro Dos Anjos Caídos",
+        sub: "Michael Howard — Vigilantes de Enoque e origens da bruxaria",
+        tags: ["misticismo", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788537007365",
+      },
+      {
+        id: "b317",
+        num: "317",
+        name: "O Livro Dos Mortos Do Antigo Egito",
+        sub: "Fórmulas mágicas e rituais de ascensão da alma",
+        tags: ["misticismo", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "8528900894",
+      },
+      {
+        id: "b318",
+        num: "318",
+        name: "As Imaculadas Escrituras",
+        sub: "Josmar Dias — Adulterações de tradução nos textos sagrados",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788577736058",
+      },
+      {
+        id: "b319",
+        num: "319",
+        name: "Os Santos Pagãos, Deuses Ontem",
+        sub: "Reconfiguração de deuses pagãos em santos venerados",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "8527403714",
+      },
+      {
+        id: "b320",
+        num: "320",
+        name: "11 De Setembro De 2001",
+        sub: "Renê Bourbon — Falsa bandeira e engenharia social mediática",
+        tags: ["geopolitica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "8572460241",
+      },
+      {
+        id: "b321",
+        num: "321",
+        name: "O Homem Domado",
+        sub: "Esther Vilar — Manipulação psicológica e estruturas sociais",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+      },
+      {
+        id: "b322",
+        num: "322",
+        name: "O Sexo Polígamo",
+        sub: "Esther Vilar — Análise sociológica sobre convenções morais",
+        tags: ["critica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "9788501043532",
+      },
+      {
+        id: "b323",
+        num: "323",
+        name: "Os Genocidas Do Século XX",
+        sub: "Sérgio Oliveira — Bastidores políticos das grandes guerras",
+        tags: ["geopolitica", "carrinho"],
+        procedencia: "Catálogo Original",
+        isbn: "8572460187",
+      },
+      {
+        id: "b333",
+        num: "333",
+        name: "Islam and EI: The Djinn Hypothesis",
+        sub: "Gordon Creighton — Fenômeno UFO e as entidades de fogo no Alcorão",
+        tags: ["ufologia", "carrinho"],
+        isbn: "978-1945791222",
+      },
+      {
+        id: "b334",
+        num: "334",
+        name: "Dimensions: A Casebook of Alien Contact",
+        sub: "Jacques Vallée — Extraterrestres como sistema de controle psíquico",
+        tags: ["ufologia", "carrinho"],
+        isbn: "978-1511345477",
+      },
+      {
+        id: "b335",
+        num: "335",
+        name: "O Livro Secreto dos Djinn",
+        sub: "Grimórios Árabes Clássicos — Pactos e evocações pré-islâmicas",
+        tags: ["ocultismo", "misticismo"],
+      },
+      {
+        id: "b336",
+        num: "336",
+        name: "A Conspiração de Meca",
+        sub: "David Icke — Controle energético e linhagens do Oriente Médio",
+        tags: ["conspiracao", "geopolitica"],
+      },
+      {
+        id: "b337",
+        num: "337",
+        name: "The Seventh Top Secret Country: UFOs",
+        sub: "Relatórios Militares — Avistamentos anômalos na Mesopotâmia",
+        tags: ["ufologia", "geopolitica"],
+      },
+      {
+        id: "b324_art",
+        num: "Art-01",
+        name: "Das Ahnenerbe-Problem",
+        sub: "Dr. Michael H. Kater — Sociedade arqueológica da SS",
+        tags: ["artigo", "ocultismo"],
+        tipo: "Artigo Acadêmico",
+      },
+      {
+        id: "b325_art",
+        num: "Art-02",
+        name: "The Vril Society",
+        sub: "Nicholas Goodrick-Clarke — Manifestos mediúnicos de Maria Orsic",
+        tags: ["artigo", "ocultismo"],
+        tipo: "Ensaio Histórico",
+      },
+      {
+        id: "b326_art",
+        num: "Art-03",
+        name: "The Hunt for Zero Point Energy",
+        sub: "Nick Cook / Igor Witkowski — Arquivos sobre Die Glocke",
+        tags: ["artigo", "tecnologia"],
+        tipo: "Relatório Militar",
+      },
+      {
+        id: "b327_art",
+        num: "Art-04",
+        name: "Project Paperclip Reports",
+        sub: "JIOA — Absorção de cientistas e patentes nazistas",
+        tags: ["artigo", "geopolitica"],
+        tipo: "Documento Militar Desclassificado",
+      },
+      {
+        id: "b328_art",
+        num: "Art-05",
+        name: "The Missing Diary of Admiral Byrd",
+        sub: "Relato da Operação Highjump e a abertura de Agartha",
+        tags: ["artigo", "esoterismo"],
+        tipo: "Manuscrito / Relato",
+      },
+      {
+        id: "b329_art",
+        num: "Art-06",
+        name: "Le Roi du Monde et les doctrines",
+        sub: "René Guénon — Budismo Tibetano e o reino de Shambhala",
+        tags: ["artigo", "esoterismo"],
+        tipo: "Artigo Metafísico",
+      },
+      {
+        id: "b330_art",
+        num: "Art-07",
+        name: "The Zeta Reticuli Incident",
+        sub: "Marjorie Fish — Análise tridimensional do mapa estelar de Betty Hill",
+        tags: ["artigo", "ufologia"],
+        tipo: "Artigo Científico",
+      },
+      {
+        id: "b331_art",
+        num: "Art-08",
+        name: "The Reptilian Matrix",
+        sub: "David Icke — Rituais sumérios e manipulação arcontôntica",
+        tags: ["artigo", "conspiracao"],
+        tipo: "Manifesto Teórico",
+      },
+      {
+        id: "b332_art",
+        num: "Art-09",
+        name: "The Lacerta Interview",
+        sub: "Ole K. — Transcrição sobre entidade intraterrestre e engenharia genética",
+        tags: ["artigo", "ufologia"],
+        tipo: "Transcrição de Entrevista",
+      },
+    ],
+  },
+];
+export const CANON_DATA_ENGLISH: Phase[] = [
+  {
+    id: "f0",
+    num: "0",
+    title: "FOUNDATIONS & HERMETIC KEYS",
+    theme: "hermetism_base",
+    div: "PRELIMINARY STUDIES — READING KEYS",
+    books: [
+      {
+        id: "b0_1",
+        num: "0a",
+        name: "Corpus Hermeticum Græcum",
+        sub: "Trans. David Pessoa de Lira — Philosophy of the origin of consciousness and the Word",
+        tags: ["hermetismo", "base", "carrinho"],
+      },
+      {
+        id: "b0_2",
+        num: "0b",
+        name: "The Emerald Tablet",
+        sub: "Trans. Fabio R. de Araujo — The secret laws of analogy and correspondence",
+        tags: ["alquimia", "base", "carrinho"],
+      },
+      {
+        id: "b0_3",
+        num: "0c",
+        name: "History of Magic",
+        sub: "Éliphas Lévi — Historical panorama of the evolution of occult thought in humanity",
+        tags: ["ocultismo", "historia", "carrinho"],
+      },
+      {
+        id: "b0_4",
+        num: "0d",
+        name: "The Kabbalah: Secret Tradition of the West",
+        sub: "Papus — The theoretical and cosmogonic structure of the Tree of Life",
+        tags: ["cabala", "base", "carrinho"],
+      },
+      {
+        id: "b0_5",
+        num: "0e",
+        name: "Transcendental Magic, Its Doctrine and Ritual",
+        sub: "Éliphas Lévi — The absolute compendium of correspondences and the laws of the applied will",
+        tags: ["ocultismo", "teoria", "carrinho"],
+      },
+      {
+        id: "b0_6",
+        num: "0f",
+        name: "The Key to the Great Mysteries",
+        sub: "Éliphas Lévi — Symbolic keys and the reconciliation between science and religion",
+        tags: ["ocultismo", "teoria", "carrinho"],
+      },
+      {
+        id: "b0_7",
+        num: "0g",
+        name: "Introduction to Hermetic Science",
+        sub: "Giuliano Kremmerz — The initiatory path and the laws of natural magic",
+        tags: ["hermetismo", "pratica", "carrinho"],
+      },
+      {
+        id: "b0_8",
+        num: "0h",
+        name: "The Kybalion",
+        sub: "Three Initiates — The seven hermetic principles that govern the hidden truth and the laws of the mind",
+        tags: ["hermetismo", "base", "carrinho"],
+      },
+    ],
+  },
+  {
+    id: "f1",
+    num: "1",
+    title: "CREATION & ORIGINS",
+    theme: "genesis",
+    books: [
+      {
+        id: "b1",
+        num: "1",
+        name: "Genesis 1–5",
+        sub: "Creation, Adam and Eve, Cain and Abel, genealogy",
+        tags: ["b201", "cnbb"],
+      },
+      {
+        id: "b1_comp",
+        num: "1b",
+        name: "Demiurgos: On the Creation of Worlds",
+        sub: "Juliano C. S. Neves — The philosophical and gnostic counterpoint of the material creation process",
+        tags: ["gnose", "cosmogonia", "carrinho"],
+      },
+      {
+        id: "b2",
+        num: "2",
+        name: "Adam and Eve I",
+        sub: "",
+        tags: ["b201", "v1"],
+      },
+      {
+        id: "b3",
+        num: "3",
+        name: "Adam and Eve II",
+        sub: "",
+        tags: ["b201", "v1"],
+      },
+      {
+        id: "b4",
+        num: "4",
+        name: "Adam and Eve III",
+        sub: "",
+        tags: ["b201"],
+      },
+      {
+        id: "b5",
+        num: "5",
+        name: "Vita Adae et Evae",
+        sub: "Latin version",
+        tags: ["b201"],
+      },
+      {
+        id: "b6",
+        num: "6",
+        name: "Slavonic Vita Adae et Evae",
+        sub: "Slavonic version",
+        tags: ["b201"],
+      },
+      {
+        id: "b7",
+        num: "7",
+        name: "Book of Adam",
+        sub: "The Conflict of Adam and Eve with Satan (V1)",
+        tags: ["v3"],
+      },
+      {
+        id: "b7b",
+        num: "7b",
+        name: "Testament of Adam",
+        sub: "(V1)",
+        tags: ["v3"],
+      },
+      {
+        id: "b7c",
+        num: "7c",
+        name: "Apocalypse of Adam",
+        sub: "",
+        tags: ["b201", "v1", "nag hammadi"],
+      },
+      {
+        id: "b8",
+        num: "8",
+        name: "Genesis 6–11",
+        sub: "Watchers, Noah, the Flood, Tower of Babel",
+        tags: ["b201", "cnbb"],
+      },
+      {
+        id: "b9",
+        num: "9",
+        name: "Flood Narrative — Epic of Gilgamesh",
+        sub: "Mesopotamian parallel to the biblical flood",
+        tags: ["v1"],
+      },
+      {
+        id: "b10",
+        num: "10",
+        name: "1 Enoch",
+        sub: "Watchers, Parables, Astronomy, Dreams, Epistle",
+        tags: ["b201", "v1"],
+      },
+      {
+        id: "b11",
+        num: "11",
+        name: "2 Enoch",
+        sub: "",
+        tags: ["b201", "v1"],
+      },
+      {
+        id: "b12",
+        num: "12",
+        name: "3 Enoch",
+        sub: "",
+        tags: ["b201"],
+      },
+      {
+        id: "b12b",
+        num: "12b",
+        name: "The Book of the Secrets of Enoch (V1)",
+        sub: "",
+        tags: ["v1"],
+      },
+      {
+        id: "b13",
+        num: "13",
+        name: "The Book of Giants",
+        sub: "",
+        tags: ["b201"],
+      },
+    ],
+  },
+  {
+    id: "f2",
+    num: "2",
+    title: "PATRIARCHS & JUBILEES",
+    theme: "patriarchs",
+    books: [
+      {
+        id: "b14",
+        num: "14",
+        name: "Genesis 12–25",
+        sub: "Abraham, Lot, Isaac, covenant",
+        tags: ["b201", "cnbb"],
+      },
+      {
+        id: "b14_comp",
+        num: "14b",
+        name: "Practical Kabbalah Without Mysteries",
+        sub: "Maggy Whitehouse — Analytical application of the Patriarchs' archetypes on the Tree",
+        tags: ["cabala", "analise", "carrinho"],
+      },
+      {
+        id: "b15",
+        num: "15",
+        name: "Jubilees",
+        sub: "Rewriting of Genesis with calendar and angels",
+        tags: ["b201", "v1"],
+      },
+      {
+        id: "b16",
+        num: "16",
+        name: "Testament of Abraham",
+        sub: "The death and judgment of the patriarch's soul",
+        tags: ["b201", "v1"],
+      },
+      {
+        id: "b17",
+        num: "17",
+        name: "Apocalypse of Abraham",
+        sub: "Heavenly vision and conversion",
+        tags: ["v1"],
+      },
+      {
+        id: "b18",
+        num: "18",
+        name: "Book of Abraham",
+        sub: "Expanded version of Abrahamic traditions",
+        tags: ["v3"],
+      },
+      {
+        id: "b19",
+        num: "19",
+        name: "Cave of Treasures",
+        sub: "Syriac tradition of patriarchal stories (V1)",
+        tags: ["v1"],
+      },
+      {
+        id: "b20",
+        num: "20",
+        name: "Tale of the Patriarchs",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b21",
         num: "21",
-        name: "Gênesis 26–36",
-        sub: "Isaque, Jacó, Esaú",
+        name: "Genesis 26–36",
+        sub: "Isaac, Jacob, Esau",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b22",
         num: "22",
-        name: "Testamentos Finais dos 12 Patriarcas (Tradição Posterior)",
-        sub: "Introdução às últimas palavras dos filhos de Jacó",
+        name: "Final Testaments of the 12 Patriarchs (Later Tradition)",
+        sub: "Introduction to the last words of Jacob's sons",
         tags: ["b201", "v1"],
       },
       {
         id: "b23",
         num: "23",
-        name: "Testamento de Rúben",
+        name: "Testament of Reuben",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b24",
         num: "24",
-        name: "Testamento de Simeão",
+        name: "Testament of Simeon",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b25",
         num: "25",
-        name: "Testamento de Levi",
+        name: "Testament of Levi",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b26",
         num: "26",
-        name: "Testamento de Judá",
+        name: "Testament of Judah",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b27",
         num: "27",
-        name: "Testamento de Issacar",
+        name: "Testament of Issachar",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b28",
         num: "28",
-        name: "Testamento de Zebulom",
+        name: "Testament of Zebulun",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b29",
         num: "29",
-        name: "Testamento de Dan",
+        name: "Testament of Dan",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b30",
         num: "30",
-        name: "Testamento de Naftali",
+        name: "Testament of Naphtali",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b31",
         num: "31",
-        name: "Testamento de Gad",
+        name: "Testament of Gad",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b32",
         num: "32",
-        name: "Testamento de Aser",
+        name: "Testament of Asher",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b33",
         num: "33",
-        name: "Testamento de José",
+        name: "Testament of Joseph",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b34",
         num: "34",
-        name: "Testamento de Benjamin",
+        name: "Testament of Benjamin",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b35",
         num: "35",
-        name: "Gênesis 37–50",
-        sub: "José no Egito",
+        name: "Genesis 37–50",
+        sub: "Joseph in Egypt",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b36",
         num: "36",
-        name: "José e Asenath",
-        sub: "Novela sobre o casamento de José",
+        name: "Joseph and Asenath",
+        sub: "Novel about Joseph's marriage",
         tags: ["v1"],
       },
       {
         id: "b37",
         num: "37",
-        name: "Livro de Jasher",
-        sub: "Mencionado em Josué e 2 Samuel",
+        name: "Book of Jasher",
+        sub: "Mentioned in Joshua and 2 Samuel",
         tags: ["v2"],
       },
       {
@@ -394,71 +3593,77 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f3",
     num: "3",
-    title: "ÊXODO & A LEI",
+    title: "TEXT REMOVED FOR DUPLICITY CORRECTION — EXODUS & THE LAW",
     theme: "exodus",
     books: [
-      { id: "b41", num: "41", name: "Êxodo", sub: "", tags: ["b201", "cnbb"] },
+      {
+        id: "b41",
+        num: "41",
+        name: "Exodus",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
       {
         id: "b42",
         num: "42",
-        name: "Janes e Jambres",
-        sub: "Os magos do Faraó",
+        name: "Jannes and Jambres",
+        sub: "The magicians of Pharaoh",
         tags: ["b201"],
       },
       {
         id: "b43",
         num: "43",
-        name: "Levítico",
+        name: "Leviticus",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b44",
         num: "44",
-        name: "Números",
+        name: "Numbers",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b45",
         num: "45",
-        name: "Deuteronômio",
-        sub: "O Shemá e a síntese da Lei",
+        name: "Deuteronomy",
+        sub: "The Shema and the synthesis of the Law",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b46",
         num: "46",
-        name: "Testamento de Moisés",
-        sub: "Assunção de Moisés (V1)",
+        name: "Testament of Moses",
+        sub: "Assumption of Moses (V1)",
         tags: ["b201", "v1"],
       },
       {
         id: "b47",
         num: "47",
-        name: "Apocalipse de Moisés",
+        name: "Apocalypse of Moses",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b48",
         num: "48",
-        name: "Seleções do Livro de Moisés",
-        sub: "Trad. Intertestamental (V3)",
+        name: "Selections from the Book of Moses",
+        sub: "Intertestamental tradition (V3)",
         tags: ["v3"],
       },
       {
         id: "b49",
         num: "49",
-        name: "Fragmentos de uma Obra Zadoquita",
+        name: "Fragments of a Zadokite Work",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b50",
         num: "50",
-        name: "Documento de Damasco",
-        sub: "Manuscritos do Mar Morto",
+        name: "Damascus Document",
+        sub: "Dead Sea Scrolls",
         tags: ["v3"],
       },
     ],
@@ -466,42 +3671,42 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f4",
     num: "4",
-    title: "MANUSCRITOS DO MAR MORTO",
+    title: "DEAD SEA SCROLLS",
     theme: "qumran",
     books: [
       {
         id: "b51",
         num: "51",
-        name: "Regra da Comunidade (1QS)",
-        sub: "Serek ha-Yahad — regras da comunidade de Qumran",
+        name: "Community Rule (1QS)",
+        sub: "Serek ha-Yahad — community rules of Qumran",
         tags: ["missing"],
       },
       {
         id: "b52",
         num: "52",
-        name: "Pergaminho da Guerra (1QM)",
-        sub: "Milhamah — guerra dos filhos da luz contra os filhos das trevas",
+        name: "War Scroll (1QM)",
+        sub: "Milhamah — war of the sons of light against the sons of darkness",
         tags: ["missing"],
       },
       {
         id: "b53",
         num: "53",
-        name: "Hinos de Ação de Graças (1QH)",
-        sub: "Hodayot — hinos de agradecimento",
+        name: "Thanksgiving Hymns (1QH)",
+        sub: "Hodayot — hymns of thanksgiving",
         tags: ["missing"],
       },
       {
         id: "b54",
         num: "54",
-        name: "Pergaminho do Templo (11QT)",
-        sub: "O maior manuscrito de Qumran — lei e arquitetura do Templo",
+        name: "Temple Scroll (11QT)",
+        sub: "The longest Qumran manuscript — Temple law and architecture",
         tags: ["missing"],
       },
       {
         id: "b55",
         num: "55",
-        name: "Apócrifo de Gênesis (1QapGen)",
-        sub: "Expansão narrativa de Gênesis 1–15",
+        name: "Genesis Apocryphon (1QapGen)",
+        sub: "Narrative expansion of Genesis 1–15",
         tags: ["missing"],
       },
     ],
@@ -509,25 +3714,49 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f5",
     num: "5",
-    title: "CONQUISTA & JUÍZES",
+    title: "CONQUEST & JUDGES",
     theme: "conquest_and_judges",
     books: [
-      { id: "b56", num: "56", name: "Josué", sub: "", tags: ["b201", "cnbb"] },
-      { id: "b57", num: "57", name: "Juízes", sub: "", tags: ["b201", "cnbb"] },
-      { id: "b58", num: "58", name: "Rute", sub: "", tags: ["b201", "cnbb"] },
+      {
+        id: "b56",
+        num: "56",
+        name: "Joshua",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
+      {
+        id: "b57",
+        num: "57",
+        name: "Judges",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
+      {
+        id: "b58",
+        num: "58",
+        name: "Ruth",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
       {
         id: "b59",
         num: "59",
-        name: "A História de Ahikar",
+        name: "The Story of Ahikar",
         sub: "",
         tags: ["b201"],
       },
-      { id: "b60", num: "60", name: "Eldad e Modad", sub: "", tags: ["b201"] },
+      {
+        id: "b60",
+        num: "60",
+        name: "Eldad and Modad",
+        sub: "",
+        tags: ["b201"],
+      },
       {
         id: "b61",
         num: "61",
         name: "Melchizedek",
-        sub: "Sacerdote-rei de Salém",
+        sub: "Priest-king of Salem",
         tags: ["v1"],
       },
     ],
@@ -535,7 +3764,7 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f6",
     num: "6",
-    title: "REINO DE ISRAEL & TRADIÇÕES ATRIBUÍDAS",
+    title: "KINGDOM OF ISRAEL & ATTRIBUTED TRADITIONS",
     theme: "kingdom",
     books: [
       {
@@ -552,48 +3781,60 @@ export const CANON_DATA: Phase[] = [
         sub: "",
         tags: ["b201", "cnbb"],
       },
-      { id: "b64", num: "64", name: "1 Reis", sub: "", tags: ["b201", "cnbb"] },
-      { id: "b65", num: "65", name: "2 Reis", sub: "", tags: ["b201", "cnbb"] },
+      {
+        id: "b64",
+        num: "64",
+        name: "1 Kings",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
+      {
+        id: "b65",
+        num: "65",
+        name: "2 Kings",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
       {
         id: "b66",
         num: "66",
-        name: "1 Crônicas",
+        name: "1 Chronicles",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b67",
         num: "67",
-        name: "2 Crônicas",
+        name: "2 Chronicles",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b68",
         num: "68",
-        name: "Testamento de Salomão",
-        sub: "Sobre demônios e o Templo",
+        name: "Testament of Solomon",
+        sub: "On demons and the Temple",
         tags: ["missing"],
       },
       {
         id: "b68_grim1",
         num: "68b",
-        name: "A clavícula de Salomão",
-        sub: "S. L. MacGregor Mathers — Estudo analítico-textual do manual ritualístico medieval atribuído a Salomão",
+        name: "The Key of Solomon",
+        sub: "S. L. MacGregor Mathers — Analytical-textual study of the medieval ritual manual attributed to Solomon",
         tags: ["grimorio", "solomon", "carrinho"],
       },
       {
         id: "b68_grim2",
         num: "68c",
         name: "Goetia",
-        sub: "Humberto Maggi — Estudo das chaves de evocação e controle simbólico dos 72 espíritos",
+        sub: "Humberto Maggi — Study of the keys of evocation and symbolic control of the 72 spirits",
         tags: ["grimorio", "goetia", "carrinho"],
       },
       {
         id: "b68_grim3",
         num: "68d",
         name: "Grimorium Verum",
-        sub: "Frater Goya (Anderson Rosa) — Análise técnica das correntes e hierarquias da tradição salomônica",
+        sub: "Frater Goya (Anderson Rosa) — Technical analysis of the currents and hierarchies of the Solomonic tradition",
         tags: ["grimorio", "pratica", "carrinho"],
       },
     ],
@@ -601,7 +3842,7 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f7",
     num: "7",
-    title: "EXÍLIO, RETORNO & DEUTEROCANÔNICOS",
+    title: "EXILE, RETURN & DEUTEROCANONICALS",
     theme: "exile",
     books: [
       {
@@ -611,82 +3852,130 @@ export const CANON_DATA: Phase[] = [
         sub: "",
         tags: ["b201", "cnbb"],
       },
-      { id: "b70", num: "70", name: "2 Esdras", sub: "", tags: ["b201"] },
+      {
+        id: "b70",
+        num: "70",
+        name: "2 Esdras",
+        sub: "",
+        tags: ["b201"],
+      },
       {
         id: "b71",
         num: "71",
-        name: "4 Esdras",
-        sub: "(Revelação)",
+        name: "4 Ezra",
+        sub: "(Revelation)",
         tags: ["v3"],
       },
       {
         id: "b71b",
         num: "71b",
-        name: "Palavra e Revelação de Esdras",
-        sub: "O Santo Profeta e Amado de Deus (V3)",
+        name: "Word and Revelation of Ezra",
+        sub: "The Holy Prophet and Beloved of God (V3)",
         tags: ["v3"],
       },
       {
         id: "b72",
         num: "72",
-        name: "Neemias",
+        name: "Nehemiah",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b73",
         num: "73",
-        name: "Carta de Aristeias",
+        name: "Letter of Aristeas",
         sub: "",
         tags: ["v3"],
       },
-      { id: "b74", num: "74", name: "Tobias", sub: "", tags: ["b201", "cnbb"] },
-      { id: "b75", num: "75", name: "Judite", sub: "", tags: ["b201", "cnbb"] },
       {
-        id: "b76",
-        num: "76",
-        name: "Ester + Ester Adicional",
+        id: "b74",
+        num: "74",
+        name: "Tobit",
         sub: "",
         tags: ["b201", "cnbb"],
       },
-      { id: "b77", num: "77", name: "Susana", sub: "", tags: ["b201"] },
-      { id: "b78", num: "78", name: "Bel e o Dragão", sub: "", tags: ["b201"] },
+      {
+        id: "b75",
+        num: "75",
+        name: "Judith",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
+      {
+        id: "b76",
+        num: "76",
+        name: "Esther + Additions to Esther",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
+      {
+        id: "b77",
+        num: "77",
+        name: "Susanna",
+        sub: "",
+        tags: ["b201"],
+      },
+      {
+        id: "b78",
+        num: "78",
+        name: "Bel and the Dragon",
+        sub: "",
+        tags: ["b201"],
+      },
       {
         id: "b79",
         num: "79",
-        name: "1 Macabeus",
+        name: "1 Maccabees",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b80",
         num: "80",
-        name: "2 Macabeus",
+        name: "2 Maccabees",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b81",
         num: "81",
-        name: "3 Macabeus",
+        name: "3 Maccabees",
         sub: "",
         tags: ["b201", "v3"],
       },
       {
         id: "b82",
         num: "82",
-        name: "4 Macabeus",
+        name: "4 Maccabees",
         sub: "",
         tags: ["b201", "v3"],
       },
-      { id: "b83", num: "83", name: "1 Meqabyan", sub: "", tags: ["b201"] },
-      { id: "b84", num: "84", name: "2 Meqabyan", sub: "", tags: ["b201"] },
-      { id: "b85", num: "85", name: "3 Meqabyan", sub: "", tags: ["b201"] },
+      {
+        id: "b83",
+        num: "83",
+        name: "1 Meqabyan",
+        sub: "",
+        tags: ["b201"],
+      },
+      {
+        id: "b84",
+        num: "84",
+        name: "2 Meqabyan",
+        sub: "",
+        tags: ["b201"],
+      },
+      {
+        id: "b85",
+        num: "85",
+        name: "3 Meqabyan",
+        sub: "",
+        tags: ["b201"],
+      },
       {
         id: "b86",
         num: "86",
-        name: "Sabedoria de Salomão",
-        sub: "Sabedoria deuterocanônica atribuída a Salomão",
+        name: "Wisdom of Solomon",
+        sub: "Deuterocanonical wisdom attributed to Solomon",
         tags: ["missing", "cnbb"],
       },
     ],
@@ -694,105 +3983,111 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f8",
     num: "8",
-    title: "SABEDORIA & POESIA",
+    title: "WISDOM & POETRY",
     theme: "wisdom",
     books: [
-      { id: "b87", num: "87", name: "Jó", sub: "", tags: ["b201", "cnbb"] },
+      {
+        id: "b87",
+        num: "87",
+        name: "Job",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
       {
         id: "b88",
         num: "88",
-        name: "Salmos 1–72",
-        sub: "Livros I e II",
+        name: "Psalms 1–72",
+        sub: "Books I and II",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b89",
         num: "89",
-        name: "Salmos 73–150",
-        sub: "Livros III, IV e V",
+        name: "Psalms 73–150",
+        sub: "Books III, IV and V",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b89_comp",
         num: "89b",
-        name: "O livro dos esplendores",
-        sub: "Éliphas Lévi — O mistério hierático e a interpretação cabalística ocidental dos salmos e segredos tradicionais",
+        name: "The Book of Splendours",
+        sub: "Éliphas Lévi — The hieratic mystery and the western kabbalistic interpretation of the psalms and traditional secrets",
         tags: ["cabala", "esoterismo", "carrinho"],
       },
       {
         id: "b90",
         num: "90",
-        name: "Salmos de Salomão",
+        name: "Psalms of Solomon",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b91",
         num: "91",
-        name: "Salmos Adicionais",
+        name: "Additional Psalms",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b92",
         num: "92",
-        name: "Odes de Salomão",
+        name: "Odes of Solomon",
         sub: "",
         tags: ["b201", "v2"],
       },
       {
         id: "b93",
         num: "93",
-        name: "O Hino da Pérola",
-        sub: "Poema gnóstico sethiano",
+        name: "Hymn of the Pearl",
+        sub: "Gnostic poem (V1)",
         tags: ["v1", "gnose"],
       },
       {
         id: "b94",
         num: "94",
-        name: "Provérbios",
+        name: "Proverbs",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b95",
         num: "95",
-        name: "Eclesiastes",
+        name: "Ecclesiastes",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b96",
         num: "96",
-        name: "Cântico dos Cânticos",
+        name: "Song of Songs",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b97",
         num: "97",
-        name: "Sirach (Eclesiástico)",
+        name: "Sirach (Ecclesiasticus)",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b98",
         num: "98",
-        name: "Sobre a Origem do Mundo",
-        sub: "Tratado cosmogônico sobre o Caos e o Demiurgo",
+        name: "On the Origin of the World",
+        sub: "Gnostic tradition (V1)",
         tags: ["v1", "gnose", "nag hammadi"],
       },
       {
         id: "b99",
         num: "99",
-        name: "As Frases do Sexto",
+        name: "The Sentences of Sextus",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b100",
         num: "100",
-        name: "As Tradições de Matias",
+        name: "The Traditions of Matthias",
         sub: "",
         tags: ["b201"],
       },
@@ -801,83 +4096,83 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f9",
     num: "9",
-    title: "PROFETAS MAIORES",
+    title: "MAJOR PROPHETS",
     theme: "prophets",
     books: [
       {
         id: "b101",
         num: "101",
-        name: "Isaías 1–39",
+        name: "Isaiah 1–39",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b102",
         num: "102",
-        name: "Isaías 40–66",
+        name: "Isaiah 40–66",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b102_comp",
         num: "102b",
-        name: "Magus: Tratado Completo de Alquimia e Filosofia Oculta",
-        sub: "Francis Barrett — Enciclopédia clássica de síntese; excelente paralelo para o estudo analítico do período profético e astrológico",
+        name: "The Magus: A Complete System of Occult Philosophy",
+        sub: "Francis Barrett — Classic synthesis encyclopedia; excellent parallel for the analytical study of the prophetic and astrological period",
         tags: ["ocultismo", "enciclopedia", "carrinho"],
       },
       {
         id: "b103",
         num: "103",
-        name: "Ascensão de Isaías",
+        name: "Ascension of Isaiah",
         sub: "(V1)",
         tags: ["b201", "v1"],
       },
       {
         id: "b103b",
         num: "103b",
-        name: "Martírio de Isaías",
+        name: "Martyrdom of Isaiah",
         sub: "(V1)",
         tags: ["v1"],
       },
       {
         id: "b104",
         num: "104",
-        name: "Jeremias",
+        name: "Jeremiah",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b105",
         num: "105",
-        name: "Carta de Jeremias",
+        name: "Letter of Jeremiah",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b106",
         num: "106",
-        name: "Lamentações",
+        name: "Lamentations",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b107",
         num: "107",
-        name: "Baruque 1 · 2 · 3",
+        name: "Baruch 1 · 2 · 3",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b108",
         num: "108",
-        name: "Oração de Azarias",
+        name: "Prayer of Azariah",
         sub: "",
         tags: ["b201", "v3"],
       },
       {
         id: "b109",
         num: "109",
-        name: "Ezequiel",
+        name: "Ezekiel",
         sub: "",
         tags: ["b201", "cnbb"],
       },
@@ -891,15 +4186,15 @@ export const CANON_DATA: Phase[] = [
       {
         id: "b111",
         num: "111",
-        name: "4 Baruc (Paraleipomena Jeremiou)",
-        sub: "Expansão apócrifa de Jeremias e Baruc",
+        name: "4 Baruch (Paraleipomena Jeremiou)",
+        sub: "Apocryphal expansion of Jeremiah and Baruch",
         tags: ["missing"],
       },
       {
         id: "b112",
         num: "112",
-        name: "Vida dos Profetas",
-        sub: "Tradições biográficas dos profetas do AT",
+        name: "Lives of the Prophets",
+        sub: "Biographical traditions of OT prophets",
         tags: ["missing"],
       },
     ],
@@ -907,80 +4202,104 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f10",
     num: "10",
-    title: "PROFETAS MENORES & ORÁCULOS",
+    title: "MINOR PROPHETS & ORACLES",
     theme: "minor_prophets",
     books: [
       {
         id: "b113",
         num: "113",
-        name: "Oséias",
+        name: "Hosea",
         sub: "",
         tags: ["b201", "cnbb"],
       },
-      { id: "b114", num: "114", name: "Joel", sub: "", tags: ["b201", "cnbb"] },
-      { id: "b115", num: "115", name: "Amós", sub: "", tags: ["b201", "cnbb"] },
+      {
+        id: "b114",
+        num: "114",
+        name: "Joel",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
+      {
+        id: "b115",
+        num: "115",
+        name: "Amos",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
       {
         id: "b116",
         num: "116",
-        name: "Obadias",
+        name: "Obadiah",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b117",
         num: "117",
-        name: "Jonas",
+        name: "Jonah",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b118",
         num: "118",
-        name: "Miquéias",
+        name: "Micah",
         sub: "",
         tags: ["b201", "cnbb"],
       },
-      { id: "b119", num: "119", name: "Naum", sub: "", tags: ["b201", "cnbb"] },
+      {
+        id: "b119",
+        num: "119",
+        name: "Nahum",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
       {
         id: "b120",
         num: "120",
-        name: "Habacuque",
+        name: "Habakkuk",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b121",
         num: "121",
-        name: "Sofonias",
+        name: "Zephaniah",
         sub: "",
         tags: ["b201", "cnbb"],
       },
-      { id: "b122", num: "122", name: "Ageu", sub: "", tags: ["b201", "cnbb"] },
+      {
+        id: "b122",
+        num: "122",
+        name: "Haggai",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
       {
         id: "b123",
         num: "123",
-        name: "Zacarias",
+        name: "Zechariah",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b124",
         num: "124",
-        name: "Malaquias",
+        name: "Malachi",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b125",
         num: "125",
-        name: "Oração de Manassés",
+        name: "Prayer of Manasseh",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b126",
         num: "126",
-        name: "Oráculos Sibilinos I–XIV",
+        name: "Sibylline Oracles I–XIV",
         sub: "",
         tags: ["b201"],
       },
@@ -989,43 +4308,43 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f11",
     num: "11",
-    title: "ENTRE OS TESTAMENTOS",
+    title: "BETWEEN THE TESTAMENTS",
     theme: "intertestamental",
-    div: "PERÍODO INTERTESTAMENTAL",
+    div: "INTERTESTAMENTAL PERIOD",
     books: [
       {
         id: "b127",
         num: "127",
-        name: "A Ascensão de Isaías (Revisão)",
+        name: "The Ascension of Isaiah (Revision)",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b128",
         num: "128",
-        name: "Testamento de Moisés (Revisão)",
+        name: "Testament of Moses (Revision)",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b129",
         num: "129",
-        name: "Livro de Adão (V.3)",
+        name: "Book of Adam (V.3)",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b130",
         num: "130",
-        name: "Testamento de Isaac",
-        sub: "Tradição patriarcal intertestamental",
+        name: "Testament of Isaac",
+        sub: "Intertestamental patriarchal tradition",
         tags: ["v1"],
       },
       {
         id: "b131",
         num: "131",
-        name: "Testamento de Jacó",
-        sub: "Tradição patriarcal intertestamental",
+        name: "Testament of Jacob",
+        sub: "Intertestamental patriarchal tradition",
         tags: ["v1"],
       },
     ],
@@ -1033,70 +4352,70 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f12",
     num: "12",
-    title: "INFÂNCIA DE JESUS",
+    title: "INFANCY OF JESUS",
     theme: "infancy",
-    div: "NOVO TESTAMENTO & APÓCRIFOS CRISTÃOS",
+    div: "NEW TESTAMENT & CHRISTIAN APOCRYPHA",
     books: [
       {
         id: "b132",
         num: "132",
-        name: "Protevangelico",
-        sub: "Proto Evangelho de Tiago (V1)",
+        name: "Protevangelium",
+        sub: "Proto-Gospel of James (V1)",
         tags: ["b201", "v1"],
       },
       {
         id: "b133",
         num: "133",
-        name: "Evangelho da Natividade de Maria",
-        sub: "Evangelho do nascimento de Maria (V2)",
+        name: "Gospel of the Nativity of Mary",
+        sub: "Gospel of the Birth of Mary (V2)",
         tags: ["b201", "v2"],
       },
       {
         id: "b134",
         num: "134",
-        name: "Pseudo-Mateus",
+        name: "Pseudo-Matthew",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b135",
         num: "135",
-        name: "Evangelho da Infância de Tomé",
-        sub: "Infância de Jesus / Salvador / Pseudo Tomé (V1)",
+        name: "Infancy Gospel of Thomas",
+        sub: "Infancy of Jesus / Savior / Pseudo-Thomas (V1)",
         tags: ["b201", "v1"],
       },
       {
         id: "b136",
         num: "136",
-        name: "Fragmentos de Tomé",
+        name: "Fragments of Thomas",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b137",
         num: "137",
-        name: "Evangelho Árabe da Infância",
+        name: "Arabic Infancy Gospel",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b138",
         num: "138",
-        name: "Evangelho Armênio da Infância",
-        sub: "Excertos do Evangelho Armênio (V1)",
+        name: "Armenian Infancy Gospel",
+        sub: "Excerpts from the Armenian Gospel (V1)",
         tags: ["v1"],
       },
       {
         id: "b139",
         num: "139",
-        name: "História de José, o Carpinteiro",
+        name: "History of Joseph the Carpenter",
         sub: "",
         tags: ["b201", "v1"],
       },
       {
         id: "b140",
         num: "140",
-        name: "Cartas de Herodes e Pilatos",
+        name: "Letters of Herod and Pilate",
         sub: "",
         tags: ["b201"],
       },
@@ -1105,132 +4424,132 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f13",
     num: "13",
-    title: "MINISTÉRIO DE JESUS — OS EVANGELHOS",
+    title: "MINISTRY OF JESUS — THE GOSPELS",
     theme: "gospels",
     books: [
       {
         id: "b141",
         num: "141",
-        name: "Mateus 1–13",
+        name: "Matthew 1–13",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b142",
         num: "142",
-        name: "Mateus 14–28",
+        name: "Matthew 14–28",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b143",
         num: "143",
-        name: "Marcos",
+        name: "Mark",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b144",
         num: "144",
-        name: "Evangelho Secreto de Marcos",
+        name: "Secret Gospel of Mark",
         sub: "",
         tags: ["b201", "v3"],
       },
       {
         id: "b145",
         num: "145",
-        name: "Lucas 1–12",
+        name: "Luke 1–12",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b146",
         num: "146",
-        name: "Lucas 13–24",
+        name: "Luke 13–24",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b147",
         num: "147",
-        name: "João 1–12",
+        name: "John 1–12",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b148",
         num: "148",
-        name: "João 13–21",
+        name: "John 13–21",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b149",
         num: "149",
-        name: "Narrativa da Paixão Pré-Markan",
+        name: "Pre-Markan Passion Narrative",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b150",
         num: "150",
-        name: "Epístolas de Jesus e Abgarus",
+        name: "Epistles of Jesus and Abgarus",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b151",
         num: "151",
-        name: "Evangelho dos Hebreus",
+        name: "Gospel of the Hebrews",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b152",
         num: "152",
-        name: "Evangelho dos Ebionitas",
+        name: "Gospel of the Ebionites",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b153",
         num: "153",
-        name: "Evangelho dos Nazarenos",
+        name: "Gospel of the Nazarenes",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b154",
         num: "154",
-        name: "Evangelho de Egerton",
+        name: "Egerton Gospel",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b155",
         num: "155",
-        name: "Evangelho de Oxirrinco",
+        name: "Oxyrhynchus Gospel",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b156",
         num: "156",
-        name: "Diálogo do Salvador",
-        sub: "Conversações esotéricas pós-ressurreição",
+        name: "Dialogue of the Savior",
+        sub: "",
         tags: ["b201", "nag hammadi"],
       },
       {
         id: "b157",
         num: "157",
-        name: "Evangelho Segundo Pedro",
-        sub: "Evangelho de Pedro (V1/V2)",
+        name: "Gospel According to Peter",
+        sub: "Gospel of Peter (V1/V2)",
         tags: ["b201", "v1", "v2"],
       },
       {
         id: "b158",
         num: "158",
-        name: "A Vingança do Salvador",
+        name: "The Vengeance of the Savior",
         sub: "",
         tags: ["b201", "v1"],
       },
@@ -1239,104 +4558,104 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f14",
     num: "14",
-    title: "CICLO DE PILATOS & PÓS-RESSURREIÇÃO",
+    title: "PILATE CYCLE & POST-RESURRECTION",
     theme: "passion",
     books: [
       {
         id: "b159",
         num: "159",
-        name: "Evangelho de Nicodemus",
+        name: "Gospel of Nicodemus",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b160",
         num: "160",
-        name: "Descida ao Inferno (Grego)",
+        name: "Descent into Hell (Greek)",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b161",
         num: "161",
-        name: "Descida ao Inferno (Latim)",
+        name: "Descent into Hell (Latin)",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b162",
         num: "162",
-        name: "Ciclo de Pilatos",
+        name: "Pilate Cycle",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b163",
         num: "163",
-        name: "Condenação de Pilatos",
+        name: "Condemnation of Pilate",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b164",
         num: "164",
-        name: "Cartas do Senhor",
-        sub: "Carta do Senhor (V1)",
+        name: "Letters of the Lord",
+        sub: "Letter of the Lord (V1)",
         tags: ["v1"],
       },
       {
         id: "b165",
         num: "165",
-        name: "Declarações de José de Arimatéia",
+        name: "Declarations of Joseph of Arimathea",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b166",
         num: "166",
-        name: "A Narrative de José de Arimatéia",
+        name: "The Narrative of Joseph of Arimathea",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b167",
         num: "167",
-        name: "Discurso Sobre o Domingo",
+        name: "Discourse on the Lord's Day",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b168",
         num: "168",
-        name: "Apócrifos da Assunção",
-        sub: "Trad. da Assunção (V1)",
+        name: "Assumption Apocrypha",
+        sub: "Assumption tradition (V1)",
         tags: ["v1"],
       },
       {
         id: "b169",
         num: "169",
-        name: "Passagem da Virgem Maria",
-        sub: "Passagem da Bem-Aventurada (V1)",
+        name: "Passing of the Virgin Mary",
+        sub: "Passing of the Blessed (V1)",
         tags: ["v1"],
       },
       {
         id: "b170",
         num: "170",
-        name: "Agrapha Extra-Evangelho",
-        sub: "Ditos não canônicos de Jesus (V1)",
+        name: "Extra-Gospel Agrapha",
+        sub: "Non-canonical sayings of Jesus (V1)",
         tags: ["v1"],
       },
       {
         id: "b171",
         num: "171",
-        name: "Ressurreição de Cristo (Bartolomeu)",
+        name: "Resurrection of Christ (Bartholomew)",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b172",
         num: "172",
-        name: "Evangelho de Bartolomeu",
+        name: "Gospel of Bartholomew",
         sub: "",
         tags: ["b201", "v1"],
       },
@@ -1345,160 +4664,160 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f15",
     num: "15",
-    title: "ATOS & MISSÃO APOSTÓLICA",
+    title: "ACTS & APOSTOLIC MISSION",
     theme: "acts",
     books: [
       {
         id: "b173",
         num: "173",
-        name: "Atos 1–12",
+        name: "Acts 1–12",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b174",
         num: "174",
-        name: "Atos 13–28",
+        name: "Acts 13–28",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b175",
         num: "175",
-        name: "Atos 29 (Apócrifo)",
+        name: "Acts 29 (Apocryphal)",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b176",
         num: "176",
-        name: "Atos de Pedro e os 12",
-        sub: "Relato herético da missão dos apóstolos",
+        name: "Acts of Peter and the Twelve",
+        sub: "",
         tags: ["b201", "nag hammadi"],
       },
       {
         id: "b177",
         num: "177",
-        name: "Atos de Pedro",
+        name: "Acts of Peter",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b178",
         num: "178",
-        name: "Atos de Pedro e André",
+        name: "Acts of Peter and Andrew",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b179",
         num: "179",
-        name: "Atos de Pedro e Paulo",
+        name: "Acts of Peter and Paul",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b180",
         num: "180",
-        name: "Atos de Paulo e Tecla",
+        name: "Acts of Paul and Thecla",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b181",
         num: "181",
-        name: "Atos de André",
+        name: "Acts of Andrew",
         sub: "",
         tags: ["b201", "v3"],
       },
       {
         id: "b182",
         num: "182",
-        name: "Atos de André e Matias",
+        name: "Acts of Andrew and Matthias",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b183",
         num: "183",
-        name: "Atos de João",
-        sub: "Contém traços gnósticos antigos sobre o corpo espiritual de Jesus",
+        name: "Acts of John",
+        sub: "",
         tags: ["v3"],
       },
       {
         id: "b184",
         num: "184",
-        name: "Atos de Tomé",
+        name: "Acts of Thomas",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b185",
         num: "185",
-        name: "Consumação de Tomé",
-        sub: "A consumação do apóstolo Tomé (V3)",
+        name: "Consummation of Thomas",
+        sub: "The consummation of the apostle Thomas (V3)",
         tags: ["v3"],
       },
       {
         id: "b186",
         num: "186",
-        name: "Atos de Barnabé",
+        name: "Acts of Barnabas",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b187",
         num: "187",
-        name: "Atos e Martírio de São Mateus",
-        sub: "Atos e Martírio do Apóstolo (V3)",
+        name: "Acts and Martyrdom of St. Matthew",
+        sub: "Acts and Martyrdom of the Apostle (V3)",
         tags: ["v3"],
       },
       {
         id: "b188",
         num: "188",
-        name: "Martírio de Mateus",
+        name: "Martyrdom of Matthew",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b189",
         num: "189",
-        name: "Xantipe, Polixena e Rebeca",
-        sub: "Vida das Santas Mulheres",
+        name: "Xanthippe, Polyxena and Rebecca",
+        sub: "Life of the Holy Women",
         tags: ["v3"],
       },
       {
         id: "b190",
         num: "190",
-        name: "Atos do Santo Apóstolo",
+        name: "Acts of the Holy Apostle",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b191",
         num: "191",
-        name: "Ensino de Tadeu",
+        name: "Teaching of Thaddaeus",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b192",
         num: "192",
-        name: "Livro de João Evangelista",
+        name: "Book of John the Evangelist",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b193",
         num: "193",
-        name: "Atos de Perpétua e Felicidade",
+        name: "Acts of Perpetua and Felicity",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b194",
         num: "194",
-        name: "A Pregação de Pedro",
+        name: "The Preaching of Peter",
         sub: "",
         tags: ["b201"],
       },
@@ -1507,127 +4826,133 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f16",
     num: "16",
-    title: "CARTAS DE PAULO",
+    title: "LETTERS OF PAUL",
     theme: "epistles",
     books: [
       {
         id: "b195",
         num: "195",
-        name: "Gálatas",
+        name: "Galatians",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b196",
         num: "196",
-        name: "1 Tessalonicenses",
+        name: "1 Thessalonians",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b197",
         num: "197",
-        name: "2 Tessalonicenses",
+        name: "2 Thessalonians",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b198",
         num: "198",
-        name: "1 Coríntios",
+        name: "1 Corinthians",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b199",
         num: "199",
-        name: "2 Coríntios",
+        name: "2 Corinthians",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b200",
         num: "200",
-        name: "III Coríntios",
+        name: "3 Corinthians",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b201",
         num: "201",
-        name: "Romanos",
+        name: "Romans",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b202",
         num: "202",
-        name: "Filipenses",
+        name: "Philippians",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b203",
         num: "203",
-        name: "Colossenses",
+        name: "Colossians",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b204",
         num: "204",
-        name: "Filemão",
+        name: "Philemon",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b205",
         num: "205",
-        name: "Efésios",
+        name: "Ephesians",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b206",
         num: "206",
-        name: "1 Timóteo",
+        name: "1 Timothy",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b207",
         num: "207",
-        name: "2 Timóteo",
+        name: "2 Timothy",
         sub: "",
         tags: ["b201", "cnbb"],
       },
-      { id: "b208", num: "208", name: "Tito", sub: "", tags: ["b201", "cnbb"] },
+      {
+        id: "b208",
+        num: "208",
+        name: "Titus",
+        sub: "",
+        tags: ["b201", "cnbb"],
+      },
       {
         id: "b209",
         num: "209",
-        name: "Hebreus",
+        name: "Hebrews",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b210",
         num: "210",
-        name: "Laodicenses",
-        sub: "Epístola aos Laodicenses (V3)",
+        name: "Laodiceans",
+        sub: "Epistle to the Laodiceans (V3)",
         tags: ["b201", "v3"],
       },
       {
         id: "b211",
         num: "211",
-        name: "Epístolas a Sêneca",
-        sub: "Correspondência entre Paulo e Sêneca (V2)",
+        name: "Epistles to Seneca",
+        sub: "Correspondence between Paul and Seneca (V2)",
         tags: ["b201", "v2"],
       },
       {
         id: "b212",
         num: "212",
-        name: "Prece de Paulo",
-        sub: "Oração esotérica de abertura do Codex Jung",
+        name: "Prayer of Paul",
+        sub: "",
         tags: ["v3", "nag hammadi"],
       },
     ],
@@ -1635,133 +4960,133 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f17",
     num: "17",
-    title: "CARTAS GERAIS, APOCALIPSES & REVELAÇÃO",
+    title: "GENERAL LETTERS, APOCALYPSES & REVELATION",
     theme: "apocalypse",
     books: [
       {
         id: "b213",
         num: "213",
-        name: "Tiago",
+        name: "James",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b214",
         num: "214",
-        name: "1 Pedro",
+        name: "1 Peter",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b215",
         num: "215",
-        name: "2 Pedro",
+        name: "2 Peter",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b216",
         num: "216",
-        name: "1 João",
+        name: "1 John",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b217",
         num: "217",
-        name: "2 João",
+        name: "2 John",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b218",
         num: "218",
-        name: "3 João",
+        name: "3 John",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b219",
         num: "219",
-        name: "Judas",
+        name: "Jude",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b220",
         num: "220",
-        name: "Epístola dos Apóstolos",
+        name: "Epistle of the Apostles",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b221",
         num: "221",
-        name: "Carta de Pedro à Felipe",
-        sub: "Carta e revelação gnóstica pós-ressurreição",
+        name: "Letter of Peter to Philip",
+        sub: "",
         tags: ["v3", "nag hammadi"],
       },
       {
         id: "b222",
         num: "222",
-        name: "Epístola de Barnabé",
+        name: "Epistle of Barnabas",
         sub: "",
         tags: ["v3"],
       },
       {
         id: "b223",
         num: "223",
-        name: "Revelação (Apocalipse) 1–11",
+        name: "Revelation (Apocalypse) 1–11",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b224",
         num: "224",
-        name: "Revelação 12–22",
+        name: "Revelation 12–22",
         sub: "",
         tags: ["b201", "cnbb"],
       },
       {
         id: "b225",
         num: "225",
-        name: "João o Teólogo",
-        sub: "A Revelação de São João, o Teólogo (V3)",
+        name: "John the Theologian",
+        sub: "The Revelation of St. John the Theologian (V3)",
         tags: ["v3"],
       },
       {
         id: "b226",
         num: "226",
-        name: "Apocalipse de Pedro",
-        sub: "Visão mística da crucificação espiritual",
+        name: "Apocalypse of Peter",
+        sub: "",
         tags: ["v1", "nag hammadi"],
       },
       {
         id: "b227",
         num: "227",
-        name: "Apocalipse de Paulo",
-        sub: "Ascensão do apóstolo através dos céus arcontônticos",
+        name: "Apocalypse of Paul",
+        sub: "",
         tags: ["v3", "nag hammadi"],
       },
       {
         id: "b228",
         num: "228",
-        name: "Apocalipse de Baruch",
+        name: "Apocalypse of Baruch",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b229",
         num: "229",
-        name: "Apocalipse de Elias",
+        name: "Apocalypse of Elijah",
         sub: "",
         tags: ["v1"],
       },
       {
         id: "b230",
         num: "230",
-        name: "Apocalipse de Tomé",
-        sub: "Revelação de Tomé (V1)",
+        name: "Apocalypse of Thomas",
+        sub: "Revelation of Thomas (V1)",
         tags: ["v1"],
       },
     ],
@@ -1769,298 +5094,310 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f18",
     num: "18",
-    title: "PAIS DA IGREJA & TEXTOS APOSTÓLICOS",
+    title: "CHURCH FATHERS & APOSTOLIC TEXTS",
     theme: "fathers",
     books: [
-      { id: "b231", num: "231", name: "O Didachê", sub: "", tags: ["b201"] },
+      {
+        id: "b231",
+        num: "231",
+        name: "The Didache",
+        sub: "",
+        tags: ["b201"],
+      },
       {
         id: "b232",
         num: "232",
-        name: "Pastor de Hermas",
-        sub: "Livros I (Visões), II (Mandatos) e III (Similitudes) (V2)",
+        name: "Shepherd of Hermas",
+        sub: "Books I (Visions), II (Mandates) and III (Similitudes) (V2)",
         tags: ["v2"],
       },
       {
         id: "b233",
         num: "233",
-        name: "1 Clemente",
-        sub: "Primeira Epístola de Clemente aos Coríntios (V2)",
+        name: "1 Clement",
+        sub: "First Epistle of Clement to the Corinthians (V2)",
         tags: ["b201", "v2"],
       },
       {
         id: "b234",
         num: "234",
-        name: "2 Clemente",
-        sub: "Segunda Epístola de Clemente aos Coríntios (V2)",
+        name: "2 Clement",
+        sub: "Second Epistle of Clement to the Corinthians (V2)",
         tags: ["b201", "v2"],
       },
       {
         id: "b235",
         num: "235",
-        name: "Apócrifo de Tiago",
-        sub: "Ensinamentos secretos de Jesus a Tiago",
+        name: "Apocryphon of James",
+        sub: "",
         tags: ["b201", "v3", "nag hammadi"],
       },
       {
         id: "b236",
         num: "236",
-        name: "Inácio de Antioquia",
-        sub: "Efésios, Magnésios, Trales, Romanos, Filadelfianos, Esmirniotas e Policarpo (V2)",
+        name: "Ignatius of Antioch",
+        sub: "Ephesians, Magnesians, Trallians, Romans, Philadelphians, Smyrnaeans and Polycarp (V2)",
         tags: ["b201", "v2"],
       },
       {
         id: "b237",
         num: "237",
-        name: "Policarpo aos Filipenses",
-        sub: "Epístola de Policarpo aos Filipenses (V2)",
+        name: "Polycarp to the Philippians",
+        sub: "Epistle of Polycarp to the Philippians (V2)",
         tags: ["b201", "v2"],
       },
       {
         id: "b238",
         num: "238",
-        name: "Martírio de Inácio",
+        name: "Martyrdom of Ignatius",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b239",
         num: "239",
-        name: "Martírio de Policarpo",
+        name: "Martyrdom of Polycarp",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b240",
         num: "240",
-        name: "Tertuliano (Mártires)",
+        name: "Tertullian (To the Martyrs)",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b241",
         num: "241",
-        name: "Carta de Pilatos",
+        name: "Letter of Pilate",
         sub: "",
         tags: ["b201"],
       },
       {
         id: "b242",
         num: "242",
-        name: "Oração Ação de Graças",
-        sub: "Oração esotérica de matriz hermético-gnóstica",
+        name: "Thanksgiving Prayer",
+        sub: "",
         tags: ["b201", "nag hammadi"],
       },
       {
         id: "b243",
         num: "243",
-        name: "Epifânio sobre a Justiça",
+        name: "Epiphanes on Righteousness",
         sub: "",
         tags: ["b201"],
       },
-      { id: "b244", num: "244", name: "Credos", sub: "", tags: ["b201"] },
+      {
+        id: "b244",
+        num: "244",
+        name: "Creeds",
+        sub: "",
+        tags: ["b201"],
+      },
     ],
   },
   {
     id: "f19",
     num: "19",
-    title: "GNOSE & TEXTOS ESOTÉRICOS",
+    title: "GNOSIS & ESOTERIC TEXTS",
     theme: "gnosis",
-    div: "TEXTOS GNÓSTICOS",
+    div: "GNOSTIC TEXTS",
     books: [
       {
         id: "b245",
         num: "245",
-        name: "Evangelho de Tomé",
-        sub: "Evangelho Segundo Tomé, o Dídimo (V1)",
+        name: "Gospel of Thomas",
+        sub: "Gospel According to Thomas the Twin (V1)",
         tags: ["b201", "v1", "gnose", "nag hammadi"],
       },
       {
         id: "b246",
         num: "246",
-        name: "Fragmentos Gregos de Tomé",
-        sub: "Versões em papiro de Oxirrinco",
+        name: "Greek Fragments of Thomas",
+        sub: "",
         tags: ["b201", "gnose"],
       },
       {
         id: "b247",
         num: "247",
-        name: "Evangelho de Filipe",
-        sub: "Evangelho Segundo Felipe (V1)",
+        name: "Gospel of Philip",
+        sub: "Gospel According to Philip (V1)",
         tags: ["b201", "v1", "gnose", "nag hammadi"],
       },
       {
         id: "b248",
         num: "248",
-        name: "Evangelho de Maria Madalena",
-        sub: "Gnose mística a partir do Codex de Berlim",
+        name: "Gospel of Mary Magdalene",
+        sub: "(V1)",
         tags: ["v1", "gnose"],
       },
       {
         id: "b248b",
         num: "248b",
-        name: "Excertos do Evangelho de Maria",
+        name: "Excerpts from the Gospel of Mary",
         sub: "(V1)",
         tags: ["v1", "gnose"],
       },
       {
         id: "b249",
         num: "249",
-        name: "Evangelho de Judas",
-        sub: "Tradição Gnóstica Cainita a partir do Codex Tchacos",
+        name: "Gospel of Judas",
+        sub: "",
         tags: ["v1", "gnose"],
       },
       {
         id: "b250",
         num: "250",
-        name: "Evangelho de Valentino",
-        sub: "Expressão maior da gnose valentiniana poética",
+        name: "Gospel of Valentinus",
+        sub: "",
         tags: ["v1", "gnose"],
       },
       {
         id: "b251",
         num: "251",
-        name: "Evangelho da Verdade",
-        sub: "Tratado profundo atribuído a Valentino",
+        name: "Gospel of Truth",
+        sub: "",
         tags: ["b201", "v1", "gnose", "nag hammadi"],
       },
       {
         id: "b252",
         num: "252",
-        name: "Evangelho dos Egípcios",
-        sub: "O Livro Sagrado do Grande Espírito Invisível",
+        name: "Gospel of the Egyptians",
+        sub: "",
         tags: ["b201", "gnose", "nag hammadi"],
       },
       {
         id: "b253",
         num: "253",
-        name: "Apócrifo de João",
-        sub: "O Livro Secreto de João e a cosmologia da Luz",
+        name: "Apocryphon of John",
+        sub: "",
         tags: ["b201", "v3", "gnose", "nag hammadi"],
       },
       {
         id: "b254",
         num: "254",
-        name: "Thomas Contendor",
-        sub: "Livro de Tomé o Contendor (V3)",
+        name: "Thomas the Contender",
+        sub: "Book of Thomas the Contender (V3)",
         tags: ["b201", "v3", "gnose", "nag hammadi"],
       },
       {
         id: "b255",
         num: "255",
-        name: "Tratado Grande Seth",
-        sub: "Revelação da linhagem celestial e do Cristo espiritual",
+        name: "Second Treatise of the Great Seth",
+        sub: "",
         tags: ["b201", "gnose", "nag hammadi"],
       },
       {
         id: "b256",
         num: "256",
         name: "Basilides",
-        sub: "Fragmentos heresiológicos",
+        sub: "",
         tags: ["b201", "gnose"],
       },
       {
         id: "b257",
         num: "257",
-        name: "Livro de Marcião",
-        sub: "O Evangelho do Deus Estrangeiro",
+        name: "Book of Marcion",
+        sub: "",
         tags: ["b201", "gnose"],
       },
       {
         id: "b258",
         num: "258",
-        name: "Livro de Sindos",
+        name: "Book of Sindos",
         sub: "",
         tags: ["b201", "gnose"],
       },
       {
         id: "b259",
         num: "259",
-        name: "Fonte Q",
-        sub: "Reconstrução hipotética dos ditos originais",
+        name: "Q Source",
+        sub: "",
         tags: ["b201", "gnose"],
       },
       {
         id: "b260",
         num: "260",
-        name: "Pistis Sophia Comentada",
-        sub: "Samael Aun Weor — O código-fonte da gnose com chaves interpretativas profundas",
+        name: "Pistis Sophia",
+        sub: "",
         tags: ["gnose", "esoterismo", "carrinho"],
       },
       {
         id: "b261",
         num: "261",
-        name: "Evangelho Nestoriano",
-        sub: "José Alves de Araújo Filho — O livro dos ensinamentos alternativos do Oriente",
+        name: "Nestorian Gospel",
+        sub: "José Alves de Araújo Filho — The book of alternative teachings of the East",
         tags: ["gnose", "carrinho"],
       },
       {
         id: "b262",
         num: "262",
-        name: "Trovão: Mente Perfeita",
-        sub: "Poema revelatório de voz feminina divina (V1)",
+        name: "Thunder: Perfect Mind",
+        sub: "Nag Hammadi — poem of a divine female voice (V1)",
         tags: ["v1", "gnose", "nag hammadi"],
       },
       {
         id: "b263",
         num: "263",
-        name: "Hipóstase dos Arcontes",
-        sub: "Natureza e origem dos arcontes — Nag Hammadi",
+        name: "Hypostasis of the Archons",
+        sub: "Nature and origin of the archons — Nag Hammadi",
         tags: ["gnose", "nag hammadi"],
       },
       {
         id: "b264",
         num: "264",
-        name: "Protennoia Trimórfica",
-        sub: "Três descidas do Primeiro Pensamento divino (V1)",
+        name: "Trimorphic Protennoia",
+        sub: "Three descents of the divine Thought — Nag Hammadi (V1)",
         tags: ["v1", "gnose", "nag hammadi"],
       },
       {
         id: "b265",
         num: "265",
-        name: "Tratado Tripartite",
-        sub: "Cosmologia valentiniana — Nag Hammadi",
+        name: "Tripartite Tractate",
+        sub: "Valentinian cosmology — Nag Hammadi",
         tags: ["gnose", "nag hammadi"],
       },
       {
         id: "b266",
         num: "266",
-        name: "Exegese sobre a Alma",
-        sub: "Alegoria mística da queda e resgate da alma humana",
+        name: "Exegesis on the Soul",
+        sub: "Allegory of the fall and redemption of the soul — Nag Hammadi",
         tags: ["gnose", "nag hammadi"],
       },
       {
         id: "b267",
         num: "267",
-        name: "Sofia de Jesus Cristo",
-        sub: "Versão gnóstica do Eugnostos — Nag Hammadi",
+        name: "Sophia of Jesus Christ",
+        sub: "Gnostic version of Eugnostos — Nag Hammadi",
         tags: ["gnose", "nag hammadi"],
       },
       {
         id: "b268",
         num: "268",
-        name: "Testemunho da Verdade",
-        sub: "Crítica radical ao martírio e ao Criador material",
+        name: "Testimony of Truth",
+        sub: "Gnostic critique of martyrdom and the OT God — Nag Hammadi",
         tags: ["gnose", "nag hammadi"],
       },
       {
         id: "b269",
         num: "269",
         name: "Zostrianos",
-        sub: "Apocalipse sethiano — Nag Hammadi",
+        sub: "Sethian apocalypse — Nag Hammadi",
         tags: ["gnose", "nag hammadi"],
       },
       {
         id: "b269_add1",
         num: "269b",
-        name: "As Três Estelas de Sete",
-        sub: "Hinos de adoração e revelações da linhagem sethiana pura",
+        name: "The Three Steles of Seth",
+        sub: "Hymns of adoration and revelations of the pure Sethian lineage",
         tags: ["gnose", "sethiano", "nag hammadi"],
       },
       {
         id: "b269_add2",
         num: "269c",
-        name: "O Alógenes",
-        sub: "O Estrangeiro e sua transcendência mental além do Demiurgo",
+        name: "Allogenes",
+        sub: "The Stranger and his mental transcendence beyond the Demiurge",
         tags: ["gnose", "revelacao", "nag hammadi"],
       },
     ],
@@ -2068,43 +5405,43 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f20",
     num: "20",
-    title: "GNOSE COMO PONTE",
+    title: "GNOSIS AS BRIDGE",
     theme: "bridge",
-    div: "TRANSIÇÃO ISLÃ",
+    div: "TRANSITION TO ISLAM",
     books: [
       {
         id: "b270",
         num: "270",
-        name: "Gnósticos: Escrituras apócrifas Setianas",
-        sub: "José Alves de Araújo Filho — Análise focada na linhagem herética de Sete",
+        name: "Sethian Scriptures",
+        sub: "",
         tags: ["gnose", "ponte", "carrinho"],
       },
       {
         id: "b271",
         num: "271",
-        name: "Ele Não Morreu na Cruz",
-        sub: "José Alves de Araújo Filho — O relato revisionista sobre a crucificação e sobrevivência física",
+        name: "He Did Not Die on the Cross",
+        sub: "",
         tags: ["ponte", "revisionismo", "carrinho"],
       },
       {
         id: "b272",
         num: "272",
-        name: "O Famigerado Apóstolo Paulo: O Maior deturpador do Cristianismo",
-        sub: "José Alves de Araújo Filho — Crítica estrutural à formação do dogma romano ortodoxo",
+        name: "The Infamous Paul",
+        sub: "",
         tags: ["ponte", "critica", "carrinho"],
       },
       {
         id: "b273",
         num: "273",
-        name: "EUTAOGNOSE: A Religião dos Anjos",
-        sub: "José Alves de Araújo Filho — Cosmologia e hierarquias intermediárias na transição doutrinária",
+        name: "EUGNOSTOS",
+        sub: "",
         tags: ["ponte", "misticismo", "carrinho"],
       },
       {
         id: "b273_comp",
         num: "273b",
-        name: "O grande arcano ou o occultismo revelado",
-        sub: "Éliphas Lévi — A manipulação analítica da luz astral e o fechamento do entendimento do sistema ocidental",
+        name: "The Great Secret or Occultism Unveiled",
+        sub: "Éliphas Lévi — The analytical manipulation of the astral light and the closing of the understanding of the western system",
         tags: ["ocultismo", "síntese", "carrinho"],
       },
     ],
@@ -2112,4542 +5449,617 @@ export const CANON_DATA: Phase[] = [
   {
     id: "f21",
     num: "21",
-    title: "A REVELAÇÃO DE MAOMÉ E O MISTICISMO ISLÂMICO",
+    title: "MOHAMMED'S REVELATION & ISLAMIC MYSTICISM",
     theme: "islam",
-    div: "TRANSIÇÃO ISLÃ E ESOTERISMO ORIENTAL",
+    div: "TRANSITION ISLAM AND ORIENTAL ESOTERICISM",
     books: [
       {
         id: "b274",
         num: "274",
-        name: "O Evangelho de Barnabé: O Gospel Apócrifo de Barnabé",
-        sub: "Josúe Alves de Araújo Filho — Visão de transição doutrinária que aproxima a figura profética ao Islã.",
+        name: "The Gospel of Barnabas: The Apocryphal Gospel of Barnabas",
+        sub: "Josúe Alves de Araújo Filho — Doctrinal transition view that brings the prophetic figure closer to Islam.",
         tags: ["ponte", "apocrifo", "carrinho"],
-        procedencia: "Catálogo Original"
+        procedencia: "Original Catalog",
       },
       {
         id: "b275",
         num: "275",
-        name: "O ALCORÃO",
-        sub: "Texto sagrado central do Islã, analisado sob viés exegético e de deconstrução estrutural.",
+        name: "THE QURAN",
+        sub: "Central sacred text of Islam, analyzed under an exegetical and structural deconstruction lens.",
         tags: ["ponte", "base"],
-        procedencia: "Catálogo Original"
+        procedencia: "Original Catalog",
       },
       {
         id: "b276",
         num: "276",
         name: "Sirah Nabawi",
-        sub: "Ibn Hisham — Biografia tradicional e histórica do Profeta Muhammad.",
+        sub: "Ibn Hisham — Traditional and historical biography of the Prophet Muhammad.",
         tags: ["missing", "ponte"],
-        procedencia: "Catálogo Original"
+        procedencia: "Original Catalog",
       },
-      // --- EXPANSÃO: SUFISMO, XIISMO E FILOSOFIA AL-BATIN (O OCULTO) ---
       {
         id: "b276_sufi1",
         num: "276b",
-        name: "A Epístola da Unidade (Risalat al-Ahadivyah)",
-        sub: "Ibn Arabi — O tratado definitivo sobre a não-dualidade (Wahdat al-Wujud) no Islã esotérico.",
+        name: "The Epistle of Unity (Risalat al-Ahadivyah)",
+        sub: "Ibn Arabi — The definitive treatise on non-duality (Wahdat al-Wujud) in esoteric Islam.",
         isbn: "978-8571740136",
-        tags: ["sufismo", "teosofia", "carrinho"]
+        tags: ["sufismo", "teosofia", "carrinho"],
       },
       {
         id: "b276_sufi2",
         num: "276c",
-        name: "O Tabernáculo das Luzes (Mishkat al-Anwar)",
-        sub: "Al-Ghazali — Análise hermética do Versículo da Luz do Alcorão e os níveis de emanação espiritual.",
+        name: "The Niche for Lights (Mishkat al-Anwar)",
+        sub: "Al-Ghazali — Hermetic analysis of the Light Verse of the Quran and the levels of spiritual emanation.",
         isbn: "978-8571740068",
-        tags: ["sufismo", "gnose", "carrinho"]
+        tags: ["sufismo", "gnose", "carrinho"],
       },
       {
         id: "b276_sufi3",
         num: "276d",
-        name: "O Islã Espiritual: Sufismo, Xiismo e a Gnose Ismaelita",
-        sub: "Henry Corbin — Análise profunda do Islã xiita iraquiano/iraniano, o mistério do 12º Imam Oculto e o corpo de luz.",
+        name: "Spiritual Islam: Sufism, Shiism and Ismaili Gnosis",
+        sub: "Henry Corbin — Deep analysis of Iraqi/Iranian Shiite Islam, the mystery of the 12th Hidden Imam, and the body of light.",
         isbn: "978-8532616890",
-        tags: ["xiismo", "gnose", "carrinho"]
+        tags: ["xiismo", "gnose", "carrinho"],
       },
       {
         id: "b276_sufi4",
         num: "276e",
-        name: "A Filosofia Iluminativa (Hikmat al-Ishraq)",
-        sub: "Suhrawardi — Fusão de Hermetismo, Zoroatrismo e Islã. Desenvolvimento do conceito de Mundus Imaginalis (Mundo Imaginal).",
+        name: "The Philosophy of Illumination (Hikmat al-Ishraq)",
+        sub: "Suhrawardi — Fusion of Hermetism, Zoroatrianism, and Islam. Development of the concept of Mundus Imaginalis (Imaginal World).",
         tags: ["ocultismo", "hermetismo"],
-        observacao: "Obra de circulação estrita em institutos de filosofia oriental"
+        observacao:
+          "Work of strict circulation in oriental philosophy institutes",
       },
       {
         id: "b276_sufi5",
         num: "276f",
-        name: "A Doutrina Sufi do Homem Perfeito (Al-Insan al-Kamil)",
-        sub: "Abdul Karim al-Jili — O arquétipo do Homem Cósmico unificador. Paralelo islâmico direto ao Adam Kadmon.",
-        tags: ["sufismo", "teosofia"]
+        name: "The Sufi Doctrine of the Perfect Man (Al-Insan al-Kamil)",
+        sub: "Abdul Karim al-Jili — The archetype of the unifying Cosmic Man. Direct Islamic parallel to Adam Kadmon.",
+        tags: ["sufismo", "teosofia"],
       },
       {
         id: "b276_crit1",
         num: "276g",
         name: "Hagarism: The Making of the Islamic World",
-        sub: "Patricia Crone / Michael Cook — Análise historiográfica crítica que desconstrói as origens dogmáticas do Islã.",
+        sub: "Patricia Crone / Michael Cook — Critical historiographical analysis that deconstructs the dogmatic origins of Islam.",
         isbn: "978-0521297547",
-        tags: ["critica", "revisionismo"]
+        tags: ["critica", "revisionismo"],
       },
       {
         id: "b276_crit2",
         num: "276h",
-        name: "A Farsa da Ortodoxia: Como os Califas moldaram o Alcorão",
-        sub: "Estudos Historiográficos Históricos — Investigação das reformas de Uthman e o apagamento de manuscritos alternativos.",
-        tags: ["critica", "revisionismo"]
-      }
-    ]
+        name: "The Sham of Orthodoxy: How the Caliphs Shaped the Quran",
+        sub: "Historical Historiographical Studies — Investigation of Uthman's reforms and the erasure of alternative manuscripts.",
+        tags: ["critica", "revisionismo"],
+      },
+    ],
   },
   {
     id: "f22",
     num: "22",
-    title: "CONSPIRAÇÕES, GEOPOLÍTICA OCULTA E SIONISMO",
+    title: "CONSPIRACIES, OCCULT GEOPOLITICS & ZIONISM",
     theme: "conspiracy",
-    div: "MACRO-CONSPIRAÇÕES E GENEALOGIA CÓSMICA",
+    div: "MACRO-CONSPIRAÇÕES AND COSMIC GENEALOGY",
     books: [
-      // --- MÓDULO 1: RAÇAS CÓSMICAS, ANUNNAKIS E ORIGENS DA HUMANIDADE ---
       {
         id: "b277",
         num: "277",
-        name: "Prisma de Lira: Uma Exploração do Sistema Galáctico Global",
-        sub: "Lyssa Royal — Origem dos Liranos, Pleiadianos e a árvore genealógica cósmica da humanidade.",
+        name: "The Prism of Lyra: An Exploration of Human Galactic Heritage",
+        sub: "Lyssa Royal — Origin of the Lyrans, Pleiadians, and humanity's cosmic family tree.",
         tags: ["ufologia", "carrinho"],
-        isbn: "978-8572420074"
+        isbn: "978-8572420074",
       },
       {
         id: "b278",
         num: "278",
-        name: "Mensageiros do Amanhecer: Ensinamentos das Plêiades",
-        sub: "Barbara Marciniak — A perspectiva pleiadiana sobre a história da Terra e o despertar do DNA humano.",
+        name: "Bringers of the Dawn: Teachings from the Pleiades",
+        sub: "Barbara Marciniak — The Pleiadian perspective on Earth's history and the awakening of human DNA.",
         tags: ["ufologia", "carrinho"],
-        isbn: "978-8531507755"
+        isbn: "978-8531507755",
       },
       {
         id: "b279",
         num: "279",
-        name: "Os Anunnakis | Os Deuses Astronautas",
-        sub: "Zecharia Sitchin (Linha Temática) — A intervenção genética alienígena na Suméria e as origens das civilizações antigas.",
+        name: "The Anunnaki | The Astronaut Gods",
+        sub: "Zecharia Sitchin — Alien genetic intervention in Sumer and the origins of ancient civilizations.",
         tags: ["ufologia", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788537008669"
+        procedencia: "Original Catalog",
+        isbn: "9788537008669",
       },
       {
         id: "b280",
         num: "280",
-        name: "O Livro Perdido de Enki",
-        sub: "Zecharia Sitchin — A história da criação da humanidade sob a ótica das divindades de Nibiru.",
+        name: "The Lost Book of Enki",
+        sub: "Zecharia Sitchin — The story of humanity's creation from the perspective of the deities of Nibiru.",
         tags: ["ufologia", "carrinho"],
-        isbn: "978-8531513220"
+        isbn: "978-8531513220",
       },
       {
         id: "b281",
         num: "281",
-        name: "O Mistério de Sírius",
-        sub: "Robert Temple — A conexão dos Sirianos com a tribo Dogon e o conhecimento astronômico antigo.",
+        name: "The Sirius Mystery",
+        sub: "Robert Temple — The connection of the Sirians with the Dogon tribe and ancient astronomical knowledge.",
         tags: ["ufologia", "carrinho"],
-        isbn: "978-0593013458"
+        isbn: "978-0593013458",
       },
       {
         id: "b282",
         num: "282",
-        name: "O Livro Dos Senhores Do Mundo",
-        sub: "Robert Charroux — Investigações sobre antigos astronautas, civilizações perdidas e os donos ocultos do planeta.",
+        name: "The Book of the Masters of the World",
+        sub: "Robert Charroux — Investigations into ancient astronauts, lost civilizations, and the hidden owners of the planet.",
         tags: ["ufologia", "carrinho"],
-        procedencia: "Catálogo Original",
-        observacao: "Edição Difusão Européia (Coleção Enigmas de Todos os Tempos)"
+        procedencia: "Original Catalog",
+        observacao:
+          "Difusão Européia Edition (Enigmas de Todos os Tempos Collection)",
       },
-
-      // --- MÓDULO 2: CONTINENTES PERDIDOS, TERRA OCA E AGARTHA ---
       {
         id: "b283",
         num: "283",
-        name: "O Mito de Hiperbórea",
-        sub: "Evgueni Golovin / Julius Evola — O continente perdido do norte, a Idade de Ouro espiritual e sua distorção moderna.",
-        tags: ["esoterismo", "carrinho"]
+        name: "The Myth of Hyperborea",
+        sub: "Evgueni Golovin / Julius Evola — The lost continent of the north, the spiritual Golden Age, and its modern distortion.",
+        tags: ["esoterismo", "carrinho"],
       },
       {
         id: "b284",
         num: "284",
-        name: "Agartha: O Mundo Subterrâneo",
-        sub: "Raymond Bernard — A teoria da Terra Oca, redes intraterrenas e o diário do Almirante Byrd.",
+        name: "The Hollow Earth",
+        sub: "Raymond Bernard — The Hollow Earth theory, underground networks, and Admiral Byrd's diary.",
         tags: ["esoterismo", "carrinho"],
-        isbn: "978-0205201105"
+        isbn: "978-0205201105",
       },
       {
         id: "b285",
         num: "285",
-        name: "O Rei do Mundo",
-        sub: "René Guénon — Análise metafísica tradicionalista sobre o reino espiritual oculto de Shambhala/Agartha.",
+        name: "The King of the World",
+        sub: "René Guénon — Traditionalist metaphysical analysis of the hidden spiritual realm of Shambhala/Agartha.",
         tags: ["esoterismo", "carrinho"],
-        isbn: "978-8531505676"
+        isbn: "978-8531505676",
       },
-
-      // --- MÓDULO 3: OCULTISMO NAZISTA, VRIL E ENGENHARIA DO SINO (DIE GLOCKE) ---
       {
         id: "b286",
         num: "286",
-        name: "Os Nazistas E O Ocultismo - Às Forças Negras Desencadeadas Pelo Terceiro Reich",
-        sub: "Paul Roland — A sociedade Thule, o misticismo da SS, busca por relíquias sagradas e rituais neopagãos.",
+        name: "The Nazis and the Occult: The Dark Forces Unleashed by the Third Reich",
+        sub: "Paul Roland — The Thule Society, SS mysticism, the search for sacred relics, and neopagan rituals.",
         tags: ["ocultismo", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788537004753"
+        procedencia: "Original Catalog",
+        isbn: "9788537004753",
       },
       {
         id: "b287",
         num: "287",
-        name: "The Hunt for Zero Point (A Busca pelo Ponto Zero / O mistério do Sino)",
-        sub: "Nick Cook — Investigação militar sobre os discos voadores nazistas e o projeto de antigravidade Die Glocke (O Sino).",
+        name: "The Hunt for Zero Point (The Hunt for Zero Point / The mystery of the Bell)",
+        sub: "Nick Cook — Military investigation into Nazi flying saucers and the Die Glocke (The Bell) anti-gravity project.",
         tags: ["ocultismo", "carrinho"],
-        isbn: "978-0099414988"
+        isbn: "978-0099414988",
       },
       {
         id: "b288",
         num: "288",
-        name: "Hitler Culpado Ou Inocente",
-        sub: "Sérgio Oliveira — Literatura revisionista histórica de forte circulação em círculos conspiratórios teóricos.",
+        name: "Hitler Guilty or Innocent",
+        sub: "Sérgio Oliveira — Historical revisionist literature widely circulated in theoretical conspiracy circles.",
         tags: ["revisionismo", "carrinho"],
-        procedencia: "Catálogo Original"
+        procedencia: "Original Catalog",
       },
       {
         id: "b289",
         num: "289",
-        name: "S.o.s Para Alemanha",
-        sub: "S.S. Castan — Obra de caráter revisionista e conspiratório focada no cenário alemão pós-guerra.",
+        name: "S.O.S. for Germany",
+        sub: "S.S. Castan — Revisionist and conspiratorial work focused on the post-war German scenario.",
         tags: ["revisionismo", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "8572460020"
+        procedencia: "Original Catalog",
+        isbn: "8572460020",
       },
-
-      // --- MÓDULO 4: SIONISMO, GEOPOLÍTICA E AS DINASTIAS DE PODER ---
       {
         id: "b290",
         num: "290",
-        name: "Protocolos Dos Sábios De Sião",
-        sub: "Anônimo / Vários — Documento central de teorias de conspiração geopolítica sobre o controle global e finanças.",
+        name: "The Protocols of the Elders of Zion",
+        sub: "Anonymous — Central document of geopolitical conspiracy theories regarding global control and finance.",
         tags: ["geopolitica", "carrinho"],
-        procedencia: "Catálogo Original"
+        procedencia: "Original Catalog",
       },
       {
         id: "b291",
         num: "291",
-        name: "O Judeu Internacional",
-        sub: "Henry Ford — Análise crítica e controversa do início do século XX sobre a influência econômica e cultural.",
+        name: "The International Jew",
+        sub: "Henry Ford — Controversial early 20th-century analysis of economic and cultural influence.",
         tags: ["geopolitica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "0123456789"
+        procedencia: "Original Catalog",
+        isbn: "0123456789",
       },
       {
         id: "b292",
         num: "292",
-        name: "Os Rothschild: Retrato Duma Família",
-        sub: "Frederic Morton — A história e ascensão da dinastia bancária mais famosa do mundo e sua influência nas guerras europeias.",
+        name: "The Rothschilds: A Family Portrait",
+        sub: "Frederic Morton — The history and rise of the world's most famous banking dynasty and its influence on European wars.",
         tags: ["geopolitica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "0123456789"
+        procedencia: "Original Catalog",
+        isbn: "0123456789",
       },
       {
         id: "b293",
         num: "293",
-        name: "A Dinastia Rothschild",
-        sub: "Herbert Lottman — Análise detalhada do império financeiro e os bastidores das decisões políticas globais.",
+        name: "The Rothschild Dynasty",
+        sub: "Herbert Lottman — Detailed analysis of the financial empire and the behind-the-scenes of global political decisions.",
         tags: ["geopolitica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788525421289"
+        procedencia: "Original Catalog",
+        isbn: "9788525421289",
       },
       {
         id: "b294",
         num: "294",
-        name: "A Invenção Do Povo Judeu",
-        sub: "Shlomo Sand — Estudo historiográfico crítico escrito por um professor israelense sobre a identidade nacional e mitos fundadores.",
+        name: "The Invention of the Jewish People",
+        sub: "Shlomo Sand — Critical historiographical study by an Israeli professor on national identity and founding myths.",
         tags: ["geopolitica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788502134775"
+        procedencia: "Original Catalog",
+        isbn: "9788502134775",
       },
       {
         id: "b295",
         num: "295",
-        name: "Sionismo X Revisionismo - Fantasia E Realidade",
-        sub: "Sérgio Oliveira — Estudos revisionistas sobre o movimento sionista e os conflitos de narrativa histórica.",
+        name: "Zionism vs. Revisionism: Fantasy and Reality",
+        sub: "Sérgio Oliveira — Revisionist studies on the Zionist movement and historical narrative conflicts.",
         tags: ["revisionismo", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9789898249104"
+        procedencia: "Original Catalog",
+        isbn: "9789898249104",
       },
       {
         id: "b296",
         num: "296",
-        name: "Os Judeus, O Dinheiro E O Mundo",
-        sub: "Jacques Attali — Um panorama detalhado escrito por um conselheiro econômico francês sobre a história econômica global.",
+        name: "The Jews, World and Money",
+        sub: "Jacques Attali — A detailed panorama by a French economic advisor on global economic history.",
         tags: ["geopolitica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "8574131806"
+        procedencia: "Original Catalog",
+        isbn: "8574131806",
       },
       {
         id: "b297",
         num: "297",
-        name: "O Waterloo De Israel?",
-        sub: "David Duke — Geopolítica do Oriente Médio sob uma perspectiva nacionalista americana e antisionista.",
+        name: "Israel's Waterloo?",
+        sub: "David Duke — Middle Eastern geopolitics from an American nationalist and anti-Zionist perspective.",
         tags: ["geopolitica", "carrinho"],
-        procedencia: "Catálogo Original",
-        observacao: "Editora Revisão (Ano: 2001) - Coleção Contraponto"
+        procedencia: "Original Catalog",
+        observacao: "Revisão Publisher (Year: 2001) - Contraponto Collection",
       },
-
-      // --- MÓDULO 5: SOCIEDADES SECRETAS, REPTILIANOS E ILLUMINATI ---
       {
         id: "b298",
         num: "298",
-        name: "Conspiração Global / Maçonaria, Illuminatis",
-        sub: "David Icke — A macro-teoria reptiliana conectando sociedades secretas, manipulação de massa e linhagens híbridas.",
+        name: "The Global Conspiracy",
+        sub: "David Icke — The reptilian macro-theory connecting secret societies, mass manipulation, and hybrid lineages.",
         tags: ["conspiracao", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9789898249005"
+        procedencia: "Original Catalog",
+        isbn: "9789898249005",
       },
       {
         id: "b299",
         num: "299",
-        name: "O Maior Segredo",
-        sub: "David Icke — O livro base que conecta linhagens de reis à matriz energética de controle global extraterrestre.",
+        name: "The Biggest Secret",
+        sub: "David Icke — The core book connecting royal lineages to the alien global control energy matrix.",
         tags: ["conspiracao", "carrinho"],
-        isbn: "978-0953820405"
+        isbn: "978-0953820405",
       },
       {
         id: "b300",
         num: "300",
-        name: "O Governo Secreto Illuminati - A História Oculta Que Liga A Comissão Trilateral, Os Maçons E As Grandes Pirâmides",
-        sub: "Jim Marrs — O fio condutor que une o antigo Egito às elites tecnocráticas modernas como o Grupo Bilderberg.",
+        name: "Rule by Secrecy: The Hidden History That Connects the Trilateral Commission, the Freemasons, and the Great Pyramids",
+        sub: "Jim Marrs — The common thread linking ancient Egypt to modern technocratic elites like the Bilderberg Group.",
         tags: ["conspiracao", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788573749953"
+        procedencia: "Original Catalog",
+        isbn: "9788573749953",
       },
       {
         id: "b301",
         num: "301",
-        name: "Os Illuminatis E A Grande Conspiração Global",
-        sub: "Estrutura hierárquica das ordens ocultas e seus planos para o estabelecimento de um governo central mundial.",
+        name: "The Illuminati and the Great Global Conspiracy",
+        sub: "Hierarchical structure of occult orders and their plans for establishing a centralized world government.",
         tags: ["conspiracao", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9789723321593"
+        procedencia: "Original Catalog",
+        isbn: "9789723321593",
       },
       {
         id: "b302",
         num: "302",
-        name: "Sociedades Secretas E Movimentos Subversivos",
-        sub: "Como facções esotéricas ocultas influenciaram revoluções históricas e a queda de monarquias.",
+        name: "Secret Societies and Subversive Movements",
+        sub: "How hidden esoteric factions influenced historical revolutions and the fall of monarchies.",
         tags: ["conspiracao", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9781805401278"
+        procedencia: "Original Catalog",
+        isbn: "9781805401278",
       },
       {
         id: "b303",
         num: "303",
-        name: "Maçonaria Illuminati",
-        sub: "Michael Howard — A infiltração de ramos illuministas dentro das lojas maçônicas continentais da Europa.",
+        name: "Illuminati Freemasonry",
+        sub: "Michael Howard — The infiltration of Illuminist branches into the continental Masonic lodges of Europe.",
         tags: ["conspiracao", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "8570018738"
+        procedencia: "Original Catalog",
+        isbn: "8570018738",
       },
-
-      // --- MÓDULO 6: RELIGIÕES DE CONTROLE, SATANISMO E DECONSTRUÇÃO TEOLÓGICA ---
       {
         id: "b304",
         num: "304",
-        name: "O Livro Negro Do Cristianismo",
-        sub: "Análise histórica das inquisições, massacres e repressão do livre pensamento por dogmas eclesiásticos.",
+        name: "The Black Book of Christianity",
+        sub: "Historical analysis of inquisitions, massacres, and the suppression of free thought by ecclesiastical dogmas.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788500019647"
+        procedencia: "Original Catalog",
+        isbn: "9788500019647",
       },
       {
         id: "b305",
         num: "305",
-        name: "Dinheiro, Deuses E Poder",
-        sub: "Noenio Spinola — A imbricação histórica entre as finanças globais, instituições bancárias e as estruturas das grandes religiões.",
+        name: "Money, Gods, and Power",
+        sub: "Noenio Spinola — The historical intertwining of global finance, banking institutions, and the structures of major religions.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788520010570"
+        procedencia: "Original Catalog",
+        isbn: "9788520010570",
       },
       {
         id: "b306",
         num: "306",
-        name: "A Farsa Do Dízimo Cristão",
-        sub: "Ivan Toro Rua — Análise teológica e financeira crítica sobre a explorações econômicas através da fé.",
+        name: "The Sham of Christian Tithing",
+        sub: "Ivan Toro Rua — Critical theological and financial analysis of economic exploitation through faith.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "0123456789"
+        procedencia: "Original Catalog",
+        isbn: "0123456789",
       },
       {
         id: "b307",
         num: "307",
-        name: "Babilônia: A Religião Dos Mistérios",
-        sub: "Ralph Woodrow — Rastreia os símbolos pagãos sumérios e babilônicos ocultos dentro das tradições litúrgicas católicas.",
+        name: "Babylon Mystery Religion",
+        sub: "Ralph Woodrow — Traces hidden pagan Sumerian and Babylonian symbols within Catholic liturgical traditions.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original"
+        procedencia: "Original Catalog",
       },
       {
         id: "b308",
         num: "308",
-        name: "Os Enganos Do Cristianismo Pagão / Os Mistérios De Mitras",
-        sub: "A fusão do antigo culto solar de Mitras com a estruturação institucional da Igreja Primitiva.",
+        name: "The Deceptions of Pagan Christianity / The Mysteries of Mithras",
+        sub: "The fusion of the ancient solar cult of Mithras with the institutional structuring of the Early Church.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788573747669"
+        procedencia: "Original Catalog",
+        isbn: "9788573747669",
       },
       {
         id: "b309",
         num: "309",
-        name: "Seja Feita A Vossa Vontade",
-        sub: "G. Colby / C. Dennet — O uso da religião evangélica americana na Amazônia como ferramenta geopolítica de dominação e recursos corporativos. (Foco na influência Rockefeller nas missões).",
+        name: "Thy Will Be Done",
+        sub: "G. Colby / C. Dennet — The use of American evangelical religion in the Amazon as a geopolitical tool for domination and corporate resource exploitation (Focus on Rockefeller influence on missions).",
         tags: ["geopolitica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "8501045322"
+        procedencia: "Original Catalog",
+        isbn: "8501045322",
       },
       {
         id: "b310",
         num: "310",
-        name: "O Diabo No Século XIX - A Franco-maçonaria Luciferiana",
-        sub: "Dr. Bataille / Leo Taxil — O famoso embuste histórico de Taxil que descreve supostos rituais satânicos nas esferas de alto grau da Maçonaria.",
+        name: "The Devil in the 19th Century: Luciferian Freemasonry",
+        sub: "Dr. Bataille / Leo Taxil — The famous historical hoax by Taxil describing alleged satanic rituals in the high degrees of Freemasonry.",
         tags: ["ocultismo", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "0123456789"
+        procedencia: "Original Catalog",
+        isbn: "0123456789",
       },
       {
         id: "b311",
         num: "311",
-        name: "O Anticristo - Poder Oculto Por Trás Da Nova Ordem Mundial Illuminati",
-        sub: "Interpretações profético-conspiratórias sobre a fusão de um sistema político e religioso unificado.",
+        name: "The Antichrist: Hidden Power Behind the Illuminati New World Order",
+        sub: "Prophetic-conspiratorial interpretations of the merger into a unified political and religious system.",
         tags: ["conspiracao", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788527610865"
+        procedencia: "Original Catalog",
+        isbn: "9788527610865",
       },
       {
         id: "b312",
         num: "312",
-        name: "Dos Judeus E Suas Mentiras",
-        sub: "Martin Luther (Martinho Lutero) — Tratado teológico do século XVI que expõe as raízes históricas do antijudaísmo na Reforma Protestante.",
+        name: "On the Jews and Their Lies",
+        sub: "Martin Luther — 16th-century theological treatise exposing the historical roots of anti-Judaism in the Protestant Reformation.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "0123456789"
+        procedencia: "Original Catalog",
+        isbn: "0123456789",
       },
       {
         id: "b313",
         num: "313",
-        name: "Os Servos Do Talmud",
-        sub: "Luiz Amaral — Análise polêmica das leis internas rabínicas e sua barreira de interação com o mundo não judeu.",
+        name: "Servants of the Talmud",
+        sub: "Luiz Amaral — Controversial analysis of internal rabbinic laws and their barriers to interaction with the non-Jewish world.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788590535713"
+        procedencia: "Original Catalog",
+        isbn: "9788590535713",
       },
-
-      // --- MÓDULO 7: ANJOS CAÍDOS, ARQUÉTIPOS DEMONÍACOS E MISTICISMO EGÍPCIO ---
       {
         id: "b314",
         num: "314",
-        name: "Lúcifer O Primeiro Anjo",
-        sub: "Marcelo Hipólito — Estudo literário e esotérico da transição do arquétipo do portador da luz para o senhor das trevas.",
+        name: "Lucifer the First Angel",
+        sub: "Marcelo Hipólito — Literary and esoteric study of the transition from the light-bringer archetype to the lord of darkness.",
         tags: ["misticismo", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "978852903950" // ISBN Corrigido de acordo com metadados reais
+        procedencia: "Original Catalog",
+        isbn: "978852903950",
       },
       {
         id: "b315",
         num: "315",
-        name: "Lilith A Primeira Eva",
-        sub: "Siegmund Hurwitz — Historiografia da figura cabalística e mitológica de Lilith, o aspecto feminino sombrio rejeitado no Gênesis.",
+        name: "Lilith the First Eve",
+        sub: "Siegmund Hurwitz — Historiography of the Kabbalistic and mythological figure of Lilith, the dark feminine aspect rejected in Genesis.",
         tags: ["misticismo", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788586671685"
+        procedencia: "Original Catalog",
+        isbn: "9788586671685",
       },
       {
         id: "b316",
         num: "316",
-        name: "O Livro Dos Anjos Caídos",
-        sub: "Michael Howard — Conecta os Vigilantes (Watchers) de Enoque com as origens secretas da bruxaria e do neopaganismo.",
+        name: "The Book of the Fallen Angels",
+        sub: "Michael Howard — Connects the Watchers of Enoch with the secret origins of witchcraft and neopaganism.",
         tags: ["misticismo", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788537007365"
+        procedencia: "Original Catalog",
+        isbn: "9788537007365",
       },
       {
         id: "b317",
         num: "317",
-        name: "O Livro Dos Mortos Do Antigo Egito - O Primeiro Livro Da Humanidade",
-        sub: "Fórmulas mágicas, rituais funerários e a jornada de ascensão e julgamento da alma pelo submundo cósmico.",
+        name: "The Egyptian Book of the Dead",
+        sub: "Magical spells, funerary rituals, and the soul's journey of ascension and judgment through the cosmic underworld.",
         tags: ["misticismo", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "8528900894"
+        procedencia: "Original Catalog",
+        isbn: "8528900894",
       },
       {
         id: "b318",
         num: "318",
-        name: "As Imaculadas Escrituras",
-        sub: "Josmar Dias — Análise textual crítica sobre as adulterações de tradução e dogmas inseridos nos textos sagrados.",
+        name: "The Immaculate Scriptures",
+        sub: "Josmar Dias — Critical textual analysis of translation alterations and dogmas inserted into sacred texts.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788577736058"
+        procedencia: "Original Catalog",
+        isbn: "9788577736058",
       },
       {
         id: "b319",
         num: "319",
-        name: "Os Santos Pagãos, Deuses Ontem",
-        sub: "A reconfiguração de deuses do panteão politeísta romano e celta em santos venerados pela Igreja Católica.",
+        name: "Pagan Saints, Yesterday's Gods",
+        sub: "The reconfiguration of gods from the polytheistic Roman and Celtic pantheons into saints venerated by the Catholic Church.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "8527403714"
+        procedencia: "Original Catalog",
+        isbn: "8527403714",
       },
-
-      // --- MÓDULO 8: MÍDIA, CONTROLE POPULACIONAL E GUERRA PSICOLÓGICA ---
       {
         id: "b320",
         num: "320",
-        name: "11 De Setembro De 2001 - Como Se Engana A Humanidade (O Poder Da Mídia)",
-        sub: "Renê Bourbon — Investigação sobre engenharia social, operações de falsa bandeira e o uso do medo mediático para controle populacional.",
+        name: "September 11, 2001: How Humanity is Deceived (The Power of the Media)",
+        sub: "Renê Bourbon — Investigation into social engineering, false flag operations, and the use of media-driven fear for population control.",
         tags: ["geopolitica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "8572460241"
+        procedencia: "Original Catalog",
+        isbn: "8572460241",
       },
       {
         id: "b321",
         num: "321",
-        name: "O Homem Domado",
-        sub: "Esther Vilar — Crítica contundente às dinâmicas sociais de relacionamento, manipulação psicológica e estruturas de gênero.",
+        name: "The Manipulated Man",
+        sub: "Esther Vilar — Strong critique of relationship social dynamics, psychological manipulation, and gender structures.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original"
+        procedencia: "Original Catalog",
       },
       {
         id: "b322",
         num: "322",
-        name: "O Sexo Polígamo - O Direito Do Homem A Duas Mulheres",
-        sub: "Esther Vilar — Análise sociológica e biológica provocativa sobre as convenções morais construídas pelas sociedades ocidentais.",
+        name: "The Polygamous Sex: Man's Right to Two Women",
+        sub: "Esther Vilar — Provocative sociological and biological analysis of moral conventions constructed by Western societies.",
         tags: ["critica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "9788501043532" // ISBN normalizado para o padrão EAN-13 aproximado
+        procedencia: "Original Catalog",
+        isbn: "9788501043532",
       },
       {
         id: "b323",
         num: "323",
-        name: "Os Genocidas Do Século XX",
-        sub: "Sérgio Oliveira — Estudo crítico das guerras modernas e dos bastidores políticos que ditaram os maiores massacres humanos.",
+        name: "Genocides of the 20th Century",
+        sub: "Sérgio Oliveira — Critical study of modern wars and the political behind-the-scenes that dictated the largest human massacres.",
         tags: ["geopolitica", "carrinho"],
-        procedencia: "Catálogo Original",
-        isbn: "8572460187"
+        procedencia: "Original Catalog",
+        isbn: "8572460187",
       },
-
-      // --- MÓDULO 9: UFOLOGIA CONVERSA, RECONSTRUÇÃO DOS DJINN E CONSPIRAÇÕES DO DESERTO ---
       {
         id: "b333",
         num: "333",
-        name: "Islam and EI: The Djinn Hypothesis (Islã e Extraterrestres: A Hipótese Djinn)",
-        sub: "Gordon Creighton / Rosemary Ellen Guiley — Mapeamento do fenômeno UFO moderno sob a ótica das entidades de fogo plasmático descritas no Alcorão.",
+        name: "Islam and ET: The Djinn Hypothesis",
+        sub: "Gordon Creighton / Rosemary Ellen Guiley — Mapping of the modern UFO phenomenon under the lens of the plasma fire entities described in the Quran.",
         tags: ["ufologia", "carrinho"],
-        isbn: "978-1945791222"
+        isbn: "978-1945791222",
       },
       {
         id: "b334",
         num: "334",
         name: "Dimensions: A Casebook of Alien Contact",
-        sub: "Jacques Vallée — Aponta que as raças extraterrestres (Greys, Nórdicos) são manifestações do mesmo sistema de controle psíquico transdimensional antigo (Anjos/Djinn).",
+        sub: "Jacques Vallée — Argues that alien races (Greys, Nordics) are manifestations of the same ancient transdimensional psychic control system (Angels/Djinn).",
         tags: ["ufologia", "carrinho"],
-        isbn: "978-1511345477"
+        isbn: "978-1511345477",
       },
       {
         id: "b335",
         num: "335",
-        name: "O Livro Secreto dos Djinn: Magia Oculta no Deserto da Arábia",
-        sub: "Compilações de Grimórios Árabes Clássicos — Investigação dos pactos primitivos e das correntes secretas de evocação pré-islâmicas.",
-        tags: ["ocultismo", "misticismo"]
+        name: "The Secret Book of the Djinn: Occult Magic in the Arabian Desert",
+        sub: "Compilations of Classical Arabic Grimoires — Investigation of primitive covenants and pre-Islamic secret currents of evocation.",
+        tags: ["ocultismo", "misticismo"],
       },
       {
         id: "b336",
         num: "336",
-        name: "A Conspiração de Meca e as Linhagens Reais Sauditas",
-        sub: "David Icke (Ensaios Selecionados) — Estudo sobre o controle energético e as linhagens políticas do Oriente Médio.",
-        tags: ["conspiracao", "geopolitica"]
+        name: "The Mecca Conspiracy and the Saudi Royal Lineages",
+        sub: "David Icke (Selected Essays) — Study on energy control and political lineages of the Middle East.",
+        tags: ["conspiracao", "geopolitica"],
       },
       {
         id: "b337",
         num: "337",
         name: "The Seventh Top Secret Country: UFOs over the Middle East",
-        sub: "Relatórios de Inteligência Militar — Mapeamento de avistamentos anômalos em locais de conflitos religiosos históricos na Mesopotâmia.",
-        tags: ["ufologia", "geopolitica"]
+        sub: "Military Intelligence Reports — Mapping of anomalous sightings at historical religious conflict sites in Mesopotamia.",
+        tags: ["ufologia", "geopolitica"],
       },
-
-      // --- MÓDULO 10: ARTIGOS CIENTÍFICOS, HISTORIOGRÁFICOS E RELATÓRIOS MILITARES DESCLASSIFICADOS ---
       {
         id: "b324_art",
         num: "Art-01",
         name: "Das Ahnenerbe-Problem: Die Urgeschichte im Dritten Reich",
-        sub: "Dr. Michael H. Kater (Universidade de York) — Análise documental da sociedade arqueológica e mística da SS financiando buscas em Agartha e no Tibete.",
+        sub: "Dr. Michael H. Kater (York University) — Documentary analysis of the SS archaeological and esoteric society funding searches in Agartha and Tibet.",
         tags: ["artigo", "ocultismo"],
-        tipo: "Artigo Acadêmico / Historiográfico"
+        tipo: "Academic / Historiographical Article",
       },
       {
         id: "b325_art",
         num: "Art-02",
         name: "The Vril Society: The Silk Road of Esoteric Aryanism",
-        sub: "Nicholas Goodrick-Clarke — Investigação estrutural dos manifestos mediúnicos e canalizações aeroespaciais atribuídas a Maria Orsic.",
+        sub: "Nicholas Goodrick-Clarke — Structural investigation of the mediumistic manifestos and aerospace channelings attributed to Maria Orsic.",
         tags: ["artigo", "ocultismo"],
-        tipo: "Ensaio Histórico / Ocultismo"
+        tipo: "Historical Essay / Occultism",
       },
       {
         id: "b326_art",
         num: "Art-03",
         name: "The Hunt for Zero Point Energy and the Wenceslaus Mine Reports",
-        sub: "Nick Cook / Igor Witkowski — Compilado de arquivos desclassificados poloneses sobre o dispositivo de radiação e antigravidade Die Glocke.",
+        sub: "Nick Cook / Igor Witkowski — Compilation of declassified Polish archives on the Die Glocke radiation and anti-gravity device.",
         tags: ["artigo", "tecnologia"],
-        tipo: "Relatório de Investigação / Tecnologia Militar"
+        tipo: "Investigation Report / Military Technology",
       },
       {
         id: "b327_art",
         num: "Art-04",
         name: "Project Paperclip and the Evacuation of Secret Reich Weapons",
-        sub: "Joint Intelligence Objectives Agency (JIOA) — Relatórios dos EUA documentando a absorção de patentes circulares e cientistas nazistas.",
+        sub: "Joint Intelligence Objectives Agency (JIOA) — US reports documenting the absorption of circular patents and Nazi scientists.",
         tags: ["artigo", "geopolitica"],
-        tipo: "Documento Militar Desclassificado"
+        tipo: "Declassified Military Document",
       },
       {
         id: "b328_art",
         num: "Art-05",
         name: "The Missing Diary of Admiral Richard E. Byrd",
-        sub: "Atribuído ao Almirante Byrd — Transcrição disputada sobre o voo polar da Operação Highjump que relata uma abertura física para o reino de Agartha.",
+        sub: "Attributed to Admiral Byrd — Disputed transcript regarding the Operation Highjump polar flight reporting a physical opening to the realm of Agartha.",
         tags: ["artigo", "esoterismo"],
-        tipo: "Manuscrito / Relato de Expedição"
+        tipo: "Manuscript / Expedition Account",
       },
       {
         id: "b329_art",
         num: "Art-06",
         name: "Le Roi du Monde et les doctrines souterraines",
-        sub: "René Guénon — Dissertação teológica tradicionalista amarrando as profecias do Budismo Tibetano ao reino de Shambhala.",
+        sub: "René Guénon — Traditionalist theological dissertation tying Tibetan Buddhist prophecies to the realm of Shambhala.",
         tags: ["artigo", "esoterismo"],
-        tipo: "Artigo Metafísico / Tradicionalista"
+        tipo: "Metaphysical / Traditionalist Article",
       },
       {
         id: "b330_art",
         num: "Art-07",
         name: "The Zeta Reticuli Incident: An Astronomical Analysis of the Hill Star Map",
-        sub: "Marjorie Fish / Terence Dickinson (Astronomy Magazine) — Estudo tridimensional matemático focado nas coordenadas de navegação extraterrestre.",
+        sub: "Marjorie Fish / Terence Dickinson (Astronomy Magazine) — Three-dimensional mathematical study focusing on extraterrestrial navigation coordinates.",
         tags: ["artigo", "ufologia"],
-        tipo: "Artigo Científico / Ufológico"
+        tipo: "Scientific / Ufological Article",
       },
       {
         id: "b331_art",
         num: "Art-08",
-        name: "The Reptilian Matrix and the Subversion of Human Sovereignity",
-        sub: "David Icke — Síntese analítica unindo rituais sumérios à matriz de manipulação global arcontôntica.",
+        name: "The Reptilian Matrix and the Subversion of Human Sovereignty",
+        sub: "David Icke — Analytical synthesis uniting Sumerian rituals to the archontic global manipulation matrix.",
         tags: ["artigo", "conspiracao"],
-        tipo: "Manifesto Teórico / Conspiratório"
+        tipo: "Theoretical / Conspiratorial Manifesto",
       },
       {
         id: "b332_art",
         num: "Art-09",
         name: "The Lacerta Interview: Transcripts of an Intraterrestrial Entity",
-        sub: "Ole K. (Pseudônimo) — Famoso documento que desconstrói a criação da raça humana a partir das guerras biológicas entre os Anunnakis e seres nativos.",
+        sub: "Ole K. (Pseudonym) — Famous document that deconstructs the creation of the human race from biological wars between the Anunnaki and native beings.",
         tags: ["artigo", "ufologia"],
-        tipo: "Transcrição de Entrevista / Arquivo Ufológico"
-      }
-    ]
-  }
-];
-
-export const CANON_DATA_ENGLISH: Phase[] = [
-  {
-    "id": "f0",
-    "num": "0",
-    "title": "FOUNDATIONS & HERMETIC KEYS",
-    "theme": "hermetism_base",
-    "div": "PRELIMINARY STUDIES — READING KEYS",
-    "books": [
-      {
-        "id": "b0_1",
-        "num": "0a",
-        "name": "Corpus Hermeticum Græcum",
-        "sub": "Trans. David Pessoa de Lira — Philosophy of the origin of consciousness and the Word",
-        "tags": [
-          "hermetismo",
-          "base",
-          "carrinho"
-        ]
+        tipo: "Interview Transcript / UFO File",
       },
-      {
-        "id": "b0_2",
-        "num": "0b",
-        "name": "The Emerald Tablet",
-        "sub": "Trans. Fabio R. de Araujo — The secret laws of analogy and correspondence",
-        "tags": [
-          "alquimia",
-          "base",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b0_3",
-        "num": "0c",
-        "name": "History of Magic",
-        "sub": "Éliphas Lévi — Historical panorama of the evolution of occult thought in humanity",
-        "tags": [
-          "ocultismo",
-          "historia",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b0_4",
-        "num": "0d",
-        "name": "The Kabbalah: Secret Tradition of the West",
-        "sub": "Papus — The theoretical and cosmogonic structure of the Tree of Life",
-        "tags": [
-          "cabala",
-          "base",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b0_5",
-        "num": "0e",
-        "name": "Transcendental Magic, Its Doctrine and Ritual",
-        "sub": "Éliphas Lévi — The absolute compendium of correspondences and the laws of the applied will",
-        "tags": [
-          "ocultismo",
-          "teoria",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b0_6",
-        "num": "0f",
-        "name": "The Key to the Great Mysteries",
-        "sub": "Éliphas Lévi — Symbolic keys and the reconciliation between science and religion",
-        "tags": [
-          "ocultismo",
-          "teoria",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b0_7",
-        "num": "0g",
-        "name": "Introduction to Hermetic Science",
-        "sub": "Giuliano Kremmerz — The initiatory path and the laws of natural magic",
-        "tags": [
-          "hermetismo",
-          "pratica",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b0_8",
-        "num": "0h",
-        "name": "The Kybalion",
-        "sub": "Three Initiates — The seven hermetic principles that govern the hidden truth and the laws of the mind",
-        "tags": [
-          "hermetismo",
-          "base",
-          "carrinho"
-        ]
-      }
-    ]
+    ],
   },
-  {
-    "id": "f1",
-    "num": "1",
-    "title": "CREATION & ORIGINS",
-    "theme": "genesis",
-    "books": [
-      {
-        "id": "b1",
-        "num": "1",
-        "name": "Genesis 1–5",
-        "sub": "Creation, Adam and Eve, Cain and Abel, genealogy",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b1_comp",
-        "num": "1b",
-        "name": "Demiurgos: On the Creation of Worlds",
-        "sub": "Juliano C. S. Neves — The philosophical and gnostic counterpoint of the material creation process",
-        "tags": [
-          "gnose",
-          "cosmogonia",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b2",
-        "num": "2",
-        "name": "Adam and Eve I",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b3",
-        "num": "3",
-        "name": "Adam and Eve II",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b4",
-        "num": "4",
-        "name": "Adam and Eve III",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b5",
-        "num": "5",
-        "name": "Vita Adae et Evae",
-        "sub": "Latin version",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b6",
-        "num": "6",
-        "name": "Slavonic Vita Adae et Evae",
-        "sub": "Slavonic version",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b7",
-        "num": "7",
-        "name": "Book of Adam",
-        "sub": "The Conflict of Adam and Eve with Satan (V1)",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b7b",
-        "num": "7b",
-        "name": "Testament of Adam",
-        "sub": "(V1)",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b7c",
-        "num": "7c",
-        "name": "Apocalypse of Adam",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b8",
-        "num": "8",
-        "name": "Genesis 6–11",
-        "sub": "Watchers, Noah, the Flood, Tower of Babel",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b9",
-        "num": "9",
-        "name": "Flood Narrative — Epic of Gilgamesh",
-        "sub": "Mesopotamian parallel to the biblical flood",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b10",
-        "num": "10",
-        "name": "1 Enoch",
-        "sub": "Watchers, Parables, Astronomy, Dreams, Epistle",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b11",
-        "num": "11",
-        "name": "2 Enoch",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b12",
-        "num": "12",
-        "name": "3 Enoch",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b12b",
-        "num": "12b",
-        "name": "The Book of the Secrets of Enoch (V1)",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b13",
-        "num": "13",
-        "name": "The Book of Giants",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f2",
-    "num": "2",
-    "title": "PATRIARCHS & JUBILEES",
-    "theme": "patriarchs",
-    "books": [
-      {
-        "id": "b14",
-        "num": "14",
-        "name": "Genesis 12–25",
-        "sub": "Abraham, Lot, Isaac, covenant",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b14_comp",
-        "num": "14b",
-        "name": "Practical Kabbalah Without Mysteries",
-        "sub": "Maggy Whitehouse — Analytical application of the Patriarchs' archetypes on the Tree",
-        "tags": [
-          "cabala",
-          "analise",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b15",
-        "num": "15",
-        "name": "Jubilees",
-        "sub": "Rewriting of Genesis with calendar and angels",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b16",
-        "num": "16",
-        "name": "Testament of Abraham",
-        "sub": "The death and judgment of the patriarch's soul",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b17",
-        "num": "17",
-        "name": "Apocalypse of Abraham",
-        "sub": "Heavenly vision and conversion",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b18",
-        "num": "18",
-        "name": "Book of Abraham",
-        "sub": "Expanded version of Abrahamic traditions",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b19",
-        "num": "19",
-        "name": "Cave of Treasures",
-        "sub": "Syriac tradition of patriarchal stories (V1)",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b20",
-        "num": "20",
-        "name": "Tale of the Patriarchs",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b21",
-        "num": "21",
-        "name": "Genesis 26–36",
-        "sub": "Isaac, Jacob, Esau",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b22",
-        "num": "22",
-        "name": "Final Testaments of the 12 Patriarchs (Later Tradition)",
-        "sub": "Introduction to the last words of Jacob's sons",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b23",
-        "num": "23",
-        "name": "Testament of Reuben",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b24",
-        "num": "24",
-        "name": "Testament of Simeon",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b25",
-        "num": "25",
-        "name": "Testament of Levi",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b26",
-        "num": "26",
-        "name": "Testament of Judah",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b27",
-        "num": "27",
-        "name": "Testament of Issachar",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b28",
-        "num": "28",
-        "name": "Testament of Zebulun",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b29",
-        "num": "29",
-        "name": "Testament of Dan",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b30",
-        "num": "30",
-        "name": "Testament of Naphtali",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b31",
-        "num": "31",
-        "name": "Testament of Gad",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b32",
-        "num": "32",
-        "name": "Testament of Asher",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b33",
-        "num": "33",
-        "name": "Testament of Joseph",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b34",
-        "num": "34",
-        "name": "Testament of Benjamin",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b35",
-        "num": "35",
-        "name": "Genesis 37–50",
-        "sub": "Joseph in Egypt",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b36",
-        "num": "36",
-        "name": "Joseph and Asenath",
-        "sub": "Novel about Joseph's marriage",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b37",
-        "num": "37",
-        "name": "Book of Jasher",
-        "sub": "Mentioned in Joshua and 2 Samuel",
-        "tags": [
-          "v2"
-        ]
-      },
-      {
-        "id": "b38",
-        "num": "38",
-        "name": "Escada de Jacó",
-        "sub": "Expansão do sonho de Jacó em Betel",
-        "tags": [
-          "missing"
-        ]
-      },
-      {
-        "id": "b39",
-        "num": "39",
-        "name": "Testamento de Jó",
-        "sub": "Expansão apócrifa da história de Jó",
-        "tags": [
-          "missing"
-        ]
-      },
-      {
-        "id": "b40",
-        "num": "40",
-        "name": "Pseudo-Filo — Antiguidades Bíblicas",
-        "sub": "Reescrita de Adão a Saul",
-        "tags": [
-          "missing"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f3",
-    "num": "3",
-    "title": "TEXT REMOVED FOR DUPLICITY CORRECTION — EXODUS & THE LAW",
-    "theme": "exodus",
-    "books": [
-      {
-        "id": "b41",
-        "num": "41",
-        "name": "Exodus",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b42",
-        "num": "42",
-        "name": "Jannes and Jambres",
-        "sub": "The magicians of Pharaoh",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b43",
-        "num": "43",
-        "name": "Leviticus",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b44",
-        "num": "44",
-        "name": "Numbers",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b45",
-        "num": "45",
-        "name": "Deuteronomy",
-        "sub": "The Shema and the synthesis of the Law",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b46",
-        "num": "46",
-        "name": "Testament of Moses",
-        "sub": "Assumption of Moses (V1)",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b47",
-        "num": "47",
-        "name": "Apocalypse of Moses",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b48",
-        "num": "48",
-        "name": "Selections from the Book of Moses",
-        "sub": "Intertestamental tradition (V3)",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b49",
-        "num": "49",
-        "name": "Fragments of a Zadokite Work",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b50",
-        "num": "50",
-        "name": "Damascus Document",
-        "sub": "Dead Sea Scrolls",
-        "tags": [
-          "v3"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f4",
-    "num": "4",
-    "title": "DEAD SEA SCROLLS",
-    "theme": "qumran",
-    "books": [
-      {
-        "id": "b51",
-        "num": "51",
-        "name": "Community Rule (1QS)",
-        "sub": "Serek ha-Yahad — community rules of Qumran",
-        "tags": [
-          "missing"
-        ]
-      },
-      {
-        "id": "b52",
-        "num": "52",
-        "name": "War Scroll (1QM)",
-        "sub": "Milhamah — war of the sons of light against the sons of darkness",
-        "tags": [
-          "missing"
-        ]
-      },
-      {
-        "id": "b53",
-        "num": "53",
-        "name": "Thanksgiving Hymns (1QH)",
-        "sub": "Hodayot — hymns of thanksgiving",
-        "tags": [
-          "missing"
-        ]
-      },
-      {
-        "id": "b54",
-        "num": "54",
-        "name": "Temple Scroll (11QT)",
-        "sub": "The longest Qumran manuscript — Temple law and architecture",
-        "tags": [
-          "missing"
-        ]
-      },
-      {
-        "id": "b55",
-        "num": "55",
-        "name": "Genesis Apocryphon (1QapGen)",
-        "sub": "Narrative expansion of Genesis 1–15",
-        "tags": [
-          "missing"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f5",
-    "num": "5",
-    "title": "CONQUEST & JUDGES",
-    "theme": "conquest_and_judges",
-    "books": [
-      {
-        "id": "b56",
-        "num": "56",
-        "name": "Joshua",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b57",
-        "num": "57",
-        "name": "Judges",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b58",
-        "num": "58",
-        "name": "Ruth",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b59",
-        "num": "59",
-        "name": "The Story of Ahikar",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b60",
-        "num": "60",
-        "name": "Eldad and Modad",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b61",
-        "num": "61",
-        "name": "Melchizedek",
-        "sub": "Priest-king of Salem",
-        "tags": [
-          "v1"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f6",
-    "num": "6",
-    "title": "KINGDOM OF ISRAEL & ATTRIBUTED TRADITIONS",
-    "theme": "kingdom",
-    "books": [
-      {
-        "id": "b62",
-        "num": "62",
-        "name": "1 Samuel",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b63",
-        "num": "63",
-        "name": "2 Samuel",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b64",
-        "num": "64",
-        "name": "1 Kings",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b65",
-        "num": "65",
-        "name": "2 Kings",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b66",
-        "num": "66",
-        "name": "1 Chronicles",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b67",
-        "num": "67",
-        "name": "2 Chronicles",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b68",
-        "num": "68",
-        "name": "Testament of Solomon",
-        "sub": "On demons and the Temple",
-        "tags": [
-          "missing"
-        ]
-      },
-      {
-        "id": "b68_grim1",
-        "num": "68b",
-        "name": "The Key of Solomon",
-        "sub": "S. L. MacGregor Mathers — Analytical-textual study of the medieval ritual manual attributed to Solomon",
-        "tags": [
-          "grimorio",
-          "solomon",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b68_grim2",
-        "num": "68c",
-        "name": "Goetia",
-        "sub": "Humberto Maggi — Study of the keys of evocation and symbolic control of the 72 spirits",
-        "tags": [
-          "grimorio",
-          "goetia",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b68_grim3",
-        "num": "68d",
-        "name": "Grimorium Verum",
-        "sub": "Frater Goya (Anderson Rosa) — Technical analysis of the currents and hierarchies of the Solomonic tradition",
-        "tags": [
-          "grimorio",
-          "pratica",
-          "carrinho"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f7",
-    "num": "7",
-    "title": "EXILE, RETURN & DEUTEROCANONICALS",
-    "theme": "exile",
-    "books": [
-      {
-        "id": "b69",
-        "num": "69",
-        "name": "1 Esdras",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b70",
-        "num": "70",
-        "name": "2 Esdras",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b71",
-        "num": "71",
-        "name": "4 Ezra",
-        "sub": "(Revelation)",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b71b",
-        "num": "71b",
-        "name": "Word and Revelation of Ezra",
-        "sub": "The Holy Prophet and Beloved of God (V3)",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b72",
-        "num": "72",
-        "name": "Nehemiah",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b73",
-        "num": "73",
-        "name": "Letter of Aristeas",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b74",
-        "num": "74",
-        "name": "Tobit",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b75",
-        "num": "75",
-        "name": "Judith",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b76",
-        "num": "76",
-        "name": "Esther + Additions to Esther",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b77",
-        "num": "77",
-        "name": "Susanna",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b78",
-        "num": "78",
-        "name": "Bel and the Dragon",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b79",
-        "num": "79",
-        "name": "1 Maccabees",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b80",
-        "num": "80",
-        "name": "2 Maccabees",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b81",
-        "num": "81",
-        "name": "3 Maccabees",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v3"
-        ]
-      },
-      {
-        "id": "b82",
-        "num": "82",
-        "name": "4 Maccabees",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v3"
-        ]
-      },
-      {
-        "id": "b83",
-        "num": "83",
-        "name": "1 Meqabyan",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b84",
-        "num": "84",
-        "name": "2 Meqabyan",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b85",
-        "num": "85",
-        "name": "3 Meqabyan",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b86",
-        "num": "86",
-        "name": "Wisdom of Solomon",
-        "sub": "Deuterocanonical wisdom attributed to Solomon",
-        "tags": [
-          "missing",
-          "cnbb"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f8",
-    "num": "8",
-    "title": "WISDOM & POETRY",
-    "theme": "wisdom",
-    "books": [
-      {
-        "id": "b87",
-        "num": "87",
-        "name": "Job",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b88",
-        "num": "88",
-        "name": "Psalms 1–72",
-        "sub": "Books I and II",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b89",
-        "num": "89",
-        "name": "Psalms 73–150",
-        "sub": "Books III, IV and V",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b89_comp",
-        "num": "89b",
-        "name": "The Book of Splendours",
-        "sub": "Éliphas Lévi — The hieratic mystery and the western kabbalistic interpretation of the psalms and traditional secrets",
-        "tags": [
-          "cabala",
-          "esoterismo",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b90",
-        "num": "90",
-        "name": "Psalms of Solomon",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b91",
-        "num": "91",
-        "name": "Additional Psalms",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b92",
-        "num": "92",
-        "name": "Odes of Solomon",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v2"
-        ]
-      },
-      {
-        "id": "b93",
-        "num": "93",
-        "name": "Hymn of the Pearl",
-        "sub": "Gnostic poem (V1)",
-        "tags": [
-          "v1",
-          "gnose"
-        ]
-      },
-      {
-        "id": "b94",
-        "num": "94",
-        "name": "Proverbs",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b95",
-        "num": "95",
-        "name": "Ecclesiastes",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b96",
-        "num": "96",
-        "name": "Song of Songs",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b97",
-        "num": "97",
-        "name": "Sirach (Ecclesiasticus)",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b98",
-        "num": "98",
-        "name": "On the Origin of the World",
-        "sub": "Gnostic tradition (V1)",
-        "tags": [
-          "v1",
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b99",
-        "num": "99",
-        "name": "The Sentences of Sextus",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b100",
-        "num": "100",
-        "name": "The Traditions of Matthias",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f9",
-    "num": "9",
-    "title": "MAJOR PROPHETS",
-    "theme": "prophets",
-    "books": [
-      {
-        "id": "b101",
-        "num": "101",
-        "name": "Isaiah 1–39",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b102",
-        "num": "102",
-        "name": "Isaiah 40–66",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b102_comp",
-        "num": "102b",
-        "name": "The Magus: A Complete System of Occult Philosophy",
-        "sub": "Francis Barrett — Classic synthesis encyclopedia; excellent parallel for the analytical study of the prophetic and astrological period",
-        "tags": [
-          "ocultismo",
-          "enciclopedia",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b103",
-        "num": "103",
-        "name": "Ascension of Isaiah",
-        "sub": "(V1)",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b103b",
-        "num": "103b",
-        "name": "Martyrdom of Isaiah",
-        "sub": "(V1)",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b104",
-        "num": "104",
-        "name": "Jeremiah",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b105",
-        "num": "105",
-        "name": "Letter of Jeremiah",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b106",
-        "num": "106",
-        "name": "Lamentations",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b107",
-        "num": "107",
-        "name": "Baruch 1 · 2 · 3",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b108",
-        "num": "108",
-        "name": "Prayer of Azariah",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v3"
-        ]
-      },
-      {
-        "id": "b109",
-        "num": "109",
-        "name": "Ezekiel",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b110",
-        "num": "110",
-        "name": "Daniel",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b111",
-        "num": "111",
-        "name": "4 Baruch (Paraleipomena Jeremiou)",
-        "sub": "Apocryphal expansion of Jeremiah and Baruch",
-        "tags": [
-          "missing"
-        ]
-      },
-      {
-        "id": "b112",
-        "num": "112",
-        "name": "Lives of the Prophets",
-        "sub": "Biographical traditions of OT prophets",
-        "tags": [
-          "missing"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f10",
-    "num": "10",
-    "title": "MINOR PROPHETS & ORACLES",
-    "theme": "minor_prophets",
-    "books": [
-      {
-        "id": "b113",
-        "num": "113",
-        "name": "Hosea",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b114",
-        "num": "114",
-        "name": "Joel",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b115",
-        "num": "115",
-        "name": "Amos",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b116",
-        "num": "116",
-        "name": "Obadiah",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b117",
-        "num": "117",
-        "name": "Jonah",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b118",
-        "num": "118",
-        "name": "Micah",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b119",
-        "num": "119",
-        "name": "Nahum",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b120",
-        "num": "120",
-        "name": "Habakkuk",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b121",
-        "num": "121",
-        "name": "Zephaniah",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b122",
-        "num": "122",
-        "name": "Haggai",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b123",
-        "num": "123",
-        "name": "Zechariah",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b124",
-        "num": "124",
-        "name": "Malachi",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b125",
-        "num": "125",
-        "name": "Prayer of Manasseh",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b126",
-        "num": "126",
-        "name": "Sibylline Oracles I–XIV",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f11",
-    "num": "11",
-    "title": "BETWEEN THE TESTAMENTS",
-    "theme": "intertestamental",
-    "div": "INTERTESTAMENTAL PERIOD",
-    "books": [
-      {
-        "id": "b127",
-        "num": "127",
-        "name": "The Ascension of Isaiah (Revision)",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b128",
-        "num": "128",
-        "name": "Testament of Moses (Revision)",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b129",
-        "num": "129",
-        "name": "Book of Adam (V.3)",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b130",
-        "num": "130",
-        "name": "Testament of Isaac",
-        "sub": "Intertestamental patriarchal tradition",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b131",
-        "num": "131",
-        "name": "Testament of Jacob",
-        "sub": "Intertestamental patriarchal tradition",
-        "tags": [
-          "v1"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f12",
-    "num": "12",
-    "title": "INFANCY OF JESUS",
-    "theme": "infancy",
-    "div": "NEW TESTAMENT & CHRISTIAN APOCRYPHA",
-    "books": [
-      {
-        "id": "b132",
-        "num": "132",
-        "name": "Protevangelium",
-        "sub": "Proto-Gospel of James (V1)",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b133",
-        "num": "133",
-        "name": "Gospel of the Nativity of Mary",
-        "sub": "Gospel of the Birth of Mary (V2)",
-        "tags": [
-          "b201",
-          "v2"
-        ]
-      },
-      {
-        "id": "b134",
-        "num": "134",
-        "name": "Pseudo-Matthew",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b135",
-        "num": "135",
-        "name": "Infancy Gospel of Thomas",
-        "sub": "Infancy of Jesus / Savior / Pseudo-Thomas (V1)",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b136",
-        "num": "136",
-        "name": "Fragments of Thomas",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b137",
-        "num": "137",
-        "name": "Arabic Infancy Gospel",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b138",
-        "num": "138",
-        "name": "Armenian Infancy Gospel",
-        "sub": "Excerpts from the Armenian Gospel (V1)",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b139",
-        "num": "139",
-        "name": "History of Joseph the Carpenter",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      },
-      {
-        "id": "b140",
-        "num": "140",
-        "name": "Letters of Herod and Pilate",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f13",
-    "num": "13",
-    "title": "MINISTRY OF JESUS — THE GOSPELS",
-    "theme": "gospels",
-    "books": [
-      {
-        "id": "b141",
-        "num": "141",
-        "name": "Matthew 1–13",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b142",
-        "num": "142",
-        "name": "Matthew 14–28",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b143",
-        "num": "143",
-        "name": "Mark",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b144",
-        "num": "144",
-        "name": "Secret Gospel of Mark",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v3"
-        ]
-      },
-      {
-        "id": "b145",
-        "num": "145",
-        "name": "Luke 1–12",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b146",
-        "num": "146",
-        "name": "Luke 13–24",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b147",
-        "num": "147",
-        "name": "John 1–12",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b148",
-        "num": "148",
-        "name": "John 13–21",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b149",
-        "num": "149",
-        "name": "Pre-Markan Passion Narrative",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b150",
-        "num": "150",
-        "name": "Epistles of Jesus and Abgarus",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b151",
-        "num": "151",
-        "name": "Gospel of the Hebrews",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b152",
-        "num": "152",
-        "name": "Gospel of the Ebionites",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b153",
-        "num": "153",
-        "name": "Gospel of the Nazarenes",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b154",
-        "num": "154",
-        "name": "Egerton Gospel",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b155",
-        "num": "155",
-        "name": "Oxyrhynchus Gospel",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b156",
-        "num": "156",
-        "name": "Dialogue of the Savior",
-        "sub": "",
-        "tags": [
-          "b201",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b157",
-        "num": "157",
-        "name": "Gospel According to Peter",
-        "sub": "Gospel of Peter (V1/V2)",
-        "tags": [
-          "b201",
-          "v1",
-          "v2"
-        ]
-      },
-      {
-        "id": "b158",
-        "num": "158",
-        "name": "The Vengeance of the Savior",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f14",
-    "num": "14",
-    "title": "PILATE CYCLE & POST-RESURRECTION",
-    "theme": "passion",
-    "books": [
-      {
-        "id": "b159",
-        "num": "159",
-        "name": "Gospel of Nicodemus",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b160",
-        "num": "160",
-        "name": "Descent into Hell (Greek)",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b161",
-        "num": "161",
-        "name": "Descent into Hell (Latin)",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b162",
-        "num": "162",
-        "name": "Pilate Cycle",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b163",
-        "num": "163",
-        "name": "Condemnation of Pilate",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b164",
-        "num": "164",
-        "name": "Letters of the Lord",
-        "sub": "Letter of the Lord (V1)",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b165",
-        "num": "165",
-        "name": "Declarations of Joseph of Arimathea",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b166",
-        "num": "166",
-        "name": "The Narrative of Joseph of Arimathea",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b167",
-        "num": "167",
-        "name": "Discourse on the Lord's Day",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b168",
-        "num": "168",
-        "name": "Assumption Apocrypha",
-        "sub": "Assumption tradition (V1)",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b169",
-        "num": "169",
-        "name": "Passing of the Virgin Mary",
-        "sub": "Passing of the Blessed (V1)",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b170",
-        "num": "170",
-        "name": "Extra-Gospel Agrapha",
-        "sub": "Non-canonical sayings of Jesus (V1)",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b171",
-        "num": "171",
-        "name": "Resurrection of Christ (Bartholomew)",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b172",
-        "num": "172",
-        "name": "Gospel of Bartholomew",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f15",
-    "num": "15",
-    "title": "ACTS & APOSTOLIC MISSION",
-    "theme": "acts",
-    "books": [
-      {
-        "id": "b173",
-        "num": "173",
-        "name": "Acts 1–12",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b174",
-        "num": "174",
-        "name": "Acts 13–28",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b175",
-        "num": "175",
-        "name": "Acts 29 (Apocryphal)",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b176",
-        "num": "176",
-        "name": "Acts of Peter and the Twelve",
-        "sub": "",
-        "tags": [
-          "b201",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b177",
-        "num": "177",
-        "name": "Acts of Peter",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b178",
-        "num": "178",
-        "name": "Acts of Peter and Andrew",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b179",
-        "num": "179",
-        "name": "Acts of Peter and Paul",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b180",
-        "num": "180",
-        "name": "Acts of Paul and Thecla",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b181",
-        "num": "181",
-        "name": "Acts of Andrew",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v3"
-        ]
-      },
-      {
-        "id": "b182",
-        "num": "182",
-        "name": "Acts of Andrew and Matthias",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b183",
-        "num": "183",
-        "name": "Acts of John",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b184",
-        "num": "184",
-        "name": "Acts of Thomas",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b185",
-        "num": "185",
-        "name": "Consummation of Thomas",
-        "sub": "The consummation of the apostle Thomas (V3)",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b186",
-        "num": "186",
-        "name": "Acts of Barnabas",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b187",
-        "num": "187",
-        "name": "Acts and Martyrdom of St. Matthew",
-        "sub": "Acts and Martyrdom of the Apostle (V3)",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b188",
-        "num": "188",
-        "name": "Martyrdom of Matthew",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b189",
-        "num": "189",
-        "name": "Xanthippe, Polyxena and Rebecca",
-        "sub": "Life of the Holy Women",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b190",
-        "num": "190",
-        "name": "Acts of the Holy Apostle",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b191",
-        "num": "191",
-        "name": "Teaching of Thaddaeus",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b192",
-        "num": "192",
-        "name": "Book of John the Evangelist",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b193",
-        "num": "193",
-        "name": "Acts of Perpetua and Felicity",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b194",
-        "num": "194",
-        "name": "The Preaching of Peter",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f16",
-    "num": "16",
-    "title": "LETTERS OF PAUL",
-    "theme": "epistles",
-    "books": [
-      {
-        "id": "b195",
-        "num": "195",
-        "name": "Galatians",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b196",
-        "num": "196",
-        "name": "1 Thessalonians",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b197",
-        "num": "197",
-        "name": "2 Thessalonians",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b198",
-        "num": "198",
-        "name": "1 Corinthians",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b199",
-        "num": "199",
-        "name": "2 Corinthians",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b200",
-        "num": "200",
-        "name": "3 Corinthians",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b201",
-        "num": "201",
-        "name": "Romans",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b202",
-        "num": "202",
-        "name": "Philippians",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b203",
-        "num": "203",
-        "name": "Colossians",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b204",
-        "num": "204",
-        "name": "Philemon",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b205",
-        "num": "205",
-        "name": "Ephesians",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b206",
-        "num": "206",
-        "name": "1 Timothy",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b207",
-        "num": "207",
-        "name": "2 Timothy",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b208",
-        "num": "208",
-        "name": "Titus",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b209",
-        "num": "209",
-        "name": "Hebrews",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b210",
-        "num": "210",
-        "name": "Laodiceans",
-        "sub": "Epistle to the Laodiceans (V3)",
-        "tags": [
-          "b201",
-          "v3"
-        ]
-      },
-      {
-        "id": "b211",
-        "num": "211",
-        "name": "Epistles to Seneca",
-        "sub": "Correspondence between Paul and Seneca (V2)",
-        "tags": [
-          "b201",
-          "v2"
-        ]
-      },
-      {
-        "id": "b212",
-        "num": "212",
-        "name": "Prayer of Paul",
-        "sub": "",
-        "tags": [
-          "v3",
-          "nag hammadi"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f17",
-    "num": "17",
-    "title": "GENERAL LETTERS, APOCALYPSES & REVELATION",
-    "theme": "apocalypse",
-    "books": [
-      {
-        "id": "b213",
-        "num": "213",
-        "name": "James",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b214",
-        "num": "214",
-        "name": "1 Peter",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b215",
-        "num": "215",
-        "name": "2 Peter",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b216",
-        "num": "216",
-        "name": "1 John",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b217",
-        "num": "217",
-        "name": "2 John",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b218",
-        "num": "218",
-        "name": "3 John",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b219",
-        "num": "219",
-        "name": "Jude",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b220",
-        "num": "220",
-        "name": "Epistle of the Apostles",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b221",
-        "num": "221",
-        "name": "Letter of Peter to Philip",
-        "sub": "",
-        "tags": [
-          "v3",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b222",
-        "num": "222",
-        "name": "Epistle of Barnabas",
-        "sub": "",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b223",
-        "num": "223",
-        "name": "Revelation (Apocalypse) 1–11",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b224",
-        "num": "224",
-        "name": "Revelation 12–22",
-        "sub": "",
-        "tags": [
-          "b201",
-          "cnbb"
-        ]
-      },
-      {
-        "id": "b225",
-        "num": "225",
-        "name": "John the Theologian",
-        "sub": "The Revelation of St. John the Theologian (V3)",
-        "tags": [
-          "v3"
-        ]
-      },
-      {
-        "id": "b226",
-        "num": "226",
-        "name": "Apocalypse of Peter",
-        "sub": "",
-        "tags": [
-          "v1",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b227",
-        "num": "227",
-        "name": "Apocalypse of Paul",
-        "sub": "",
-        "tags": [
-          "v3",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b228",
-        "num": "228",
-        "name": "Apocalypse of Baruch",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b229",
-        "num": "229",
-        "name": "Apocalypse of Elijah",
-        "sub": "",
-        "tags": [
-          "v1"
-        ]
-      },
-      {
-        "id": "b230",
-        "num": "230",
-        "name": "Apocalypse of Thomas",
-        "sub": "Revelation of Thomas (V1)",
-        "tags": [
-          "v1"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f18",
-    "num": "18",
-    "title": "CHURCH FATHERS & APOSTOLIC TEXTS",
-    "theme": "fathers",
-    "books": [
-      {
-        "id": "b231",
-        "num": "231",
-        "name": "The Didache",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b232",
-        "num": "232",
-        "name": "Shepherd of Hermas",
-        "sub": "Books I (Visions), II (Mandates) and III (Similitudes) (V2)",
-        "tags": [
-          "v2"
-        ]
-      },
-      {
-        "id": "b233",
-        "num": "233",
-        "name": "1 Clement",
-        "sub": "First Epistle of Clement to the Corinthians (V2)",
-        "tags": [
-          "b201",
-          "v2"
-        ]
-      },
-      {
-        "id": "b234",
-        "num": "234",
-        "name": "2 Clement",
-        "sub": "Second Epistle of Clement to the Corinthians (V2)",
-        "tags": [
-          "b201",
-          "v2"
-        ]
-      },
-      {
-        "id": "b235",
-        "num": "235",
-        "name": "Apocryphon of James",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v3",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b236",
-        "num": "236",
-        "name": "Ignatius of Antioch",
-        "sub": "Ephesians, Magnesians, Trallians, Romans, Philadelphians, Smyrnaeans and Polycarp (V2)",
-        "tags": [
-          "b201",
-          "v2"
-        ]
-      },
-      {
-        "id": "b237",
-        "num": "237",
-        "name": "Polycarp to the Philippians",
-        "sub": "Epistle of Polycarp to the Philippians (V2)",
-        "tags": [
-          "b201",
-          "v2"
-        ]
-      },
-      {
-        "id": "b238",
-        "num": "238",
-        "name": "Martyrdom of Ignatius",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b239",
-        "num": "239",
-        "name": "Martyrdom of Polycarp",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b240",
-        "num": "240",
-        "name": "Tertullian (To the Martyrs)",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b241",
-        "num": "241",
-        "name": "Letter of Pilate",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b242",
-        "num": "242",
-        "name": "Thanksgiving Prayer",
-        "sub": "",
-        "tags": [
-          "b201",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b243",
-        "num": "243",
-        "name": "Epiphanes on Righteousness",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      },
-      {
-        "id": "b244",
-        "num": "244",
-        "name": "Creeds",
-        "sub": "",
-        "tags": [
-          "b201"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f19",
-    "num": "19",
-    "title": "GNOSIS & ESOTERIC TEXTS",
-    "theme": "gnosis",
-    "div": "GNOSTIC TEXTS",
-    "books": [
-      {
-        "id": "b245",
-        "num": "245",
-        "name": "Gospel of Thomas",
-        "sub": "Gospel According to Thomas the Twin (V1)",
-        "tags": [
-          "b201",
-          "v1",
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b246",
-        "num": "246",
-        "name": "Greek Fragments of Thomas",
-        "sub": "",
-        "tags": [
-          "b201",
-          "gnose"
-        ]
-      },
-      {
-        "id": "b247",
-        "num": "247",
-        "name": "Gospel of Philip",
-        "sub": "Gospel According to Philip (V1)",
-        "tags": [
-          "b201",
-          "v1",
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b248",
-        "num": "248",
-        "name": "Gospel of Mary Magdalene",
-        "sub": "(V1)",
-        "tags": [
-          "v1",
-          "gnose"
-        ]
-      },
-      {
-        "id": "b248b",
-        "num": "248b",
-        "name": "Excerpts from the Gospel of Mary",
-        "sub": "(V1)",
-        "tags": [
-          "v1",
-          "gnose"
-        ]
-      },
-      {
-        "id": "b249",
-        "num": "249",
-        "name": "Gospel of Judas",
-        "sub": "",
-        "tags": [
-          "v1",
-          "gnose"
-        ]
-      },
-      {
-        "id": "b250",
-        "num": "250",
-        "name": "Gospel of Valentinus",
-        "sub": "",
-        "tags": [
-          "v1",
-          "gnose"
-        ]
-      },
-      {
-        "id": "b251",
-        "num": "251",
-        "name": "Gospel of Truth",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v1",
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b252",
-        "num": "252",
-        "name": "Gospel of the Egyptians",
-        "sub": "",
-        "tags": [
-          "b201",
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b253",
-        "num": "253",
-        "name": "Apocryphon of John",
-        "sub": "",
-        "tags": [
-          "b201",
-          "v3",
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b254",
-        "num": "254",
-        "name": "Thomas the Contender",
-        "sub": "Book of Thomas the Contender (V3)",
-        "tags": [
-          "b201",
-          "v3",
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b255",
-        "num": "255",
-        "name": "Second Treatise of the Great Seth",
-        "sub": "",
-        "tags": [
-          "b201",
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b256",
-        "num": "256",
-        "name": "Basilides",
-        "sub": "",
-        "tags": [
-          "b201",
-          "gnose"
-        ]
-      },
-      {
-        "id": "b257",
-        "num": "257",
-        "name": "Book of Marcion",
-        "sub": "",
-        "tags": [
-          "b201",
-          "gnose"
-        ]
-      },
-      {
-        "id": "b258",
-        "num": "258",
-        "name": "Book of Sindos",
-        "sub": "",
-        "tags": [
-          "b201",
-          "gnose"
-        ]
-      },
-      {
-        "id": "b259",
-        "num": "259",
-        "name": "Q Source",
-        "sub": "",
-        "tags": [
-          "b201",
-          "gnose"
-        ]
-      },
-      {
-        "id": "b260",
-        "num": "260",
-        "name": "Pistis Sophia",
-        "sub": "",
-        "tags": [
-          "gnose",
-          "esoterismo",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b261",
-        "num": "261",
-        "name": "Nestorian Gospel",
-        "sub": "José Alves de Araújo Filho — The book of alternative teachings of the East",
-        "tags": [
-          "gnose",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b262",
-        "num": "262",
-        "name": "Thunder: Perfect Mind",
-        "sub": "Nag Hammadi — poem of a divine female voice (V1)",
-        "tags": [
-          "v1",
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b263",
-        "num": "263",
-        "name": "Hypostasis of the Archons",
-        "sub": "Nature and origin of the archons — Nag Hammadi",
-        "tags": [
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b264",
-        "num": "264",
-        "name": "Trimorphic Protennoia",
-        "sub": "Three descents of the divine Thought — Nag Hammadi (V1)",
-        "tags": [
-          "v1",
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b265",
-        "num": "265",
-        "name": "Tripartite Tractate",
-        "sub": "Valentinian cosmology — Nag Hammadi",
-        "tags": [
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b266",
-        "num": "266",
-        "name": "Exegesis on the Soul",
-        "sub": "Allegory of the fall and redemption of the soul — Nag Hammadi",
-        "tags": [
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b267",
-        "num": "267",
-        "name": "Sophia of Jesus Christ",
-        "sub": "Gnostic version of Eugnostos — Nag Hammadi",
-        "tags": [
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b268",
-        "num": "268",
-        "name": "Testimony of Truth",
-        "sub": "Gnostic critique of martyrdom and the OT God — Nag Hammadi",
-        "tags": [
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b269",
-        "num": "269",
-        "name": "Zostrianos",
-        "sub": "Sethian apocalypse — Nag Hammadi",
-        "tags": [
-          "gnose",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b269_add1",
-        "num": "269b",
-        "name": "The Three Steles of Seth",
-        "sub": "Hymns of adoration and revelations of the pure Sethian lineage",
-        "tags": [
-          "gnose",
-          "sethiano",
-          "nag hammadi"
-        ]
-      },
-      {
-        "id": "b269_add2",
-        "num": "269c",
-        "name": "Allogenes",
-        "sub": "The Stranger and his mental transcendence beyond the Demiurge",
-        "tags": [
-          "gnose",
-          "revelacao",
-          "nag hammadi"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f20",
-    "num": "20",
-    "title": "GNOSIS AS BRIDGE",
-    "theme": "bridge",
-    "div": "TRANSITION TO ISLAM",
-    "books": [
-      {
-        "id": "b270",
-        "num": "270",
-        "name": "Sethian Scriptures",
-        "sub": "",
-        "tags": [
-          "gnose",
-          "ponte",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b271",
-        "num": "271",
-        "name": "He Did Not Die on the Cross",
-        "sub": "",
-        "tags": [
-          "ponte",
-          "revisionismo",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b272",
-        "num": "272",
-        "name": "The Infamous Paul",
-        "sub": "",
-        "tags": [
-          "ponte",
-          "critica",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b273",
-        "num": "273",
-        "name": "EUGNOSTOS",
-        "sub": "",
-        "tags": [
-          "ponte",
-          "misticismo",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b273_comp",
-        "num": "273b",
-        "name": "The Great Secret or Occultism Unveiled",
-        "sub": "Éliphas Lévi — The analytical manipulation of the astral light and the closing of the understanding of the western system",
-        "tags": [
-          "ocultismo",
-          "síntese",
-          "carrinho"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f21",
-    "num": "21",
-    "title": "MOHAMMED'S REVELATION & ISLAMIC MYSTICISM",
-    "theme": "islam",
-    "div": "TRANSITION ISLAM AND ORIENTAL ESOTERICISM",
-    "books": [
-      {
-        "id": "b274",
-        "num": "274",
-        "name": "The Gospel of Barnabas: The Apocryphal Gospel of Barnabas",
-        "sub": "Josúe Alves de Araújo Filho — Doctrinal transition view that brings the prophetic figure closer to Islam.",
-        "tags": [
-          "ponte",
-          "apocrifo",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog"
-      },
-      {
-        "id": "b275",
-        "num": "275",
-        "name": "THE QURAN",
-        "sub": "Central sacred text of Islam, analyzed under an exegetical and structural deconstruction lens.",
-        "tags": [
-          "ponte",
-          "base"
-        ],
-        "procedencia": "Original Catalog"
-      },
-      {
-        "id": "b276",
-        "num": "276",
-        "name": "Sirah Nabawi",
-        "sub": "Ibn Hisham — Traditional and historical biography of the Prophet Muhammad.",
-        "tags": [
-          "missing",
-          "ponte"
-        ],
-        "procedencia": "Original Catalog"
-      },
-      {
-        "id": "b276_sufi1",
-        "num": "276b",
-        "name": "The Epistle of Unity (Risalat al-Ahadivyah)",
-        "sub": "Ibn Arabi — The definitive treatise on non-duality (Wahdat al-Wujud) in esoteric Islam.",
-        "isbn": "978-8571740136",
-        "tags": [
-          "sufismo",
-          "teosofia",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b276_sufi2",
-        "num": "276c",
-        "name": "The Niche for Lights (Mishkat al-Anwar)",
-        "sub": "Al-Ghazali — Hermetic analysis of the Light Verse of the Quran and the levels of spiritual emanation.",
-        "isbn": "978-8571740068",
-        "tags": [
-          "sufismo",
-          "gnose",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b276_sufi3",
-        "num": "276d",
-        "name": "Spiritual Islam: Sufism, Shiism and Ismaili Gnosis",
-        "sub": "Henry Corbin — Deep analysis of Iraqi/Iranian Shiite Islam, the mystery of the 12th Hidden Imam, and the body of light.",
-        "isbn": "978-8532616890",
-        "tags": [
-          "xiismo",
-          "gnose",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b276_sufi4",
-        "num": "276e",
-        "name": "The Philosophy of Illumination (Hikmat al-Ishraq)",
-        "sub": "Suhrawardi — Fusion of Hermetism, Zoroatrianism, and Islam. Development of the concept of Mundus Imaginalis (Imaginal World).",
-        "tags": [
-          "ocultismo",
-          "hermetismo"
-        ],
-        "observacao": "Work of strict circulation in oriental philosophy institutes"
-      },
-      {
-        "id": "b276_sufi5",
-        "num": "276f",
-        "name": "The Sufi Doctrine of the Perfect Man (Al-Insan al-Kamil)",
-        "sub": "Abdul Karim al-Jili — The archetype of the unifying Cosmic Man. Direct Islamic parallel to Adam Kadmon.",
-        "tags": [
-          "sufismo",
-          "teosofia"
-        ]
-      },
-      {
-        "id": "b276_crit1",
-        "num": "276g",
-        "name": "Hagarism: The Making of the Islamic World",
-        "sub": "Patricia Crone / Michael Cook — Critical historiographical analysis that deconstructs the dogmatic origins of Islam.",
-        "isbn": "978-0521297547",
-        "tags": [
-          "critica",
-          "revisionismo"
-        ]
-      },
-      {
-        "id": "b276_crit2",
-        "num": "276h",
-        "name": "The Sham of Orthodoxy: How the Caliphs Shaped the Quran",
-        "sub": "Historical Historiographical Studies — Investigation of Uthman's reforms and the erasure of alternative manuscripts.",
-        "tags": [
-          "critica",
-          "revisionismo"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f22",
-    "num": "22",
-    "title": "CONSPIRACIES, OCCULT GEOPOLITICS & ZIONISM",
-    "theme": "conspiracy",
-    "div": "MACRO-CONSPIRAÇÕES AND COSMIC GENEALOGY",
-    "books": [
-      {
-        "id": "b277",
-        "num": "277",
-        "name": "The Prism of Lyra: An Exploration of Human Galactic Heritage",
-        "sub": "Lyssa Royal — Origin of the Lyrans, Pleiadians, and humanity's cosmic family tree.",
-        "tags": [
-          "ufologia",
-          "carrinho"
-        ],
-        "isbn": "978-8572420074"
-      },
-      {
-        "id": "b278",
-        "num": "278",
-        "name": "Bringers of the Dawn: Teachings from the Pleiades",
-        "sub": "Barbara Marciniak — The Pleiadian perspective on Earth's history and the awakening of human DNA.",
-        "tags": [
-          "ufologia",
-          "carrinho"
-        ],
-        "isbn": "978-8531507755"
-      },
-      {
-        "id": "b279",
-        "num": "279",
-        "name": "The Anunnaki | The Astronaut Gods",
-        "sub": "Zecharia Sitchin — Alien genetic intervention in Sumer and the origins of ancient civilizations.",
-        "tags": [
-          "ufologia",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788537008669"
-      },
-      {
-        "id": "b280",
-        "num": "280",
-        "name": "The Lost Book of Enki",
-        "sub": "Zecharia Sitchin — The story of humanity's creation from the perspective of the deities of Nibiru.",
-        "tags": [
-          "ufologia",
-          "carrinho"
-        ],
-        "isbn": "978-8531513220"
-      },
-      {
-        "id": "b281",
-        "num": "281",
-        "name": "The Sirius Mystery",
-        "sub": "Robert Temple — The connection of the Sirians with the Dogon tribe and ancient astronomical knowledge.",
-        "tags": [
-          "ufologia",
-          "carrinho"
-        ],
-        "isbn": "978-0593013458"
-      },
-      {
-        "id": "b282",
-        "num": "282",
-        "name": "The Book of the Masters of the World",
-        "sub": "Robert Charroux — Investigations into ancient astronauts, lost civilizations, and the hidden owners of the planet.",
-        "tags": [
-          "ufologia",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "observacao": "Difusão Européia Edition (Enigmas de Todos os Tempos Collection)"
-      },
-      {
-        "id": "b283",
-        "num": "283",
-        "name": "The Myth of Hyperborea",
-        "sub": "Evgueni Golovin / Julius Evola — The lost continent of the north, the spiritual Golden Age, and its modern distortion.",
-        "tags": [
-          "esoterismo",
-          "carrinho"
-        ]
-      },
-      {
-        "id": "b284",
-        "num": "284",
-        "name": "The Hollow Earth",
-        "sub": "Raymond Bernard — The Hollow Earth theory, underground networks, and Admiral Byrd's diary.",
-        "tags": [
-          "esoterismo",
-          "carrinho"
-        ],
-        "isbn": "978-0205201105"
-      },
-      {
-        "id": "b285",
-        "num": "285",
-        "name": "The King of the World",
-        "sub": "René Guénon — Traditionalist metaphysical analysis of the hidden spiritual realm of Shambhala/Agartha.",
-        "tags": [
-          "esoterismo",
-          "carrinho"
-        ],
-        "isbn": "978-8531505676"
-      },
-      {
-        "id": "b286",
-        "num": "286",
-        "name": "The Nazis and the Occult: The Dark Forces Unleashed by the Third Reich",
-        "sub": "Paul Roland — The Thule Society, SS mysticism, the search for sacred relics, and neopagan rituals.",
-        "tags": [
-          "ocultismo",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788537004753"
-      },
-      {
-        "id": "b287",
-        "num": "287",
-        "name": "The Hunt for Zero Point (The Hunt for Zero Point / The mystery of the Bell)",
-        "sub": "Nick Cook — Military investigation into Nazi flying saucers and the Die Glocke (The Bell) anti-gravity project.",
-        "tags": [
-          "ocultismo",
-          "carrinho"
-        ],
-        "isbn": "978-0099414988"
-      },
-      {
-        "id": "b288",
-        "num": "288",
-        "name": "Hitler Guilty or Innocent",
-        "sub": "Sérgio Oliveira — Historical revisionist literature widely circulated in theoretical conspiracy circles.",
-        "tags": [
-          "revisionismo",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog"
-      },
-      {
-        "id": "b289",
-        "num": "289",
-        "name": "S.O.S. for Germany",
-        "sub": "S.S. Castan — Revisionist and conspiratorial work focused on the post-war German scenario.",
-        "tags": [
-          "revisionismo",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "8572460020"
-      },
-      {
-        "id": "b290",
-        "num": "290",
-        "name": "The Protocols of the Elders of Zion",
-        "sub": "Anonymous — Central document of geopolitical conspiracy theories regarding global control and finance.",
-        "tags": [
-          "geopolitica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog"
-      },
-      {
-        "id": "b291",
-        "num": "291",
-        "name": "The International Jew",
-        "sub": "Henry Ford — Controversial early 20th-century analysis of economic and cultural influence.",
-        "tags": [
-          "geopolitica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "0123456789"
-      },
-      {
-        "id": "b292",
-        "num": "292",
-        "name": "The Rothschilds: A Family Portrait",
-        "sub": "Frederic Morton — The history and rise of the world's most famous banking dynasty and its influence on European wars.",
-        "tags": [
-          "geopolitica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "0123456789"
-      },
-      {
-        "id": "b293",
-        "num": "293",
-        "name": "The Rothschild Dynasty",
-        "sub": "Herbert Lottman — Detailed analysis of the financial empire and the behind-the-scenes of global political decisions.",
-        "tags": [
-          "geopolitica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788525421289"
-      },
-      {
-        "id": "b294",
-        "num": "294",
-        "name": "The Invention of the Jewish People",
-        "sub": "Shlomo Sand — Critical historiographical study by an Israeli professor on national identity and founding myths.",
-        "tags": [
-          "geopolitica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788502134775"
-      },
-      {
-        "id": "b295",
-        "num": "295",
-        "name": "Zionism vs. Revisionism: Fantasy and Reality",
-        "sub": "Sérgio Oliveira — Revisionist studies on the Zionist movement and historical narrative conflicts.",
-        "tags": [
-          "revisionismo",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9789898249104"
-      },
-      {
-        "id": "b296",
-        "num": "296",
-        "name": "The Jews, World and Money",
-        "sub": "Jacques Attali — A detailed panorama by a French economic advisor on global economic history.",
-        "tags": [
-          "geopolitica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "8574131806"
-      },
-      {
-        "id": "b297",
-        "num": "297",
-        "name": "Israel's Waterloo?",
-        "sub": "David Duke — Middle Eastern geopolitics from an American nationalist and anti-Zionist perspective.",
-        "tags": [
-          "geopolitica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "observacao": "Revisão Publisher (Year: 2001) - Contraponto Collection"
-      },
-      {
-        "id": "b298",
-        "num": "298",
-        "name": "The Global Conspiracy",
-        "sub": "David Icke — The reptilian macro-theory connecting secret societies, mass manipulation, and hybrid lineages.",
-        "tags": [
-          "conspiracao",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9789898249005"
-      },
-      {
-        "id": "b299",
-        "num": "299",
-        "name": "The Biggest Secret",
-        "sub": "David Icke — The core book connecting royal lineages to the alien global control energy matrix.",
-        "tags": [
-          "conspiracao",
-          "carrinho"
-        ],
-        "isbn": "978-0953820405"
-      },
-      {
-        "id": "b300",
-        "num": "300",
-        "name": "Rule by Secrecy: The Hidden History That Connects the Trilateral Commission, the Freemasons, and the Great Pyramids",
-        "sub": "Jim Marrs — The common thread linking ancient Egypt to modern technocratic elites like the Bilderberg Group.",
-        "tags": [
-          "conspiracao",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788573749953"
-      },
-      {
-        "id": "b301",
-        "num": "301",
-        "name": "The Illuminati and the Great Global Conspiracy",
-        "sub": "Hierarchical structure of occult orders and their plans for establishing a centralized world government.",
-        "tags": [
-          "conspiracao",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9789723321593"
-      },
-      {
-        "id": "b302",
-        "num": "302",
-        "name": "Secret Societies and Subversive Movements",
-        "sub": "How hidden esoteric factions influenced historical revolutions and the fall of monarchies.",
-        "tags": [
-          "conspiracao",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9781805401278"
-      },
-      {
-        "id": "b303",
-        "num": "303",
-        "name": "Illuminati Freemasonry",
-        "sub": "Michael Howard — The infiltration of Illuminist branches into the continental Masonic lodges of Europe.",
-        "tags": [
-          "conspiracao",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "8570018738"
-      },
-      {
-        "id": "b304",
-        "num": "304",
-        "name": "The Black Book of Christianity",
-        "sub": "Historical analysis of inquisitions, massacres, and the suppression of free thought by ecclesiastical dogmas.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788500019647"
-      },
-      {
-        "id": "b305",
-        "num": "305",
-        "name": "Money, Gods, and Power",
-        "sub": "Noenio Spinola — The historical intertwining of global finance, banking institutions, and the structures of major religions.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788520010570"
-      },
-      {
-        "id": "b306",
-        "num": "306",
-        "name": "The Sham of Christian Tithing",
-        "sub": "Ivan Toro Rua — Critical theological and financial analysis of economic exploitation through faith.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "0123456789"
-      },
-      {
-        "id": "b307",
-        "num": "307",
-        "name": "Babylon Mystery Religion",
-        "sub": "Ralph Woodrow — Traces hidden pagan Sumerian and Babylonian symbols within Catholic liturgical traditions.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog"
-      },
-      {
-        "id": "b308",
-        "num": "308",
-        "name": "The Deceptions of Pagan Christianity / The Mysteries of Mithras",
-        "sub": "The fusion of the ancient solar cult of Mithras with the institutional structuring of the Early Church.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788573747669"
-      },
-      {
-        "id": "b309",
-        "num": "309",
-        "name": "Thy Will Be Done",
-        "sub": "G. Colby / C. Dennet — The use of American evangelical religion in the Amazon as a geopolitical tool for domination and corporate resource exploitation (Focus on Rockefeller influence on missions).",
-        "tags": [
-          "geopolitica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "8501045322"
-      },
-      {
-        "id": "b310",
-        "num": "310",
-        "name": "The Devil in the 19th Century: Luciferian Freemasonry",
-        "sub": "Dr. Bataille / Leo Taxil — The famous historical hoax by Taxil describing alleged satanic rituals in the high degrees of Freemasonry.",
-        "tags": [
-          "ocultismo",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "0123456789"
-      },
-      {
-        "id": "b311",
-        "num": "311",
-        "name": "The Antichrist: Hidden Power Behind the Illuminati New World Order",
-        "sub": "Prophetic-conspiratorial interpretations of the merger into a unified political and religious system.",
-        "tags": [
-          "conspiracao",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788527610865"
-      },
-      {
-        "id": "b312",
-        "num": "312",
-        "name": "On the Jews and Their Lies",
-        "sub": "Martin Luther — 16th-century theological treatise exposing the historical roots of anti-Judaism in the Protestant Reformation.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "0123456789"
-      },
-      {
-        "id": "b313",
-        "num": "313",
-        "name": "Servants of the Talmud",
-        "sub": "Luiz Amaral — Controversial analysis of internal rabbinic laws and their barriers to interaction with the non-Jewish world.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788590535713"
-      },
-      {
-        "id": "b314",
-        "num": "314",
-        "name": "Lucifer the First Angel",
-        "sub": "Marcelo Hipólito — Literary and esoteric study of the transition from the light-bringer archetype to the lord of darkness.",
-        "tags": [
-          "misticismo",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "978852903950"
-      },
-      {
-        "id": "b315",
-        "num": "315",
-        "name": "Lilith the First Eve",
-        "sub": "Siegmund Hurwitz — Historiography of the Kabbalistic and mythological figure of Lilith, the dark feminine aspect rejected in Genesis.",
-        "tags": [
-          "misticismo",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788586671685"
-      },
-      {
-        "id": "b316",
-        "num": "316",
-        "name": "The Book of the Fallen Angels",
-        "sub": "Michael Howard — Connects the Watchers of Enoch with the secret origins of witchcraft and neopaganism.",
-        "tags": [
-          "misticismo",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788537007365"
-      },
-      {
-        "id": "b317",
-        "num": "317",
-        "name": "The Egyptian Book of the Dead",
-        "sub": "Magical spells, funerary rituals, and the soul's journey of ascension and judgment through the cosmic underworld.",
-        "tags": [
-          "misticismo",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "8528900894"
-      },
-      {
-        "id": "b318",
-        "num": "318",
-        "name": "The Immaculate Scriptures",
-        "sub": "Josmar Dias — Critical textual analysis of translation alterations and dogmas inserted into sacred texts.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788577736058"
-      },
-      {
-        "id": "b319",
-        "num": "319",
-        "name": "Pagan Saints, Yesterday's Gods",
-        "sub": "The reconfiguration of gods from the polytheistic Roman and Celtic pantheons into saints venerated by the Catholic Church.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "8527403714"
-      },
-      {
-        "id": "b320",
-        "num": "320",
-        "name": "September 11, 2001: How Humanity is Deceived (The Power of the Media)",
-        "sub": "Renê Bourbon — Investigation into social engineering, false flag operations, and the use of media-driven fear for population control.",
-        "tags": [
-          "geopolitica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "8572460241"
-      },
-      {
-        "id": "b321",
-        "num": "321",
-        "name": "The Manipulated Man",
-        "sub": "Esther Vilar — Strong critique of relationship social dynamics, psychological manipulation, and gender structures.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog"
-      },
-      {
-        "id": "b322",
-        "num": "322",
-        "name": "The Polygamous Sex: Man's Right to Two Women",
-        "sub": "Esther Vilar — Provocative sociological and biological analysis of moral conventions constructed by Western societies.",
-        "tags": [
-          "critica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "9788501043532"
-      },
-      {
-        "id": "b323",
-        "num": "323",
-        "name": "Genocides of the 20th Century",
-        "sub": "Sérgio Oliveira — Critical study of modern wars and the political behind-the-scenes that dictated the largest human massacres.",
-        "tags": [
-          "geopolitica",
-          "carrinho"
-        ],
-        "procedencia": "Original Catalog",
-        "isbn": "8572460187"
-      },
-      {
-        "id": "b333",
-        "num": "333",
-        "name": "Islam and ET: The Djinn Hypothesis",
-        "sub": "Gordon Creighton / Rosemary Ellen Guiley — Mapping of the modern UFO phenomenon under the lens of the plasma fire entities described in the Quran.",
-        "tags": [
-          "ufologia",
-          "carrinho"
-        ],
-        "isbn": "978-1945791222"
-      },
-      {
-        "id": "b334",
-        "num": "334",
-        "name": "Dimensions: A Casebook of Alien Contact",
-        "sub": "Jacques Vallée — Argues that alien races (Greys, Nordics) are manifestations of the same ancient transdimensional psychic control system (Angels/Djinn).",
-        "tags": [
-          "ufologia",
-          "carrinho"
-        ],
-        "isbn": "978-1511345477"
-      },
-      {
-        "id": "b335",
-        "num": "335",
-        "name": "The Secret Book of the Djinn: Occult Magic in the Arabian Desert",
-        "sub": "Compilations of Classical Arabic Grimoires — Investigation of primitive covenants and pre-Islamic secret currents of evocation.",
-        "tags": [
-          "ocultismo",
-          "misticismo"
-        ]
-      },
-      {
-        "id": "b336",
-        "num": "336",
-        "name": "The Mecca Conspiracy and the Saudi Royal Lineages",
-        "sub": "David Icke (Selected Essays) — Study on energy control and political lineages of the Middle East.",
-        "tags": [
-          "conspiracao",
-          "geopolitica"
-        ]
-      },
-      {
-        "id": "b337",
-        "num": "337",
-        "name": "The Seventh Top Secret Country: UFOs over the Middle East",
-        "sub": "Military Intelligence Reports — Mapping of anomalous sightings at historical religious conflict sites in Mesopotamia.",
-        "tags": [
-          "ufologia",
-          "geopolitica"
-        ]
-      },
-      {
-        "id": "b324_art",
-        "num": "Art-01",
-        "name": "Das Ahnenerbe-Problem: Die Urgeschichte im Dritten Reich",
-        "sub": "Dr. Michael H. Kater (York University) — Documentary analysis of the SS archaeological and esoteric society funding searches in Agartha and Tibet.",
-        "tags": [
-          "artigo",
-          "ocultismo"
-        ],
-        "tipo": "Academic / Historiographical Article"
-      },
-      {
-        "id": "b325_art",
-        "num": "Art-02",
-        "name": "The Vril Society: The Silk Road of Esoteric Aryanism",
-        "sub": "Nicholas Goodrick-Clarke — Structural investigation of the mediumistic manifestos and aerospace channelings attributed to Maria Orsic.",
-        "tags": [
-          "artigo",
-          "ocultismo"
-        ],
-        "tipo": "Historical Essay / Occultism"
-      },
-      {
-        "id": "b326_art",
-        "num": "Art-03",
-        "name": "The Hunt for Zero Point Energy and the Wenceslaus Mine Reports",
-        "sub": "Nick Cook / Igor Witkowski — Compilation of declassified Polish archives on the Die Glocke radiation and anti-gravity device.",
-        "tags": [
-          "artigo",
-          "tecnologia"
-        ],
-        "tipo": "Investigation Report / Military Technology"
-      },
-      {
-        "id": "b327_art",
-        "num": "Art-04",
-        "name": "Project Paperclip and the Evacuation of Secret Reich Weapons",
-        "sub": "Joint Intelligence Objectives Agency (JIOA) — US reports documenting the absorption of circular patents and Nazi scientists.",
-        "tags": [
-          "artigo",
-          "geopolitica"
-        ],
-        "tipo": "Declassified Military Document"
-      },
-      {
-        "id": "b328_art",
-        "num": "Art-05",
-        "name": "The Missing Diary of Admiral Richard E. Byrd",
-        "sub": "Attributed to Admiral Byrd — Disputed transcript regarding the Operation Highjump polar flight reporting a physical opening to the realm of Agartha.",
-        "tags": [
-          "artigo",
-          "esoterismo"
-        ],
-        "tipo": "Manuscript / Expedition Account"
-      },
-      {
-        "id": "b329_art",
-        "num": "Art-06",
-        "name": "Le Roi du Monde et les doctrines souterraines",
-        "sub": "René Guénon — Traditionalist theological dissertation tying Tibetan Buddhist prophecies to the realm of Shambhala.",
-        "tags": [
-          "artigo",
-          "esoterismo"
-        ],
-        "tipo": "Metaphysical / Traditionalist Article"
-      },
-      {
-        "id": "b330_art",
-        "num": "Art-07",
-        "name": "The Zeta Reticuli Incident: An Astronomical Analysis of the Hill Star Map",
-        "sub": "Marjorie Fish / Terence Dickinson (Astronomy Magazine) — Three-dimensional mathematical study focusing on extraterrestrial navigation coordinates.",
-        "tags": [
-          "artigo",
-          "ufologia"
-        ],
-        "tipo": "Scientific / Ufological Article"
-      },
-      {
-        "id": "b331_art",
-        "num": "Art-08",
-        "name": "The Reptilian Matrix and the Subversion of Human Sovereignty",
-        "sub": "David Icke — Analytical synthesis uniting Sumerian rituals to the archontic global manipulation matrix.",
-        "tags": [
-          "artigo",
-          "conspiracao"
-        ],
-        "tipo": "Theoretical / Conspiratorial Manifesto"
-      },
-      {
-        "id": "b332_art",
-        "num": "Art-09",
-        "name": "The Lacerta Interview: Transcripts of an Intraterrestrial Entity",
-        "sub": "Ole K. (Pseudonym) — Famous document that deconstructs the creation of the human race from biological wars between the Anunnaki and native beings.",
-        "tags": [
-          "artigo",
-          "ufologia"
-        ],
-        "tipo": "Interview Transcript / UFO File"
-      }
-    ]
-  }
 ];
