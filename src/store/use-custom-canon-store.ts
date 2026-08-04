@@ -277,6 +277,8 @@ export const useCustomCanonStore = create<CustomCanonState>()(
 
       syncLanguage: (lang) => set((state) => {
         const suggestionPhases = state.suggestionPhases || [];
+        const hasLegacyPage = suggestionPhases.some(p => p?.books?.some(b => 'page' in (b as any)));
+
         // Migration/Fix for Minor Prophets theme for existing users
         const updatedSuggestion = suggestionPhases.map(p => {
           if (p?.title && (p.title.includes("PROFETAS MENORES") || p.title.includes("MINOR PROPHETS")) && p.theme === "prophets") {
@@ -292,16 +294,16 @@ export const useCustomCanonStore = create<CustomCanonState>()(
         const isDefaultPT = JSON.stringify(suggestionPhases) === JSON.stringify(CANON_DATA);
         const isDefaultEN = JSON.stringify(suggestionPhases) === JSON.stringify(CANON_DATA_ENGLISH);
         
-        if (isDefaultPT || isDefaultEN || suggestionChanged) {
+        if (isDefaultPT || isDefaultEN || suggestionChanged || hasLegacyPage) {
           const newCanon = lang.startsWith('pt') ? CANON_DATA : CANON_DATA_ENGLISH;
           
           // If we had a theme fix, we should apply it even if it's not a full language sync
-          if (suggestionChanged && !(isDefaultPT || isDefaultEN)) {
+          if (suggestionChanged && !(isDefaultPT || isDefaultEN || hasLegacyPage)) {
             return { suggestionPhases: updatedSuggestion };
           }
 
           // Only update if it's actually different from current
-          if (JSON.stringify(suggestionPhases) !== JSON.stringify(newCanon)) {
+          if (hasLegacyPage || JSON.stringify(suggestionPhases) !== JSON.stringify(newCanon)) {
             return { suggestionPhases: newCanon };
           }
         }

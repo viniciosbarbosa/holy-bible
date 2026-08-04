@@ -39,23 +39,35 @@ const RootRedirect = () => {
 };
 
 const RouteErrorBoundary = () => {
+  const error = useRouteError() as any;
+  const errorMessage = error?.message || error?.statusText || (typeof error === "string" ? error : "");
+
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center">
       <div className="p-8 rounded-3xl bg-bible-card border border-bible-border shadow-2xl max-w-md w-full">
         <h2 className="font-cinzel text-xl text-bible-gold mb-3 uppercase tracking-wider">
           Cânone em Atualização
         </h2>
-        <p className="text-bible-muted font-serif text-sm mb-6">
-          Ocorreu uma inconsistência temporária nos dados salvos. Clique abaixo para recarregar a sessão.
+        <p className="text-bible-muted font-serif text-sm mb-4">
+          Ocorreu uma atualização na estrutura do Cânone. Clique no botão abaixo para sincronizar seus dados.
         </p>
+        {errorMessage && (
+          <p className="text-xs font-mono text-red-400/80 bg-red-500/10 p-3 rounded-xl mb-6 text-left overflow-auto max-h-24 border border-red-500/20">
+            {errorMessage}
+          </p>
+        )}
         <button
           onClick={() => {
+            try {
+              localStorage.removeItem("holy-bible-custom-canon-v2");
+              localStorage.clear();
+            } catch (e) {}
             useCustomCanonStore.getState().clearStore();
-            window.location.reload();
+            window.location.href = window.location.origin + window.location.pathname;
           }}
           className="w-full py-3 px-6 rounded-xl bg-bible-gold text-white font-cinzel text-xs uppercase tracking-widest hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-bible-gold/20"
         >
-          Resetar e Recarregar
+          Sincronizar e Recarregar
         </button>
       </div>
     </div>
