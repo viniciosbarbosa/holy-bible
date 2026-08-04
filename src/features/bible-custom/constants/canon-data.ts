@@ -3194,7 +3194,6 @@ export const CANON_DATA: Phase[] = [
       ],
     },
   ],
-];
 export const CANON_DATA_ENGLISH: Phase[] = [
   {
     id: "f0",
