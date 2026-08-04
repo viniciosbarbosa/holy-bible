@@ -213,22 +213,59 @@ export const EditBookModal = () => {
                       rows={2}
                     />
 
-                    <div className="mt-4 flex gap-4 items-center">
-                      <label className="text-[10px] text-bible-gold uppercase tracking-[0.2em] font-cinzel ml-2">
-                        Página:
-                      </label>
-                      <input
-                        type="number"
-                        value={activeBook.page !== undefined ? activeBook.page : ""}
-                        onChange={(e) =>
-                          updateBook(activePhaseId, activeBook.id, {
-                            page: e.target.value ? Number(e.target.value) : undefined,
-                          })
-                        }
-                        className="bg-transparent text-sm font-serif text-bible-text border-b border-bible-border/30 focus:border-bible-gold outline-none pb-1 transition-all w-24"
-                        placeholder="Nenhuma"
-                      />
-                    </div>
+                    {activeBook.tags && activeBook.tags.length > 0 ? (
+                      <div className="mt-4 space-y-2 border-l-2 border-bible-gold/20 pl-4 py-1">
+                        <label className="text-[10px] text-bible-gold uppercase tracking-[0.2em] font-cinzel ml-2">
+                          Páginas por Tag:
+                        </label>
+                        <div className="space-y-2 max-h-[120px] overflow-y-auto pr-2">
+                          {activeBook.tags.map((t) => {
+                            const lbl = BUILT_IN_TAGS[t]?.lbl || t.toUpperCase();
+                            return (
+                              <div key={t} className="flex items-center gap-2">
+                                <span className="text-[10px] font-cinzel text-bible-muted w-16 truncate">{lbl}:</span>
+                                <input
+                                  type="number"
+                                  value={activeBook.pages?.[t] !== undefined ? activeBook.pages[t] : ""}
+                                  onChange={(e) => {
+                                    const val = e.target.value;
+                                    const currentPages = activeBook.pages || {};
+                                    const newPages = { ...currentPages };
+                                    if (val) {
+                                      newPages[t] = Number(val);
+                                    } else {
+                                      delete newPages[t];
+                                    }
+                                    updateBook(activePhaseId, activeBook.id, {
+                                      pages: Object.keys(newPages).length > 0 ? newPages : undefined,
+                                    });
+                                  }}
+                                  className="bg-transparent text-sm font-serif text-bible-text border-b border-bible-border/30 focus:border-bible-gold outline-none pb-1 transition-all w-24"
+                                  placeholder="Nenhuma"
+                                />
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="mt-4 flex gap-4 items-center">
+                        <label className="text-[10px] text-bible-gold uppercase tracking-[0.2em] font-cinzel ml-2">
+                          Página:
+                        </label>
+                        <input
+                          type="number"
+                          value={activeBook.page !== undefined ? activeBook.page : ""}
+                          onChange={(e) =>
+                            updateBook(activePhaseId, activeBook.id, {
+                              page: e.target.value ? Number(e.target.value) : undefined,
+                            })
+                          }
+                          className="bg-transparent text-sm font-serif text-bible-text border-b border-bible-border/30 focus:border-bible-gold outline-none pb-1 transition-all w-24"
+                          placeholder="Nenhuma"
+                        />
+                      </div>
+                    )}
                   </header>
 
                   <div className="space-y-4">

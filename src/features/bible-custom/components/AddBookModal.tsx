@@ -15,6 +15,7 @@ export const AddBookModal = () => {
   const [name, setName] = useState("");
   const [sub, setSub] = useState("");
   const [page, setPage] = useState("");
+  const [pages, setPages] = useState<Record<string, string>>({});
   const [tags, setTags] = useState<string[]>([]);
 
   const allExistingTags = useMemo(() => {
@@ -28,12 +29,18 @@ export const AddBookModal = () => {
     e.preventDefault();
     if (!name || !activePhaseId) return;
     
+    const pagesObj = Object.keys(pages).reduce((acc, key) => {
+      if (pages[key]) acc[key] = Number(pages[key]);
+      return acc;
+    }, {} as Record<string, number>);
+
     addBook(activePhaseId, {
       num: String(Math.floor(Math.random() * 1000)), // Temp ID logic
       name,
       sub,
       tags,
       page: page ? Number(page) : undefined,
+      pages: Object.keys(pagesObj).length > 0 ? pagesObj : undefined,
     });
     
     reset();
@@ -43,6 +50,7 @@ export const AddBookModal = () => {
     setName("");
     setSub("");
     setPage("");
+    setPages({});
     setTags([]);
     closeAllModals();
   };
@@ -122,18 +130,43 @@ export const AddBookModal = () => {
                     />
                   </div>
 
-                  <div className="space-y-4">
-                    <label className="text-[10px] text-bible-gold uppercase tracking-[0.2em] font-cinzel ml-2">
-                      Página <span className="opacity-40 italic">({t("modal.optional")})</span>
-                    </label>
-                    <input
-                      type="number"
-                      value={page}
-                      onChange={(e) => setPage(e.target.value)}
-                      className="w-full bg-bible-dark/50 border border-bible-border/30 rounded-2xl px-6 py-4 text-bible-text outline-none focus:border-bible-gold transition-all font-serif"
-                      placeholder="Ex: 112"
-                    />
-                  </div>
+                  {tags.length > 0 ? (
+                    <div className="space-y-4">
+                      <label className="text-[10px] text-bible-gold uppercase tracking-[0.2em] font-cinzel ml-2">
+                        Páginas por Tag
+                      </label>
+                      <div className="space-y-3 bg-bible-dark/30 rounded-2xl p-4 border border-bible-border/30 max-h-[160px] overflow-y-auto">
+                        {tags.map((t) => {
+                          const lbl = BUILT_IN_TAGS[t]?.lbl || t.toUpperCase();
+                          return (
+                            <div key={t} className="flex items-center gap-3">
+                              <span className="text-[10px] font-cinzel text-bible-muted w-20 truncate">{lbl}:</span>
+                              <input
+                                type="number"
+                                value={pages[t] || ""}
+                                onChange={(e) => setPages({ ...pages, [t]: e.target.value })}
+                                className="flex-1 bg-bible-dark/50 border border-bible-border/30 rounded-xl px-4 py-2 text-bible-text outline-none focus:border-bible-gold transition-all text-xs"
+                                placeholder="Página"
+                              />
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="space-y-4">
+                      <label className="text-[10px] text-bible-gold uppercase tracking-[0.2em] font-cinzel ml-2">
+                        Página <span className="opacity-40 italic">({t("modal.optional")})</span>
+                      </label>
+                      <input
+                        type="number"
+                        value={page}
+                        onChange={(e) => setPage(e.target.value)}
+                        className="w-full bg-bible-dark/50 border border-bible-border/30 rounded-2xl px-6 py-4 text-bible-text outline-none focus:border-bible-gold transition-all font-serif"
+                        placeholder="Ex: 112"
+                      />
+                    </div>
+                  )}
                 </div>
 
                 <div className="space-y-6">

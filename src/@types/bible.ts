@@ -27,6 +27,7 @@ export interface Book {
   foco?: string;
   isQ?: boolean;
   page?: number;
+  pages?: Record<string, number>;
   savedVerses?: SavedVerse[];
 }
 

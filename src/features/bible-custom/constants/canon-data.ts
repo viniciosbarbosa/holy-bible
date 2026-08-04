@@ -464,7 +464,7 @@ export const CANON_DATA: Phase[] = [
         name: "Êxodo (Sh'mot)",
         sub: "Libertação do Egito e a outorga no Sinai",
         tags: ["b201", "cnbb", "stern"],
-        page: 112,
+        pages: { cnbb: 54, b201: 584, stern: 112 },
       },
       {
         id: "b42",
@@ -3193,6 +3193,7 @@ export const CANON_DATA: Phase[] = [
     ],
   },
 ];
+
 export const CANON_DATA_ENGLISH: Phase[] = [
   {
     id: "f0",
