@@ -69,8 +69,8 @@ export const CANON_DATA: Phase[] = [
         num: "0i",
         name: "O Discurso sobre a Oitava e a Nona",
         sub: "Tratado Hermético de Nag Hammadi sobre a ascensão mística às esferas celestes (NH VI, 6)",
-        tags: ["hermetismo", "nag hammadi", "gnose"],
-        page: 277,
+        tags: ["hermetismo", "naghammadi", "gnose"],
+        pages: { hermetismo: 277 },
       },
       {
         id: "b0_stern_intro",
@@ -78,7 +78,7 @@ export const CANON_DATA: Phase[] = [
         name: "Bíblia Judaica Completa: Introdução Exegética",
         sub: "David H. Stern — O Tanakh judeu vs. AT cristão, a judaicidade da B'rit Hadashah e o Nome Divino",
         tags: ["base", "stern", "exegese"],
-        page: 13,
+        pages: { stern: 13 },
       },
     ],
   },
@@ -94,7 +94,7 @@ export const CANON_DATA: Phase[] = [
         name: "Gênesis 1–5",
         sub: "Criação, Adão e Eva, Caim e Abel, genealogia (B'reshit)",
         tags: ["b201", "cnbb", "stern"],
-        page: 57,
+        pages: { b201: 57 },
       },
       {
         id: "b1_comp",
@@ -109,7 +109,7 @@ export const CANON_DATA: Phase[] = [
         name: "Adão e Eva I (O Conflito de Adão e Eva com Satã)",
         sub: "Tradição apócrifa etíope/cristã sobre a saída do Éden",
         tags: ["b201", "v1"],
-        page: 13,
+        pages: { v1: 13 },
       },
       {
         id: "b3",
@@ -117,7 +117,7 @@ export const CANON_DATA: Phase[] = [
         name: "Adão e Eva II",
         sub: "Continuação da narrativa dos patriarcas antediluvianos",
         tags: ["b201", "v1"],
-        page: 79,
+        pages: { v1: 79 },
       },
       {
         id: "b4",
@@ -125,7 +125,7 @@ export const CANON_DATA: Phase[] = [
         name: "Adão e Eva III",
         sub: "Relatos da morte e testamento dos primeiros pais",
         tags: ["b201", "v3"],
-        page: 444,
+        pages: { v3: 444 },
       },
       {
         id: "b5",
@@ -133,7 +133,7 @@ export const CANON_DATA: Phase[] = [
         name: "Vita Adae et Evae",
         sub: "Versão latina da vida de Adão e Eva",
         tags: ["b201", "v1"],
-        page: 575,
+        pages: { v1: 575 },
       },
       {
         id: "b6",
@@ -141,7 +141,7 @@ export const CANON_DATA: Phase[] = [
         name: "Eslavo Vita Adae et Evae",
         sub: "Versão eslava sobre a penitência nos rios do Paraíso",
         tags: ["b201", "v1"],
-        page: 576,
+        pages: { v1: 576 },
       },
       {
         id: "b7",
@@ -149,7 +149,7 @@ export const CANON_DATA: Phase[] = [
         name: "Livro de Adão",
         sub: "O Conflito de Adão e Eva com Satã",
         tags: ["v3"],
-        page: 13,
+        pages: { v3: 13 },
       },
       {
         id: "b7b",
@@ -163,8 +163,8 @@ export const CANON_DATA: Phase[] = [
         num: "7c",
         name: "Apocalipse de Adão",
         sub: "Revelação gnóstica de Adão a seu filho Sete (NH V, 5)",
-        tags: ["b201", "v1", "nag hammadi"],
-        page: 239,
+        tags: ["b201", "v1", "naghammadi"],
+        pages: { v1: 239 },
       },
       {
         id: "b8",
@@ -172,7 +172,7 @@ export const CANON_DATA: Phase[] = [
         name: "Gênesis 6–11",
         sub: "Vigilantes, Noé, Dilúvio, Torre de Babel",
         tags: ["b201", "cnbb", "stern"],
-        page: 57,
+        pages: { b201: 57 },
       },
       {
         id: "b9",
@@ -180,7 +180,7 @@ export const CANON_DATA: Phase[] = [
         name: "Narração do Dilúvio — Epopéia de Gilgamesh",
         sub: "Paralelo mesopotâmico ao dilúvio bíblico (Utnapishtim)",
         tags: ["v1"],
-        page: 165,
+        pages: { v1: 165 },
       },
       {
         id: "b10",
@@ -188,7 +188,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Enoch (Livro de Enoque Etiópico)",
         sub: "Vigilantes, Parábolas, Astronomia, Sonhos, Epístola",
         tags: ["b201", "v1"],
-        page: 259,
+        pages: { v1: 259 },
       },
       {
         id: "b11",
@@ -196,7 +196,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Enoch (Livro dos Segredos de Enoque)",
         sub: "Ascensão através dos 7 céus e o segredo da Criação",
         tags: ["b201", "v1"],
-        page: 105,
+        pages: { v1: 105 },
       },
       {
         id: "b12",
@@ -204,7 +204,7 @@ export const CANON_DATA: Phase[] = [
         name: "3 Enoch (Livro Hebraico de Enoque)",
         sub: "A transformação de Enoque no anjo Metatron",
         tags: ["b201"],
-        page: 567,
+        pages: { b201: 567 },
       },
       {
         id: "b12b",
@@ -212,7 +212,7 @@ export const CANON_DATA: Phase[] = [
         name: "As Viagens de Enoque",
         sub: "Seções ampliadas dos relatos de viagens celestes",
         tags: ["v1"],
-        page: 268,
+        pages: { v1: 268 },
       },
       {
         id: "b13",
@@ -220,7 +220,7 @@ export const CANON_DATA: Phase[] = [
         name: "O Livro dos Gigantes",
         sub: "Fragmentos da tradição dos Nephilim e seus sonhos",
         tags: ["b201"],
-        page: 575,
+        pages: { b201: 575 },
       },
     ],
   },
@@ -236,7 +236,7 @@ export const CANON_DATA: Phase[] = [
         name: "Gênesis 12–25",
         sub: "Abraão, Ló, Isaque, aliança",
         tags: ["b201", "cnbb", "stern"],
-        page: 57,
+        pages: { b201: 57 },
       },
       {
         id: "b14_comp",
@@ -251,7 +251,7 @@ export const CANON_DATA: Phase[] = [
         name: "Jubileus (O Livro dos Jubileus)",
         sub: "Reescrita do Gênesis com calendário solar e divisão por jubileus",
         tags: ["b201", "v1"],
-        page: 425,
+        pages: { v1: 425 },
       },
       {
         id: "b16",
@@ -259,7 +259,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Abraão",
         sub: "A morte, a carruagem de fogo e o julgamento das almas",
         tags: ["b201", "v1"],
-        page: 169,
+        pages: { v1: 169 },
       },
       {
         id: "b17",
@@ -267,7 +267,7 @@ export const CANON_DATA: Phase[] = [
         name: "Apocalipse de Abraão",
         sub: "Visão celestial, a queda da idolatria e o trono divino",
         tags: ["v1"],
-        page: 825,
+        pages: { v1: 825 },
       },
       {
         id: "b18",
@@ -275,7 +275,7 @@ export const CANON_DATA: Phase[] = [
         name: "Livro de Abraão",
         sub: "Versão expandida das tradições e da astronomia abraâmica",
         tags: ["v3"],
-        page: 36,
+        pages: { v3: 36 },
       },
       {
         id: "b19",
@@ -283,7 +283,7 @@ export const CANON_DATA: Phase[] = [
         name: "Caverna dos Tesouros",
         sub: "Tradição siríaca da genealogia dos patriarcas até Cristo",
         tags: ["v1"],
-        page: 199,
+        pages: { v1: 199 },
       },
       {
         id: "b20",
@@ -291,7 +291,7 @@ export const CANON_DATA: Phase[] = [
         name: "Conto dos Patriarcas",
         sub: "Narrativas tradicionais sobre a vida dos pais do deserto",
         tags: ["v1"],
-        page: 149,
+        pages: { v1: 149 },
       },
       {
         id: "b21",
@@ -299,7 +299,7 @@ export const CANON_DATA: Phase[] = [
         name: "Gênesis 26–36",
         sub: "Isaque, Jacó, Esaú e as doze tribos",
         tags: ["b201", "cnbb", "stern"],
-        page: 57,
+        pages: { b201: 57 },
       },
       {
         id: "b22",
@@ -307,7 +307,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamentos Finais dos 12 Patriarcas",
         sub: "Exortações éticas e messiânicas dos filhos de Jacó",
         tags: ["b201", "v1"],
-        page: 335,
+        pages: { v1: 335 },
       },
       {
         id: "b23",
@@ -315,7 +315,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Rúben",
         sub: "Da intenção e pensamentos",
         tags: ["b201", "v1"],
-        page: 335,
+        pages: { v1: 335 },
       },
       {
         id: "b24",
@@ -323,7 +323,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Simeão",
         sub: "Da inveja e do ciúme",
         tags: ["b201", "v1"],
-        page: 339,
+        pages: { v1: 339 },
       },
       {
         id: "b25",
@@ -331,7 +331,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Levi",
         sub: "Do sacerdócio e da presunção",
         tags: ["b201", "v1"],
-        page: 342,
+        pages: { v1: 342 },
       },
       {
         id: "b26",
@@ -339,7 +339,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Judá",
         sub: "Da valentia, cobiça e luxúria",
         tags: ["b201", "v1"],
-        page: 355,
+        pages: { v1: 355 },
       },
       {
         id: "b27",
@@ -347,7 +347,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Issacar",
         sub: "Da simplicidade de coração",
         tags: ["b201", "v1"],
-        page: 364,
+        pages: { v1: 364 },
       },
       {
         id: "b28",
@@ -355,7 +355,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Zebulom",
         sub: "Da compaixão e misericórdia",
         tags: ["b201", "v1"],
-        page: 367,
+        pages: { v1: 367 },
       },
       {
         id: "b29",
@@ -363,7 +363,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Dan",
         sub: "Da raiva e da mentira",
         tags: ["b201", "v1"],
-        page: 371,
+        pages: { v1: 371 },
       },
       {
         id: "b30",
@@ -371,7 +371,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Naftali",
         sub: "Da bondade natural",
         tags: ["b201", "v1"],
-        page: 374,
+        pages: { v1: 374 },
       },
       {
         id: "b31",
@@ -379,7 +379,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Gad",
         sub: "Do ódio e seu antídoto",
         tags: ["b201", "v1"],
-        page: 378,
+        pages: { v1: 378 },
       },
       {
         id: "b32",
@@ -387,7 +387,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Aser",
         sub: "Do duplo aspecto da maldade e virtude",
         tags: ["b201", "v1"],
-        page: 383,
+        pages: { v1: 383 },
       },
       {
         id: "b33",
@@ -395,7 +395,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de José",
         sub: "Da castidade e paciência",
         tags: ["b201", "v1"],
-        page: 387,
+        pages: { v1: 387 },
       },
       {
         id: "b34",
@@ -403,7 +403,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Benjamin",
         sub: "Da reta intenção e mente pura",
         tags: ["b201", "v1"],
-        page: 390,
+        pages: { v1: 390 },
       },
       {
         id: "b35",
@@ -411,7 +411,7 @@ export const CANON_DATA: Phase[] = [
         name: "Gênesis 37–50",
         sub: "José no Egito e a bênção dos patriarcas",
         tags: ["b201", "cnbb", "stern"],
-        page: 57,
+        pages: { b201: 57 },
       },
       {
         id: "b36",
@@ -419,7 +419,7 @@ export const CANON_DATA: Phase[] = [
         name: "José e Asenath",
         sub: "A conversão e o casamento da filha do sacerdote egípcio com José",
         tags: ["v1"],
-        page: 451,
+        pages: { v1: 451 },
       },
       {
         id: "b37",
@@ -427,7 +427,7 @@ export const CANON_DATA: Phase[] = [
         name: "Livro de Jasher (Livro de Jasar)",
         sub: "Crônica histórica expandida mencionada em Josué e Samuel",
         tags: ["v2"],
-        page: 10,
+        pages: { v2: 10 },
       },
       {
         id: "b38",
@@ -472,7 +472,7 @@ export const CANON_DATA: Phase[] = [
         name: "Janes e Jambres",
         sub: "O livro dos magos do Faraó que resistiram a Moisés",
         tags: ["b201"],
-        page: 624,
+        pages: { b201: 624 },
       },
       {
         id: "b43",
@@ -480,7 +480,7 @@ export const CANON_DATA: Phase[] = [
         name: "Levítico (Vayikra)",
         sub: "Código de santidade e rituais de sacrifício",
         tags: ["b201", "cnbb", "stern"],
-        page: 158,
+        pages: { b201: 158 },
       },
       {
         id: "b44",
@@ -488,7 +488,7 @@ export const CANON_DATA: Phase[] = [
         name: "Números (B'midbar)",
         sub: "A jornada no deserto e a contagem das tribos",
         tags: ["b201", "cnbb", "stern"],
-        page: 192,
+        pages: { b201: 192 },
       },
       {
         id: "b45",
@@ -496,7 +496,7 @@ export const CANON_DATA: Phase[] = [
         name: "Deuteronômio (D'varim)",
         sub: "O Shemá, a recapitulação da Lei e a morte de Moisés",
         tags: ["b201", "cnbb", "stern"],
-        page: 240,
+        pages: { b201: 240 },
       },
       {
         id: "b46",
@@ -504,7 +504,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Moisés (Assunção de Moisés)",
         sub: "Profecias finais de Moisés a Josué antes de seu sepultamento",
         tags: ["b201", "v1"],
-        page: 191,
+        pages: { v1: 191 },
       },
       {
         id: "b47",
@@ -512,7 +512,7 @@ export const CANON_DATA: Phase[] = [
         name: "Apocalipse de Moisés",
         sub: "Relato grego da criação e da queda humana",
         tags: ["b201", "v1"],
-        page: 540,
+        pages: { v1: 540 },
       },
       {
         id: "b48",
@@ -520,7 +520,7 @@ export const CANON_DATA: Phase[] = [
         name: "Seleções do Livro de Moisés",
         sub: "Traduções e visões intertestamentais",
         tags: ["v3"],
-        page: 50,
+        pages: { v3: 50 },
       },
       {
         id: "b49",
@@ -528,7 +528,7 @@ export const CANON_DATA: Phase[] = [
         name: "Fragmentos de uma Obra Zadoquita",
         sub: "Regras do sacerdócio remanescente",
         tags: ["b201", "v3"],
-        page: 536,
+        pages: { v3: 536 },
       },
       {
         id: "b50",
@@ -536,7 +536,7 @@ export const CANON_DATA: Phase[] = [
         name: "Documento de Damasco",
         sub: "Manuscritos do Mar Morto — Exortação e leis da comunidade",
         tags: ["v3"],
-        page: 142,
+        pages: { v3: 142 },
       },
     ],
   },
@@ -595,7 +595,7 @@ export const CANON_DATA: Phase[] = [
         name: "Josué (Y'hoshua)",
         sub: "Conquistas de Canaã",
         tags: ["b201", "cnbb", "stern"],
-        page: 284,
+        pages: { b201: 284 },
       },
       {
         id: "b57",
@@ -603,7 +603,7 @@ export const CANON_DATA: Phase[] = [
         name: "Juízes (Shof'tim)",
         sub: "A era dos libertadores e líderes de Israel",
         tags: ["b201", "cnbb", "stern"],
-        page: 310,
+        pages: { b201: 310 },
       },
       {
         id: "b58",
@@ -611,7 +611,7 @@ export const CANON_DATA: Phase[] = [
         name: "Rute (Rut)",
         sub: "A história da ancestral moabita do Rei Davi",
         tags: ["b201", "cnbb", "stern"],
-        page: 1078,
+        pages: { b201: 1078 },
       },
       {
         id: "b59",
@@ -619,7 +619,7 @@ export const CANON_DATA: Phase[] = [
         name: "A História de Ahikar",
         sub: "Provérbios e sabedoria da Mesopotâmia integrada ao ambiente judaico",
         tags: ["b201"],
-        page: 642,
+        pages: { b201: 642 },
       },
       {
         id: "b60",
@@ -627,7 +627,7 @@ export const CANON_DATA: Phase[] = [
         name: "Eldad e Modad",
         sub: "Profecia dos dois anciãos no acampamento",
         tags: ["b201"],
-        page: 617,
+        pages: { b201: 617 },
       },
       {
         id: "b61",
@@ -635,15 +635,15 @@ export const CANON_DATA: Phase[] = [
         name: "Melchizedek (Qumran)",
         sub: "Relato esênio do Sacerdote-Rei e Juiz celeste no Fim dos Tempos",
         tags: ["v1"],
-        page: 159,
+        pages: { v1: 159 },
       },
       {
         id: "b61_nh",
         num: "61b",
         name: "Melquisedeque (Nag Hammadi)",
         sub: "Revelação gnóstica sobre Jesus Cristo como o Sumo Sacerdote Melquisedeque (NH IX, 1)",
-        tags: ["nag hammadi", "gnose"],
-        page: 370,
+        tags: ["naghammadi", "gnose"],
+        pages: { naghammadi: 370 },
       },
     ],
   },
@@ -659,7 +659,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Samuel (Sh'mu'el Alef)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 337,
+        pages: { b201: 337 },
       },
       {
         id: "b63",
@@ -667,7 +667,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Samuel (Sh'mu'el Bet)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 372,
+        pages: { b201: 372 },
       },
       {
         id: "b64",
@@ -675,7 +675,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Reis (M'lakhim Alef)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 403,
+        pages: { b201: 403 },
       },
       {
         id: "b65",
@@ -683,7 +683,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Reis (M'lakhim Bet)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 436,
+        pages: { b201: 436 },
       },
       {
         id: "b66",
@@ -691,7 +691,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Crônicas (Divrei-HaYamim Alef)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 1172,
+        pages: { b201: 1172 },
       },
       {
         id: "b67",
@@ -699,7 +699,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Crônicas (Divrei-HaYamim Bet)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 1201,
+        pages: { b201: 1201 },
       },
       {
         id: "b68",
@@ -743,7 +743,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Esdras ('Ezra Alef)",
         sub: "Cânon Grego/Septuaginta",
         tags: ["b201", "cnbb"],
-        page: 447,
+        pages: { b201: 447 },
       },
       {
         id: "b70",
@@ -751,7 +751,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Esdras",
         sub: "Textos de Esdras e Neemias unificados",
         tags: ["b201"],
-        page: 453,
+        pages: { b201: 453 },
       },
       {
         id: "b71",
@@ -759,7 +759,7 @@ export const CANON_DATA: Phase[] = [
         name: "4 Esdras (Apocalipse de Esdras)",
         sub: "Visões apocalípticas do profeta sobre o destino da humanidade",
         tags: ["v3"],
-        page: 198,
+        pages: { v3: 198 },
       },
       {
         id: "b71b",
@@ -767,7 +767,7 @@ export const CANON_DATA: Phase[] = [
         name: "Palavra e Revelação de Esdras",
         sub: "O Santo Profeta e Amado de Deus",
         tags: ["v3"],
-        page: 82,
+        pages: { v3: 82 },
       },
       {
         id: "b72",
@@ -775,7 +775,7 @@ export const CANON_DATA: Phase[] = [
         name: "Neemias (NechemYah)",
         sub: "Reconstrução dos muros de Jerusalém",
         tags: ["b201", "cnbb", "stern"],
-        page: 1154,
+        pages: { b201: 1154 },
       },
       {
         id: "b73",
@@ -783,7 +783,7 @@ export const CANON_DATA: Phase[] = [
         name: "Carta de Aristeias",
         sub: "Relato da tradução da Septuaginta pelos 72 sábios",
         tags: ["v3"],
-        page: 89,
+        pages: { v3: 89 },
       },
       {
         id: "b74",
@@ -791,7 +791,7 @@ export const CANON_DATA: Phase[] = [
         name: "Tobias",
         sub: "História de Tobit, o anjo Rafael e o demônio Asmodeu",
         tags: ["b201", "cnbb"],
-        page: 504,
+        pages: { b201: 504 },
       },
       {
         id: "b75",
@@ -799,7 +799,7 @@ export const CANON_DATA: Phase[] = [
         name: "Judite",
         sub: "A heroína judaica que degolou Holofernes",
         tags: ["b201", "cnbb"],
-        page: 519,
+        pages: { b201: 519 },
       },
       {
         id: "b76",
@@ -807,7 +807,7 @@ export const CANON_DATA: Phase[] = [
         name: "Ester + Adições em Ester",
         sub: "Edição canônica com os capítulos adicionais gregos",
         tags: ["b201", "cnbb", "stern"],
-        page: 1118,
+        pages: { b201: 1118 },
       },
       {
         id: "b77",
@@ -815,7 +815,7 @@ export const CANON_DATA: Phase[] = [
         name: "Susana",
         sub: "Adição ao Livro de Daniel sobre o julgamento sábio",
         tags: ["b201", "cnbb"],
-        page: 527,
+        pages: { b201: 527 },
       },
       {
         id: "b78",
@@ -823,7 +823,7 @@ export const CANON_DATA: Phase[] = [
         name: "Bel e o Dragão",
         sub: "Desmistificação da idolatria por Daniel em Babilônia",
         tags: ["b201", "cnbb"],
-        page: 504,
+        pages: { b201: 504 },
       },
       {
         id: "b79",
@@ -831,7 +831,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Macabeus",
         sub: "A revolta judaica contra Ântioco Epifanes",
         tags: ["b201", "cnbb"],
-        page: 464,
+        pages: { b201: 464 },
       },
       {
         id: "b80",
@@ -839,7 +839,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Macabeus",
         sub: "Martírio dos sete irmãos e teologia da ressurreição",
         tags: ["b201", "cnbb"],
-        page: 472,
+        pages: { b201: 472 },
       },
       {
         id: "b81",
@@ -847,7 +847,7 @@ export const CANON_DATA: Phase[] = [
         name: "3 Macabeus",
         sub: "Perseguição aos judeus em Alexandria sob Ptolomeu IV",
         tags: ["b201", "v3"],
-        page: 257,
+        pages: { v3: 257 },
       },
       {
         id: "b82",
@@ -855,7 +855,7 @@ export const CANON_DATA: Phase[] = [
         name: "4 Macabeus",
         sub: "Discurso filosófico sobre a razão dominando as paixões",
         tags: ["b201", "v3"],
-        page: 278,
+        pages: { v3: 278 },
       },
       {
         id: "b83",
@@ -863,7 +863,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Meqabyan",
         sub: "Livros dos Macabeus da Bíblia Etíope",
         tags: ["b201"],
-        page: 580,
+        pages: { b201: 580 },
       },
       {
         id: "b84",
@@ -871,7 +871,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Meqabyan",
         sub: "",
         tags: ["b201"],
-        page: 596,
+        pages: { b201: 596 },
       },
       {
         id: "b85",
@@ -879,7 +879,7 @@ export const CANON_DATA: Phase[] = [
         name: "3 Meqabyan",
         sub: "",
         tags: ["b201"],
-        page: 608,
+        pages: { b201: 608 },
       },
       {
         id: "b86",
@@ -887,7 +887,7 @@ export const CANON_DATA: Phase[] = [
         name: "Sabedoria de Salomão",
         sub: "Tratado deuterocanônico de sabedoria helenística",
         tags: ["missing", "cnbb"],
-        page: 902,
+        pages: { cnbb: 902 },
       },
     ],
   },
@@ -903,7 +903,7 @@ export const CANON_DATA: Phase[] = [
         name: "Jó (Iyov)",
         sub: "O enigma do sofrimento do justo",
         tags: ["b201", "cnbb", "stern"],
-        page: 1026,
+        pages: { b201: 1026 },
       },
       {
         id: "b88",
@@ -911,7 +911,7 @@ export const CANON_DATA: Phase[] = [
         name: "Salmos 1–72 (Tehillim I & II)",
         sub: "Cânticos de Davi e dos filhos de Coré",
         tags: ["b201", "cnbb", "stern"],
-        page: 835,
+        pages: { b201: 835 },
       },
       {
         id: "b89",
@@ -919,7 +919,7 @@ export const CANON_DATA: Phase[] = [
         name: "Salmos 73–150 (Tehillim III, IV & V)",
         sub: "Cânticos de Asafe e Salmos de Romagem",
         tags: ["b201", "cnbb", "stern"],
-        page: 835,
+        pages: { b201: 835 },
       },
       {
         id: "b89_comp",
@@ -934,7 +934,7 @@ export const CANON_DATA: Phase[] = [
         name: "Salmos de Salomão",
         sub: "18 Salmos apócrifos de cunho messiânico",
         tags: ["b201"],
-        page: 652,
+        pages: { b201: 652 },
       },
       {
         id: "b91",
@@ -942,7 +942,7 @@ export const CANON_DATA: Phase[] = [
         name: "Salmos Adicionais (Salmo 151 ao 155)",
         sub: "Salmos apócrifos preservados em siríaco e no Mar Morto",
         tags: ["b201"],
-        page: 534,
+        pages: { b201: 534 },
       },
       {
         id: "b92",
@@ -950,7 +950,7 @@ export const CANON_DATA: Phase[] = [
         name: "Odes de Salomão",
         sub: "42 hinos poéticos do misticismo cristão primitivo",
         tags: ["b201", "v2"],
-        page: 317,
+        pages: { v2: 317 },
       },
       {
         id: "b93",
@@ -958,7 +958,7 @@ export const CANON_DATA: Phase[] = [
         name: "O Hino da Pérola",
         sub: "Poema gnóstico de resgate da alma contido nos Atos de Tomé",
         tags: ["v1", "gnose"],
-        page: 397,
+        pages: { v1: 397 },
       },
       {
         id: "b94",
@@ -966,7 +966,7 @@ export const CANON_DATA: Phase[] = [
         name: "Provérbios (Mishlei)",
         sub: "Sabedoria prática de Salomão e Agur",
         tags: ["b201", "cnbb", "stern"],
-        page: 977,
+        pages: { b201: 977 },
       },
       {
         id: "b95",
@@ -974,7 +974,7 @@ export const CANON_DATA: Phase[] = [
         name: "Eclesiastes (Kohelet)",
         sub: "A vaidade das coisas e a busca pelo sentido sob o sol",
         tags: ["b201", "cnbb", "stern"],
-        page: 1092,
+        pages: { b201: 1092 },
       },
       {
         id: "b96",
@@ -982,7 +982,7 @@ export const CANON_DATA: Phase[] = [
         name: "Cântico dos Cânticos (Shir-HaShirim)",
         sub: "Poesia de amor alusiva à união mística da alma com o Criador",
         tags: ["b201", "cnbb", "stern"],
-        page: 1078,
+        pages: { b201: 1078 },
       },
       {
         id: "b97",
@@ -990,23 +990,23 @@ export const CANON_DATA: Phase[] = [
         name: "Sirach (Eclesiástico / Ben Sira)",
         sub: "Sabedoria ética do sacerdócio judaico",
         tags: ["b201", "cnbb"],
-        page: 504,
+        pages: { b201: 504 },
       },
       {
         id: "b98",
         num: "98",
         name: "Sobre a Origem do Mundo",
         sub: "Tratado cosmogônico sobre o Caos, Sophia e o Demiurgo Yaldabaoth (NH II, 5)",
-        tags: ["v1", "gnose", "nag hammadi"],
-        page: 150,
+        tags: ["v1", "gnose", "naghammadi"],
+        pages: { v1: 150 },
       },
       {
         id: "b99",
         num: "99",
         name: "As Frases do Sexto (Sentenças de Sextus)",
         sub: "Provérbios éticos e ascéticos cristãos (NH XII, 1)",
-        tags: ["b201", "nag hammadi"],
-        page: 424,
+        tags: ["b201", "naghammadi"],
+        pages: { b201: 424 },
       },
       {
         id: "b100",
@@ -1014,7 +1014,7 @@ export const CANON_DATA: Phase[] = [
         name: "As Tradições de Matias",
         sub: "Fragmentos da tradição oral atribuída ao apóstolo Matias",
         tags: ["b201"],
-        page: 744,
+        pages: { b201: 744 },
       },
     ],
   },
@@ -1030,7 +1030,7 @@ export const CANON_DATA: Phase[] = [
         name: "Isaías 1–39 (Yesha'yahu I)",
         sub: "Oráculos de juízo contra Judá e as nações",
         tags: ["b201", "cnbb", "stern"],
-        page: 469,
+        pages: { b201: 469 },
       },
       {
         id: "b102",
@@ -1038,7 +1038,7 @@ export const CANON_DATA: Phase[] = [
         name: "Isaías 40–66 (Yesha'yahu II)",
         sub: "O Livro do Consolo e os cânticos do Servo Sofredor",
         tags: ["b201", "cnbb", "stern"],
-        page: 469,
+        pages: { b201: 469 },
       },
       {
         id: "b102_comp",
@@ -1053,7 +1053,7 @@ export const CANON_DATA: Phase[] = [
         name: "Ascensão de Isaías",
         sub: "A visão dos sete céus e a crucificação do Amado",
         tags: ["b201", "v1"],
-        page: 131,
+        pages: { v1: 131 },
       },
       {
         id: "b103b",
@@ -1061,7 +1061,7 @@ export const CANON_DATA: Phase[] = [
         name: "Martírio de Isaías",
         sub: "O relato do profeta sendo serrado ao meio pelo Rei Manassés",
         tags: ["v1"],
-        page: 155,
+        pages: { v1: 155 },
       },
       {
         id: "b104",
@@ -1069,7 +1069,7 @@ export const CANON_DATA: Phase[] = [
         name: "Jeremias (Yirmeyahu)",
         sub: "Profecias da queda de Jerusalém e a Nova Aliança",
         tags: ["b201", "cnbb", "stern"],
-        page: 584,
+        pages: { b201: 584 },
       },
       {
         id: "b105",
@@ -1077,7 +1077,7 @@ export const CANON_DATA: Phase[] = [
         name: "Carta de Jeremias",
         sub: "Alerta contra a idolatria babilônica",
         tags: ["b201", "cnbb"],
-        page: 488,
+        pages: { b201: 488 },
       },
       {
         id: "b106",
@@ -1085,7 +1085,7 @@ export const CANON_DATA: Phase[] = [
         name: "Lamentações (Eikhah)",
         sub: "Elegias pela destruição do Primeiro Templo",
         tags: ["b201", "cnbb", "stern"],
-        page: 1088,
+        pages: { b201: 1088 },
       },
       {
         id: "b107",
@@ -1093,7 +1093,7 @@ export const CANON_DATA: Phase[] = [
         name: "Baruque 1 · 2 · 3",
         sub: "Escritos do secretário de Jeremias no exílio",
         tags: ["b201", "cnbb"],
-        page: 489,
+        pages: { b201: 489 },
       },
       {
         id: "b108",
@@ -1101,7 +1101,7 @@ export const CANON_DATA: Phase[] = [
         name: "Oração de Azarias",
         sub: "Adição ao livro de Daniel no forno ardente",
         tags: ["b201", "v3"],
-        page: 645,
+        pages: { v3: 645 },
       },
       {
         id: "b109",
@@ -1109,7 +1109,7 @@ export const CANON_DATA: Phase[] = [
         name: "Ezequiel (Yechezkel)",
         sub: "Visões do Carro Divino (Merkavah) e da restauração do Templo",
         tags: ["b201", "cnbb", "stern"],
-        page: 681,
+        pages: { b201: 681 },
       },
       {
         id: "b110",
@@ -1117,7 +1117,7 @@ export const CANON_DATA: Phase[] = [
         name: "Daniel (Dani'el)",
         sub: "Visões apocalípticas dos quatro impérios e o Filho do Homem",
         tags: ["b201", "cnbb", "stern"],
-        page: 1125,
+        pages: { b201: 1125 },
       },
       {
         id: "b111",
@@ -1147,7 +1147,7 @@ export const CANON_DATA: Phase[] = [
         name: "Oséias (Hoshe'a)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 746,
+        pages: { b201: 746 },
       },
       {
         id: "b114",
@@ -1155,7 +1155,7 @@ export const CANON_DATA: Phase[] = [
         name: "Joel (Yo'el)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 763,
+        pages: { b201: 763 },
       },
       {
         id: "b115",
@@ -1163,7 +1163,7 @@ export const CANON_DATA: Phase[] = [
         name: "Amós ('Amos)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 770,
+        pages: { b201: 770 },
       },
       {
         id: "b116",
@@ -1171,7 +1171,7 @@ export const CANON_DATA: Phase[] = [
         name: "Obadias ('Ovadyah)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 783,
+        pages: { b201: 783 },
       },
       {
         id: "b117",
@@ -1179,7 +1179,7 @@ export const CANON_DATA: Phase[] = [
         name: "Jonas (Yonah)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 786,
+        pages: { b201: 786 },
       },
       {
         id: "b118",
@@ -1187,7 +1187,7 @@ export const CANON_DATA: Phase[] = [
         name: "Miquéias (Mikhah)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 789,
+        pages: { b201: 789 },
       },
       {
         id: "b119",
@@ -1195,7 +1195,7 @@ export const CANON_DATA: Phase[] = [
         name: "Naum (Nachum)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 800,
+        pages: { b201: 800 },
       },
       {
         id: "b120",
@@ -1203,7 +1203,7 @@ export const CANON_DATA: Phase[] = [
         name: "Habacuque (Havakuk)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 800,
+        pages: { b201: 800 },
       },
       {
         id: "b121",
@@ -1211,7 +1211,7 @@ export const CANON_DATA: Phase[] = [
         name: "Sofonias (Tz'fanyah)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 805,
+        pages: { b201: 805 },
       },
       {
         id: "b122",
@@ -1219,7 +1219,7 @@ export const CANON_DATA: Phase[] = [
         name: "Ageu (Hagai)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 811,
+        pages: { b201: 811 },
       },
       {
         id: "b123",
@@ -1227,7 +1227,7 @@ export const CANON_DATA: Phase[] = [
         name: "Zacarias (Z'kharyah)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 819,
+        pages: { b201: 819 },
       },
       {
         id: "b124",
@@ -1235,7 +1235,7 @@ export const CANON_DATA: Phase[] = [
         name: "Malaquias (Mal'akhi)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 830,
+        pages: { b201: 830 },
       },
       {
         id: "b125",
@@ -1243,7 +1243,7 @@ export const CANON_DATA: Phase[] = [
         name: "Oração de Manassés",
         sub: "A oração de arrependimento do rei mais ímpio de Judá",
         tags: ["b201"],
-        page: 501,
+        pages: { b201: 501 },
       },
       {
         id: "b126",
@@ -1251,7 +1251,7 @@ export const CANON_DATA: Phase[] = [
         name: "Oráculos Sibilinos I–XIV",
         sub: "Profecias greco-romanas adaptadas pela comunidade judaico-cristã",
         tags: ["b201"],
-        page: 653,
+        pages: { b201: 653 },
       },
     ],
   },
@@ -1268,7 +1268,7 @@ export const CANON_DATA: Phase[] = [
         name: "A Ascensão de Isaías (Revisão)",
         sub: "",
         tags: ["b201"],
-        page: 131,
+        pages: { b201: 131 },
       },
       {
         id: "b128",
@@ -1276,7 +1276,7 @@ export const CANON_DATA: Phase[] = [
         name: "Testamento de Moisés (Revisão)",
         sub: "",
         tags: ["b201"],
-        page: 623,
+        pages: { b201: 623 },
       },
       {
         id: "b129",
@@ -1284,7 +1284,7 @@ export const CANON_DATA: Phase[] = [
         name: "Livro de Adão (V.3)",
         sub: "",
         tags: ["v3"],
-        page: 13,
+        pages: { v3: 13 },
       },
       {
         id: "b130",
@@ -1306,7 +1306,7 @@ export const CANON_DATA: Phase[] = [
         name: "Profecias do Tanakh Cumpridas por Yeshua",
         sub: "David H. Stern — Mapeamento exegético das profecias messiânicas e continuísmo do pacto",
         tags: ["stern", "messianico", "exegese"],
-        page: 43,
+        pages: { stern: 43 },
       },
     ],
   },
@@ -1323,7 +1323,7 @@ export const CANON_DATA: Phase[] = [
         name: "Protevangelho de Tiago",
         sub: "O nascimento, pureza e vida da Virgem Maria",
         tags: ["b201", "v1"],
-        page: 517,
+        pages: { v1: 517 },
       },
       {
         id: "b133",
@@ -1331,7 +1331,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho da Natividade de Maria",
         sub: "Tradição latina sobre a descendência de Davi",
         tags: ["b201", "v2"],
-        page: 347,
+        pages: { v2: 347 },
       },
       {
         id: "b134",
@@ -1339,7 +1339,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho do Pseudo-Mateus",
         sub: "Milagres na fuga para o Egito com dragões e palmeiras",
         tags: ["b201", "v1"],
-        page: 475,
+        pages: { v1: 475 },
       },
       {
         id: "b135",
@@ -1347,7 +1347,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho da Infância de Tomé",
         sub: "Milagres e prodígios do menino Jesus dos 5 aos 12 anos",
         tags: ["b201", "v1"],
-        page: 503,
+        pages: { v1: 503 },
       },
       {
         id: "b136",
@@ -1355,7 +1355,7 @@ export const CANON_DATA: Phase[] = [
         name: "Fragmentos de Tomé",
         sub: "Textos suplementares da infância",
         tags: ["b201"],
-        page: 701,
+        pages: { b201: 701 },
       },
       {
         id: "b137",
@@ -1363,7 +1363,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho Árabe da Infância",
         sub: "Mágicos, faixas de pano e prodígios no Egito",
         tags: ["v1"],
-        page: 435,
+        pages: { v1: 435 },
       },
       {
         id: "b138",
@@ -1371,7 +1371,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho Armênio da Infância",
         sub: "Os reis magos Baltazar, Melquior e Gaspar",
         tags: ["v1"],
-        page: 451,
+        pages: { v1: 451 },
       },
       {
         id: "b139",
@@ -1379,7 +1379,7 @@ export const CANON_DATA: Phase[] = [
         name: "História de José, o Carpinteiro",
         sub: "Relato de Jesus sobre a morte santa de seu pai adotivo",
         tags: ["b201", "v1"],
-        page: 431,
+        pages: { v1: 431 },
       },
       {
         id: "b140",
@@ -1387,7 +1387,7 @@ export const CANON_DATA: Phase[] = [
         name: "Cartas de Herodes e Pilatos",
         sub: "Correspondência apócrifa sobre os eventos em Jerusalém",
         tags: ["b201"],
-        page: 728,
+        pages: { b201: 728 },
       },
     ],
   },
@@ -1403,7 +1403,7 @@ export const CANON_DATA: Phase[] = [
         name: "Mateus 1–13 (Mattityahu I)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 1235,
+        pages: { b201: 1235 },
       },
       {
         id: "b142",
@@ -1411,7 +1411,7 @@ export const CANON_DATA: Phase[] = [
         name: "Mateus 14–28 (Mattityahu II)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 1235,
+        pages: { b201: 1235 },
       },
       {
         id: "b143",
@@ -1419,7 +1419,7 @@ export const CANON_DATA: Phase[] = [
         name: "Marcos (Markos)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 1270,
+        pages: { b201: 1270 },
       },
       {
         id: "b144",
@@ -1427,7 +1427,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho Secreto de Marcos",
         sub: "Excerto descoberto no Mosteiro de Mar Saba",
         tags: ["b201", "v3"],
-        page: 724,
+        pages: { v3: 724 },
       },
       {
         id: "b145",
@@ -1435,7 +1435,7 @@ export const CANON_DATA: Phase[] = [
         name: "Lucas (Lukas I)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 1290,
+        pages: { b201: 1290 },
       },
       {
         id: "b146",
@@ -1443,7 +1443,7 @@ export const CANON_DATA: Phase[] = [
         name: "Lucas (Lukas II)",
         sub: "",
         tags: ["b201", "cnbb", "stern"],
-        page: 1290,
+        pages: { b201: 1290 },
       },
       {
         id: "b147",
@@ -1451,7 +1451,7 @@ export const CANON_DATA: Phase[] = [
         name: "João 1–12 (Yochanan I)",
         sub: "O Verbo, os sinais e os discursos em Jerusalém",
         tags: ["b201", "cnbb", "stern"],
-        page: 1326,
+        pages: { b201: 1326 },
       },
       {
         id: "b148",
@@ -1459,7 +1459,7 @@ export const CANON_DATA: Phase[] = [
         name: "João 13–21 (Yochanan II)",
         sub: "O lava-pés, a Paixão e as aparições da ressurreição",
         tags: ["b201", "cnbb", "stern"],
-        page: 1326,
+        pages: { b201: 1326 },
       },
       {
         id: "b149",
@@ -1467,7 +1467,7 @@ export const CANON_DATA: Phase[] = [
         name: "Narrativa da Paixão Pré-Markan",
         sub: "Fonte primitiva dos relatos da crucifixão",
         tags: ["b201"],
-        page: 708,
+        pages: { b201: 708 },
       },
       {
         id: "b150",
@@ -1475,7 +1475,7 @@ export const CANON_DATA: Phase[] = [
         name: "Epístolas de Jesus e Abgarus",
         sub: "Troca de cartas entre o Rei de Edessa e Jesus",
         tags: ["b201", "v1"],
-        page: 710,
+        pages: { v1: 710 },
       },
       {
         id: "b151",
@@ -1483,7 +1483,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho dos Hebreus",
         sub: "Citado pelos Pais da Igreja; escrito em hebraico",
         tags: ["b201"],
-        page: 740,
+        pages: { b201: 740 },
       },
       {
         id: "b152",
@@ -1491,7 +1491,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho dos Ebionitas",
         sub: "Evangelho vegetariano da seita judaico-cristã",
         tags: ["b201"],
-        page: 741,
+        pages: { b201: 741 },
       },
       {
         id: "b153",
@@ -1499,7 +1499,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho dos Nazarenos",
         sub: "Variante judaico-aramaica do Evangelho de Mateus",
         tags: ["b201"],
-        page: 741,
+        pages: { b201: 741 },
       },
       {
         id: "b154",
@@ -1507,7 +1507,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho de Egerton",
         sub: "Fragmentos papiráceos de um evangelho desconhecido",
         tags: ["b201"],
-        page: 737,
+        pages: { b201: 737 },
       },
       {
         id: "b155",
@@ -1515,15 +1515,15 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho de Oxirrinco (P.Oxy 840/1224)",
         sub: "Ditos de Jesus sobre a pureza ritual e o Templo",
         tags: ["b201"],
-        page: 735,
+        pages: { b201: 735 },
       },
       {
         id: "b156",
         num: "156",
         name: "Diálogo do Salvador",
         sub: "Conversações esotéricas pós-ressurreição (NH III, 5)",
-        tags: ["b201", "nag hammadi"],
-        page: 211,
+        tags: ["b201", "naghammadi"],
+        pages: { b201: 211 },
       },
       {
         id: "b157",
@@ -1531,7 +1531,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho Segundo Pedro",
         sub: "Relato da ressurreição com a cruz falante",
         tags: ["b201", "v1", "v2"],
-        page: 571,
+        pages: { v1: 571 },
       },
       {
         id: "b158",
@@ -1539,7 +1539,7 @@ export const CANON_DATA: Phase[] = [
         name: "A Vingança do Salvador",
         sub: "Lenda medieval do imperador Tito punindo Jerusalém",
         tags: ["b201", "v1"],
-        page: 737,
+        pages: { v1: 737 },
       },
     ],
   },
@@ -1555,7 +1555,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho de Nicodemus (Atos de Pilatos)",
         sub: "O julgamento perante Pilatos e o testemunho das testemunhas",
         tags: ["v1"],
-        page: 535,
+        pages: { v1: 535 },
       },
       {
         id: "b160",
@@ -1563,7 +1563,7 @@ export const CANON_DATA: Phase[] = [
         name: "Descida ao Inferno (Versão Grega)",
         sub: "Cristo quebrando os portões do Hades e libertando os patriarcas",
         tags: ["v1"],
-        page: 543,
+        pages: { v1: 543 },
       },
       {
         id: "b161",
@@ -1571,7 +1571,7 @@ export const CANON_DATA: Phase[] = [
         name: "Descida ao Inferno (Versão Latina)",
         sub: "Relato estendido da vitória de Cristo sobre a Morte e Satã",
         tags: ["v1"],
-        page: 563,
+        pages: { v1: 563 },
       },
       {
         id: "b162",
@@ -1579,7 +1579,7 @@ export const CANON_DATA: Phase[] = [
         name: "Ciclo de Pilatos (Relatório de Pilatos)",
         sub: "Cartas e relatórios oficiais enviados a Roma",
         tags: ["v1"],
-        page: 721,
+        pages: { v1: 721 },
       },
       {
         id: "b162_lentulus",
@@ -1587,7 +1587,7 @@ export const CANON_DATA: Phase[] = [
         name: "Carta de Lentulus a Tibério César",
         sub: "Descrição física e retrato facial de Jesus enviada ao Senado",
         tags: ["v1"],
-        page: 721,
+        pages: { v1: 721 },
       },
       {
         id: "b163",
@@ -1595,7 +1595,7 @@ export const CANON_DATA: Phase[] = [
         name: "Condenação de Pilatos (Mora de Pilatos)",
         sub: "A execução de Pilatos por ordem do Imperador",
         tags: ["v1"],
-        page: 731,
+        pages: { v1: 731 },
       },
       {
         id: "b164",
@@ -1603,7 +1603,7 @@ export const CANON_DATA: Phase[] = [
         name: "Cartas do Senhor",
         sub: "Correspondências místicas atribuídas ao Salvador",
         tags: ["v1"],
-        page: 753,
+        pages: { v1: 753 },
       },
       {
         id: "b165",
@@ -1611,7 +1611,7 @@ export const CANON_DATA: Phase[] = [
         name: "Declarações de José de Arimatéia",
         sub: "O relato sobre os dois ladrões (Gestas e Dimas) e a cruz",
         tags: ["v1"],
-        page: 747,
+        pages: { v1: 747 },
       },
       {
         id: "b166",
@@ -1619,7 +1619,7 @@ export const CANON_DATA: Phase[] = [
         name: "A Narrativa de José de Arimatéia",
         sub: "Adições sobre o sepultamento e a prisão de José",
         tags: ["b201"],
-        page: 693,
+        pages: { b201: 693 },
       },
       {
         id: "b167",
@@ -1627,7 +1627,7 @@ export const CANON_DATA: Phase[] = [
         name: "Discurso Sobre o Domingo",
         sub: "O Dia Santo do Senhor entre todos os outros",
         tags: ["v1"],
-        page: 755,
+        pages: { v1: 755 },
       },
       {
         id: "b168",
@@ -1635,7 +1635,7 @@ export const CANON_DATA: Phase[] = [
         name: "Apócrifos da Assunção (Transitus Mariae)",
         sub: "A dormição e assunção da Virgem Maria",
         tags: ["v1"],
-        page: 759,
+        pages: { v1: 759 },
       },
       {
         id: "b169",
@@ -1643,7 +1643,7 @@ export const CANON_DATA: Phase[] = [
         name: "Passagem da Virgem Maria",
         sub: "Tradição do apóstolo João sobre a partida da Mãe de Deus",
         tags: ["v1"],
-        page: 771,
+        pages: { v1: 771 },
       },
       {
         id: "b170",
@@ -1651,7 +1651,7 @@ export const CANON_DATA: Phase[] = [
         name: "Agrapha Extra-Evangelho",
         sub: "Compilação de ditos não canônicos de Jesus preservados pelos Pais",
         tags: ["v1"],
-        page: 593,
+        pages: { v1: 593 },
       },
       {
         id: "b171",
@@ -1659,7 +1659,7 @@ export const CANON_DATA: Phase[] = [
         name: "Ressurreição de Cristo (Bartolomeu)",
         sub: "Perguntas de Bartolomeu à Maria sobre a anunciação e a ressurreição",
         tags: ["b201"],
-        page: 691,
+        pages: { b201: 691 },
       },
       {
         id: "b172",
@@ -1667,7 +1667,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho de Bartolomeu",
         sub: "Revelação dos mistérios do abismo e a natureza de Beliar",
         tags: ["b201", "v1"],
-        page: 723,
+        pages: { v1: 723 },
       },
     ],
   },
@@ -1683,7 +1683,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos 1–12 (Pentecostes e Igreja Primitiva)",
         sub: "A expansão do Evangelho em Jerusalém e Samaria",
         tags: ["b201", "cnbb", "stern"],
-        page: 1352,
+        pages: { b201: 1352 },
       },
       {
         id: "b174",
@@ -1691,7 +1691,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos 13–28 (Viagens Paulinas)",
         sub: "A missão aos gentios até a prisão de Paulo em Roma",
         tags: ["b201", "cnbb", "stern"],
-        page: 1352,
+        pages: { b201: 1352 },
       },
       {
         id: "b175",
@@ -1699,15 +1699,15 @@ export const CANON_DATA: Phase[] = [
         name: "Atos 29 (Manuscrito Sonnini)",
         sub: "Relato da suposta viagem de Paulo à Espanha e Grã-Bretanha",
         tags: ["v3"],
-        page: 313,
+        pages: { v3: 313 },
       },
       {
         id: "b176",
         num: "176",
         name: "Atos de Pedro e os 12 Apóstolos",
         sub: "Visão allegórica da pérola na cidade de Lithargoel (NH VI, 1)",
-        tags: ["b201", "nag hammadi"],
-        page: 247,
+        tags: ["b201", "naghammadi"],
+        pages: { b201: 247 },
       },
       {
         id: "b177",
@@ -1715,7 +1715,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos de Pedro",
         sub: "O confronto com Simão Mago e a crucificação de cabeça para baixo",
         tags: ["v3"],
-        page: 412,
+        pages: { v3: 412 },
       },
       {
         id: "b178",
@@ -1723,7 +1723,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos de Pedro e André",
         sub: "Milagres dos apóstolos na terra dos canibais",
         tags: ["v3"],
-        page: 459,
+        pages: { v3: 459 },
       },
       {
         id: "b179",
@@ -1731,7 +1731,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos de Pedro e Paulo",
         sub: "O martírio conjunto dos dois pilares da Igreja em Roma",
         tags: ["v3"],
-        page: 624,
+        pages: { v3: 624 },
       },
       {
         id: "b180",
@@ -1739,7 +1739,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos de Paulo e Tecla",
         sub: "A história da discípula de Paulo que escapou dos leões",
         tags: ["v3"],
-        page: 388,
+        pages: { v3: 388 },
       },
       {
         id: "b181",
@@ -1747,7 +1747,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos de André",
         sub: "Pregação e martírio do apóstolo André na cruz em X",
         tags: ["b201", "v3"],
-        page: 582,
+        pages: { v3: 582 },
       },
       {
         id: "b182",
@@ -1755,7 +1755,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos de André e Matias",
         sub: "Resgate de Matias da prisão na cidade dos antropófagos",
         tags: ["v3"],
-        page: 331,
+        pages: { v3: 331 },
       },
       {
         id: "b183",
@@ -1763,7 +1763,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos de João",
         sub: "Visões docéticas do corpo de Cristo e a Dança do Círculo",
         tags: ["v3"],
-        page: 338,
+        pages: { v3: 338 },
       },
       {
         id: "b184",
@@ -1771,7 +1771,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos de Tomé",
         sub: "A viagem de Tomé à Índia e o casamento espiritual",
         tags: ["v3"],
-        page: 462,
+        pages: { v3: 462 },
       },
       {
         id: "b185",
@@ -1779,7 +1779,7 @@ export const CANON_DATA: Phase[] = [
         name: "Consumação de Tomé",
         sub: "O martírio de Tomé transpassado por lanças reais",
         tags: ["v3"],
-        page: 401,
+        pages: { v3: 401 },
       },
       {
         id: "b186",
@@ -1787,7 +1787,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos de Barnabé",
         sub: "Viagens operadas por Barnabé e João Marcos em Chipre",
         tags: ["v3"],
-        page: 405,
+        pages: { v3: 405 },
       },
       {
         id: "b187",
@@ -1795,7 +1795,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos e Martírio de São Mateus",
         sub: "Pregação e milagres de Mateus na Etiópia",
         tags: ["v3"],
-        page: 318,
+        pages: { v3: 318 },
       },
       {
         id: "b188",
@@ -1803,7 +1803,7 @@ export const CANON_DATA: Phase[] = [
         name: "Martírio de Mateus",
         sub: "O confronto com o rei Fulvano e a fogueira sacra",
         tags: ["v3"],
-        page: 778,
+        pages: { v3: 778 },
       },
       {
         id: "b189",
@@ -1811,7 +1811,7 @@ export const CANON_DATA: Phase[] = [
         name: "Xantipe, Polixena e Rebeca",
         sub: "A conversão e aventuras das santas mulheres na era apostólica",
         tags: ["v3"],
-        page: 554,
+        pages: { v3: 554 },
       },
       {
         id: "b190",
@@ -1819,7 +1819,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos do Santo Apóstolo Evangelista João",
         sub: "Relato suplementar de Procoro sobre os milagres em Éfeso",
         tags: ["v3"],
-        page: 615,
+        pages: { v3: 615 },
       },
       {
         id: "b191",
@@ -1827,7 +1827,7 @@ export const CANON_DATA: Phase[] = [
         name: "Ensino de Tadeu",
         sub: "A missão de Judas Tadeu em Edessa e a cura do Rei Abgar",
         tags: ["v3"],
-        page: 650,
+        pages: { v3: 650 },
       },
       {
         id: "b192",
@@ -1835,7 +1835,7 @@ export const CANON_DATA: Phase[] = [
         name: "Livro de João Evangelista",
         sub: "Revelações apócrifas sobre o fim dos tempos",
         tags: ["v3"],
-        page: 650,
+        pages: { v3: 650 },
       },
       {
         id: "b193",
@@ -1843,7 +1843,7 @@ export const CANON_DATA: Phase[] = [
         name: "Atos de Perpétua e Felicidade",
         sub: "Diário do martírio das santas no anfiteatro de Cartago",
         tags: ["b201"],
-        page: 688,
+        pages: { b201: 688 },
       },
       {
         id: "b194",
@@ -1851,7 +1851,7 @@ export const CANON_DATA: Phase[] = [
         name: "A Pregação de Pedro (Kerygma Petrou)",
         sub: "Doutrina apologética de Pedro sobre o Deus Único",
         tags: ["b201"],
-        page: 693,
+        pages: { b201: 693 },
       },
     ],
   },
@@ -1867,7 +1867,7 @@ export const CANON_DATA: Phase[] = [
         name: "Gálatas",
         sub: "A defesa da liberdade cristã e a justificativa pela fé",
         tags: ["b201", "cnbb", "stern"],
-        page: 1438,
+        pages: { b201: 1438 },
       },
       {
         id: "b196",
@@ -1875,7 +1875,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Tessalonicenses",
         sub: "A consolação da Vinda do Senhor e o arrebata mento",
         tags: ["b201", "cnbb", "stern"],
-        page: 1451,
+        pages: { b201: 1451 },
       },
       {
         id: "b197",
@@ -1883,7 +1883,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Tessalonicenses",
         sub: "A revelação do Homem da Iniquidade (Anticristo)",
         tags: ["b201", "cnbb", "stern"],
-        page: 1454,
+        pages: { b201: 1454 },
       },
       {
         id: "b198",
@@ -1891,7 +1891,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Coríntios",
         sub: "Os dons do Espírito, o Amor e a ordem na Igreja",
         tags: ["b201", "cnbb", "stern"],
-        page: 1406,
+        pages: { b201: 1406 },
       },
       {
         id: "b199",
@@ -1899,7 +1899,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Coríntios",
         sub: "O ministério da reconciliação e o espinho na carne",
         tags: ["b201", "cnbb", "stern"],
-        page: 1422,
+        pages: { b201: 1422 },
       },
       {
         id: "b200",
@@ -1907,7 +1907,7 @@ export const CANON_DATA: Phase[] = [
         name: "III Coríntios",
         sub: "Carta apócrifa respondendo a heresia gnostica sobre a ressurreição",
         tags: ["v3"],
-        page: 315,
+        pages: { v3: 315 },
       },
       {
         id: "b201",
@@ -1915,7 +1915,7 @@ export const CANON_DATA: Phase[] = [
         name: "Romanos",
         sub: "A grande exposição da teologia da salvação",
         tags: ["b201", "cnbb", "stern"],
-        page: 1388,
+        pages: { b201: 1388 },
       },
       {
         id: "b202",
@@ -1923,7 +1923,7 @@ export const CANON_DATA: Phase[] = [
         name: "Filipenses",
         sub: "A epístola da alegria e a kénosis (esvaziamento) de Cristo",
         tags: ["b201", "cnbb", "stern"],
-        page: 1447,
+        pages: { b201: 1447 },
       },
       {
         id: "b203",
@@ -1931,7 +1931,7 @@ export const CANON_DATA: Phase[] = [
         name: "Colossenses",
         sub: "A supremacia absoluta de Cristo sobre as potestades",
         tags: ["b201", "cnbb", "stern"],
-        page: 1447,
+        pages: { b201: 1447 },
       },
       {
         id: "b204",
@@ -1939,7 +1939,7 @@ export const CANON_DATA: Phase[] = [
         name: "Filemão",
         sub: "Intercessão pelo escravo fugitivo Onésimo",
         tags: ["b201", "cnbb", "stern"],
-        page: 1465,
+        pages: { b201: 1465 },
       },
       {
         id: "b205",
@@ -1947,7 +1947,7 @@ export const CANON_DATA: Phase[] = [
         name: "Efésios",
         sub: "O mistério da Igreja e a Armadura de Deus",
         tags: ["b201", "cnbb", "stern"],
-        page: 1443,
+        pages: { b201: 1443 },
       },
       {
         id: "b206",
@@ -1955,7 +1955,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Timóteo",
         sub: "Instruções pastorais sobre o governo da Igreja",
         tags: ["b201", "cnbb", "stern"],
-        page: 1456,
+        pages: { b201: 1456 },
       },
       {
         id: "b207",
@@ -1963,7 +1963,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Timóteo",
         sub: "O testamento final de Paulo no cárcere mamertino",
         tags: ["b201", "cnbb", "stern"],
-        page: 1460,
+        pages: { b201: 1460 },
       },
       {
         id: "b208",
@@ -1971,7 +1971,7 @@ export const CANON_DATA: Phase[] = [
         name: "Tito",
         sub: "A ordenação de presbíteros e a sã doutrina em Creta",
         tags: ["b201", "cnbb", "stern"],
-        page: 1463,
+        pages: { b201: 1463 },
       },
       {
         id: "b209",
@@ -1979,7 +1979,7 @@ export const CANON_DATA: Phase[] = [
         name: "Hebreus",
         sub: "Cristo como Sumo Sacerdote segundo a ordem de Melquisedeque",
         tags: ["b201", "cnbb", "stern"],
-        page: 1466,
+        pages: { b201: 1466 },
       },
       {
         id: "b210",
@@ -1987,7 +1987,7 @@ export const CANON_DATA: Phase[] = [
         name: "Laodicenses",
         sub: "Epístola apócrifa aos Laodicenses preservada na Vulgata",
         tags: ["b201", "v3"],
-        page: 679,
+        pages: { v3: 679 },
       },
       {
         id: "b211",
@@ -1995,15 +1995,15 @@ export const CANON_DATA: Phase[] = [
         name: "Epístolas a Sêneca",
         sub: "14 cartas trocadas entre Paulo e o filósofo estóico Sêneca",
         tags: ["b201", "v2"],
-        page: 358,
+        pages: { v2: 358 },
       },
       {
         id: "b212",
         num: "212",
         name: "Prece de Paulo",
         sub: "Oração esotérica de abertura do Codex Jung (NH I, 1)",
-        tags: ["v3", "nag hammadi"],
-        page: 38,
+        tags: ["v3", "naghammadi"],
+        pages: { v3: 38 },
       },
     ],
   },
@@ -2019,7 +2019,7 @@ export const CANON_DATA: Phase[] = [
         name: "Tiago (Ya'akov)",
         sub: "A fé demonstrada pelas obras e o controle da língua",
         tags: ["b201", "cnbb", "stern"],
-        page: 1481,
+        pages: { b201: 1481 },
       },
       {
         id: "b214",
@@ -2027,7 +2027,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Pedro (1 Kefa)",
         sub: "Consolo aos peregrinos na dispersão sob sofrimento",
         tags: ["b201", "cnbb", "stern"],
-        page: 1485,
+        pages: { b201: 1485 },
       },
       {
         id: "b215",
@@ -2035,7 +2035,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 Pedro (2 Kefa)",
         sub: "Alerta contra falsos mestres e a promessa do Novo Céu",
         tags: ["b201", "cnbb", "stern"],
-        page: 1490,
+        pages: { b201: 1490 },
       },
       {
         id: "b216",
@@ -2043,7 +2043,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 João (1 Yochanan)",
         sub: "Deus é Luz, Deus é Amor e o teste da verdade",
         tags: ["b201", "cnbb", "stern"],
-        page: 1493,
+        pages: { b201: 1493 },
       },
       {
         id: "b217",
@@ -2051,7 +2051,7 @@ export const CANON_DATA: Phase[] = [
         name: "2 João (2 Yochanan)",
         sub: "A Senhora Eleita e o perigo do anticristo",
         tags: ["b201", "cnbb", "stern"],
-        page: 1497,
+        pages: { b201: 1497 },
       },
       {
         id: "b218",
@@ -2059,7 +2059,7 @@ export const CANON_DATA: Phase[] = [
         name: "3 João (3 Yochanan)",
         sub: "Elogio a Gaio e repreensão ao orgulhoso Diótrefes",
         tags: ["b201", "cnbb", "stern"],
-        page: 1498,
+        pages: { b201: 1498 },
       },
       {
         id: "b219",
@@ -2067,7 +2067,7 @@ export const CANON_DATA: Phase[] = [
         name: "Judas (Y'hudah)",
         sub: "A batalha pela fé e a citação do Livro de Enoque",
         tags: ["b201", "cnbb", "stern"],
-        page: 1499,
+        pages: { b201: 1499 },
       },
       {
         id: "b220",
@@ -2075,15 +2075,15 @@ export const CANON_DATA: Phase[] = [
         name: "Epístola dos Apóstolos",
         sub: "Testamento dos Onze Apóstolos sobre os sinais do fim",
         tags: ["v3"],
-        page: 672,
+        pages: { v3: 672 },
       },
       {
         id: "b221",
         num: "221",
         name: "Carta de Pedro à Felipe",
         sub: "Revelação mística no Monte das Oliveiras (NH VIII, 2)",
-        tags: ["v3", "nag hammadi"],
-        page: 364,
+        tags: ["v3", "naghammadi"],
+        pages: { v3: 364 },
       },
       {
         id: "b222",
@@ -2091,7 +2091,7 @@ export const CANON_DATA: Phase[] = [
         name: "Epístola de Barnabé",
         sub: "Alegorização das leis do Antigo Testamento",
         tags: ["v3"],
-        page: 733,
+        pages: { v3: 733 },
       },
       {
         id: "b223",
@@ -2099,7 +2099,7 @@ export const CANON_DATA: Phase[] = [
         name: "Revelação (Apocalipse) 1–11",
         sub: "As cartas às Sete Igrejas, o Cordeiro e os Sete Selos",
         tags: ["b201", "cnbb", "stern"],
-        page: 1501,
+        pages: { b201: 1501 },
       },
       {
         id: "b224",
@@ -2107,7 +2107,7 @@ export const CANON_DATA: Phase[] = [
         name: "Revelação 12–22",
         sub: "A Mulher e o Dragão, Babilônia e a Nova Jerusalém",
         tags: ["b201", "cnbb", "stern"],
-        page: 1501,
+        pages: { b201: 1501 },
       },
       {
         id: "b225",
@@ -2115,23 +2115,23 @@ export const CANON_DATA: Phase[] = [
         name: "João o Teólogo",
         sub: "Revelação Apócrifa de São João sobre o fim dos tempos",
         tags: ["v3"],
-        page: 781,
+        pages: { v3: 781 },
       },
       {
         id: "b226",
         num: "226",
         name: "Apocalipse de Pedro",
         sub: "Visão detalhada dos castigos do inferno e glória dos justos",
-        tags: ["v1", "nag hammadi"],
-        page: 317,
+        tags: ["v1", "naghammadi"],
+        pages: { v1: 317 },
       },
       {
         id: "b227",
         num: "227",
         name: "Apocalipse de Paulo",
         sub: "Ascensão do apóstolo através dos 10 céus (NH V, 2)",
-        tags: ["v3", "nag hammadi"],
-        page: 221,
+        tags: ["v3", "naghammadi"],
+        pages: { v3: 221 },
       },
       {
         id: "b228",
@@ -2139,7 +2139,7 @@ export const CANON_DATA: Phase[] = [
         name: "Apocalipse de Baruch",
         sub: "Visões sobre a destruição do Templo e o mundo vindouro",
         tags: ["v1"],
-        page: 785,
+        pages: { v1: 785 },
       },
       {
         id: "b229",
@@ -2147,7 +2147,7 @@ export const CANON_DATA: Phase[] = [
         name: "Apocalipse de Elias",
         sub: "A batalha dos profetas contra o Filho da Iniquidade",
         tags: ["v1"],
-        page: 851,
+        pages: { v1: 851 },
       },
       {
         id: "b230",
@@ -2155,7 +2155,7 @@ export const CANON_DATA: Phase[] = [
         name: "Apocalipse de Tomé",
         sub: "Os sete dias de terror que antecedem a Segunda Vinda",
         tags: ["v1"],
-        page: 879,
+        pages: { v1: 879 },
       },
     ],
   },
@@ -2171,7 +2171,7 @@ export const CANON_DATA: Phase[] = [
         name: "O Didachê",
         sub: "O Ensino dos Doze Apóstolos aos Gentios — O Caminho da Vida e da Morte",
         tags: ["b201", "v1"],
-        page: 744,
+        pages: { v1: 744 },
       },
       {
         id: "b232",
@@ -2179,7 +2179,7 @@ export const CANON_DATA: Phase[] = [
         name: "Pastor de Hermas",
         sub: "Livros das Visões, Mandamentos e Similitudes",
         tags: ["v2"],
-        page: 430,
+        pages: { v2: 430 },
       },
       {
         id: "b233",
@@ -2187,7 +2187,7 @@ export const CANON_DATA: Phase[] = [
         name: "1 Clemente",
         sub: "Carta de Clemente de Roma aos Coríntios exortando a paz",
         tags: ["b201", "v2"],
-        page: 363,
+        pages: { v2: 363 },
       },
       {
         id: "b234",
@@ -2195,15 +2195,15 @@ export const CANON_DATA: Phase[] = [
         name: "2 Clemente",
         sub: "Antiga homilia cristã sobre o combate espiritual",
         tags: ["b201", "v2"],
-        page: 394,
+        pages: { v2: 394 },
       },
       {
         id: "b235",
         num: "235",
         name: "Apócrifo de Tiago",
         sub: "Ensinamentos secretos de Jesus a Tiago e Pedro (NH I, 2)",
-        tags: ["b201", "v3", "nag hammadi"],
-        page: 40,
+        tags: ["b201", "v3", "naghammadi"],
+        pages: { v3: 40 },
       },
       {
         id: "b236",
@@ -2211,7 +2211,7 @@ export const CANON_DATA: Phase[] = [
         name: "Inácio de Antioquia",
         sub: "Sete cartas aos Efésios, Magnésios, Trales, Romanos, Filadelfianos, Esmirniotas e Policarpo",
         tags: ["b201", "v2"],
-        page: 401,
+        pages: { v2: 401 },
       },
       {
         id: "b237",
@@ -2219,7 +2219,7 @@ export const CANON_DATA: Phase[] = [
         name: "Policarpo aos Filipenses",
         sub: "Epístola de conselho e exortação contra as heresias",
         tags: ["b201", "v2"],
-        page: 430,
+        pages: { v2: 430 },
       },
       {
         id: "b238",
@@ -2227,7 +2227,7 @@ export const CANON_DATA: Phase[] = [
         name: "Martírio de Inácio",
         sub: "Relato das correntes e da viagem de Inácio para as feras em Roma",
         tags: ["b201"],
-        page: 721,
+        pages: { b201: 721 },
       },
       {
         id: "b239",
@@ -2235,7 +2235,7 @@ export const CANON_DATA: Phase[] = [
         name: "Martírio de Policarpo",
         sub: "O martírio do bispo de Esmirna atado à fogueira",
         tags: ["b201"],
-        page: 729,
+        pages: { b201: 729 },
       },
       {
         id: "b240",
@@ -2243,7 +2243,7 @@ export const CANON_DATA: Phase[] = [
         name: "Tertuliano (Mártires, Sobre a Paciência e Oração)",
         sub: "Escritos apologéticos e éticos do pai latino",
         tags: ["b201", "v1"],
-        page: 720,
+        pages: { v1: 720 },
       },
       {
         id: "b241",
@@ -2251,15 +2251,15 @@ export const CANON_DATA: Phase[] = [
         name: "Carta de Pilatos",
         sub: "Relatório de Pilatos enviada ao Imperador Cláudio",
         tags: ["b201"],
-        page: 689,
+        pages: { b201: 689 },
       },
       {
         id: "b242",
         num: "242",
         name: "Oração de Ação de Graças",
         sub: "Oração mística de encerramento do Asclepios (NH VI, 7)",
-        tags: ["b201", "nag hammadi"],
-        page: 283,
+        tags: ["b201", "naghammadi"],
+        pages: { b201: 283 },
       },
       {
         id: "b243",
@@ -2267,7 +2267,7 @@ export const CANON_DATA: Phase[] = [
         name: "Epifânio sobre a Justiça",
         sub: "Tratado moral sobre a lei divinamente infusa",
         tags: ["b201"],
-        page: 775,
+        pages: { b201: 775 },
       },
       {
         id: "b244",
@@ -2275,7 +2275,7 @@ export const CANON_DATA: Phase[] = [
         name: "Credos Ecumênicos",
         sub: "Credo Niceno-Constantinopolitano, Credo dos Apóstolos e Atanasiano",
         tags: ["b201"],
-        page: 742,
+        pages: { b201: 742 },
       },
     ],
   },
@@ -2291,8 +2291,8 @@ export const CANON_DATA: Phase[] = [
         num: "245",
         name: "Evangelho de Tomé",
         sub: "114 ditos secretos de Jesus (NH II, 2)",
-        tags: ["b201", "v1", "gnose", "nag hammadi"],
-        page: 112,
+        tags: ["b201", "v1", "gnose", "naghammadi"],
+        pages: { v1: 112 },
       },
       {
         id: "b246",
@@ -2300,15 +2300,15 @@ export const CANON_DATA: Phase[] = [
         name: "Fragmentos Gregos de Tomé",
         sub: "Papiros de Oxirrinco (P.Oxy 1, 654, 655)",
         tags: ["b201", "gnose"],
-        page: 701,
+        pages: { b201: 701 },
       },
       {
         id: "b247",
         num: "247",
         name: "Evangelho de Filipe",
         sub: "Tratado sacramental e o mistério da Câmara Nupcial (NH II, 3)",
-        tags: ["b201", "v1", "gnose", "nag hammadi"],
-        page: 124,
+        tags: ["b201", "v1", "gnose", "naghammadi"],
+        pages: { v1: 124 },
       },
       {
         id: "b248",
@@ -2316,7 +2316,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho de Maria Madalena",
         sub: "Gnose mística e o diálogo sobre o ascenso da alma (BG 8502, 1)",
         tags: ["v1", "gnose"],
-        page: 440,
+        pages: { v1: 440 },
       },
       {
         id: "b248b",
@@ -2324,7 +2324,7 @@ export const CANON_DATA: Phase[] = [
         name: "Excertos do Evangelho de Maria",
         sub: "Papiro Rylands 463 e Oxyrhynchus 3525",
         tags: ["v1", "gnose"],
-        page: 586,
+        pages: { v1: 586 },
       },
       {
         id: "b249",
@@ -2332,7 +2332,7 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho de Judas",
         sub: "Tradição cainita a partir do Codex Tchacos",
         tags: ["v1", "gnose"],
-        page: 531,
+        pages: { v1: 531 },
       },
       {
         id: "b250",
@@ -2340,47 +2340,47 @@ export const CANON_DATA: Phase[] = [
         name: "Evangelho de Valentino",
         sub: "Expressão maior da gnose poética das emanações",
         tags: ["v1", "gnose"],
-        page: 649,
+        pages: { v1: 649 },
       },
       {
         id: "b251",
         num: "251",
         name: "Evangelho da Verdade",
         sub: "Tratado profundo atribuído a Valentino (NH I, 3)",
-        tags: ["b201", "v1", "gnose", "nag hammadi"],
-        page: 47,
+        tags: ["b201", "v1", "gnose", "naghammadi"],
+        pages: { v1: 47 },
       },
       {
         id: "b252",
         num: "252",
         name: "Evangelho dos Egípcios",
         sub: "O Livro Sagrado do Grande Espírito Invisível (NH III, 2)",
-        tags: ["b201", "gnose", "nag hammadi"],
-        page: 182,
+        tags: ["b201", "gnose", "naghammadi"],
+        pages: { b201: 182 },
       },
       {
         id: "b253",
         num: "253",
         name: "Apócrifo de João",
         sub: "O Livro Secreto de João e a teogonia da Luz (NH II, 1)",
-        tags: ["b201", "v3", "gnose", "nag hammadi"],
-        page: 97,
+        tags: ["b201", "v3", "gnose", "naghammadi"],
+        pages: { v3: 97 },
       },
       {
         id: "b254",
         num: "254",
         name: "Thomas Contendor",
         sub: "Livro de Tomé o Contendor aos atletas espirituais (NH II, 7)",
-        tags: ["b201", "v3", "gnose", "nag hammadi"],
-        page: 174,
+        tags: ["b201", "v3", "gnose", "naghammadi"],
+        pages: { v3: 174 },
       },
       {
         id: "b255",
         num: "255",
         name: "Tratado Grande Seth",
         sub: "O Segundo Tratado do Grande Seth sobre o Cristo celeste (NH VII, 2)",
-        tags: ["b201", "gnose", "nag hammadi"],
-        page: 309,
+        tags: ["b201", "gnose", "naghammadi"],
+        pages: { b201: 309 },
       },
       {
         id: "b256",
@@ -2388,7 +2388,7 @@ export const CANON_DATA: Phase[] = [
         name: "Basilides",
         sub: "Fragmentos heresiológicos de Abraxas e as 365 esferas",
         tags: ["b201", "gnose"],
-        page: 774,
+        pages: { b201: 774 },
       },
       {
         id: "b257",
@@ -2396,7 +2396,7 @@ export const CANON_DATA: Phase[] = [
         name: "Livro de Marcião",
         sub: "O Evangelho do Deus Estrangeiro (Antíteses)",
         tags: ["b201", "gnose"],
-        page: 772,
+        pages: { b201: 772 },
       },
       {
         id: "b258",
@@ -2404,7 +2404,7 @@ export const CANON_DATA: Phase[] = [
         name: "Livro de Sindos",
         sub: "Textos heréticos de correntes gnósticas primitivas",
         tags: ["b201", "gnose"],
-        page: 773,
+        pages: { b201: 773 },
       },
       {
         id: "b259",
@@ -2412,7 +2412,7 @@ export const CANON_DATA: Phase[] = [
         name: "Fonte Q",
         sub: "Reconstrução hipotética da coleção de ditos de Jesus",
         tags: ["b201", "gnose"],
-        page: 769,
+        pages: { b201: 769 },
       },
       {
         id: "b260",
@@ -2433,104 +2433,104 @@ export const CANON_DATA: Phase[] = [
         num: "262",
         name: "Trovão: Mente Perfeita",
         sub: "Poema revelatório de voz feminina divina (NH VI, 2)",
-        tags: ["v1", "gnose", "nag hammadi"],
-        page: 254,
+        tags: ["v1", "gnose", "naghammadi"],
+        pages: { v1: 254 },
       },
       {
         id: "b263",
         num: "263",
         name: "Hipóstase dos Arcontes",
         sub: "A natureza e origem das autoridades cósmicas (NH II, 4)",
-        tags: ["gnose", "nag hammadi"],
-        page: 142,
+        tags: ["gnose", "naghammadi"],
+        pages: { gnose: 142 },
       },
       {
         id: "b264",
         num: "264",
         name: "Protennoia Trimórfica",
         sub: "As três descidas do Primeiro Pensamento (NH XIII, 1)",
-        tags: ["v1", "gnose", "nag hammadi"],
-        page: 430,
+        tags: ["v1", "gnose", "naghammadi"],
+        pages: { v1: 430 },
       },
       {
         id: "b265",
         num: "265",
         name: "Tratado Tripartite",
         sub: "Cosmologia valentiniana completa em três partes (NH I, 5)",
-        tags: ["gnose", "nag hammadi"],
-        page: 63,
+        tags: ["gnose", "naghammadi"],
+        pages: { gnose: 63 },
       },
       {
         id: "b266",
         num: "266",
         name: "Exegese sobre a Alma",
         sub: "Alegoria da queda e resgate místico da alma humana (NH II, 6)",
-        tags: ["gnose", "nag hammadi"],
-        page: 166,
+        tags: ["gnose", "naghammadi"],
+        pages: { gnose: 166 },
       },
       {
         id: "b267",
         num: "267",
         name: "Sofia de Jesus Cristo",
         sub: "Instruções do Salvador aos discípulos (NH III, 4)",
-        tags: ["gnose", "nag hammadi"],
-        page: 191,
+        tags: ["gnose", "naghammadi"],
+        pages: { gnose: 191 },
       },
       {
         id: "b268",
         num: "268",
         name: "Testemunho da Verdade",
         sub: "Crítica radical ao martírio cego e ao Demiurgo (NH IX, 3)",
-        tags: ["gnose", "nag hammadi"],
-        page: 379,
+        tags: ["gnose", "naghammadi"],
+        pages: { gnose: 379 },
       },
       {
         id: "b269",
         num: "269",
         name: "Zostrianos",
         sub: "Apocalipse e ascensão mística de Zostrianos (NH VIII, 1)",
-        tags: ["gnose", "nag hammadi"],
-        page: 342,
+        tags: ["gnose", "naghammadi"],
+        pages: { gnose: 342 },
       },
       {
         id: "b269_add1",
         num: "269b",
         name: "As Três Estelas de Sete",
         sub: "Hinos de adoração e revelações da linhagem sethiana pura (NH VII, 5)",
-        tags: ["gnose", "sethiano", "nag hammadi"],
-        page: 336,
+        tags: ["gnose", "sethiano", "naghammadi"],
+        pages: { gnose: 336 },
       },
       {
         id: "b269_add2",
         num: "269c",
         name: "O Alógenes",
         sub: "O Estrangeiro e sua transcendência mental além do Demiurgo (NH XI, 3)",
-        tags: ["gnose", "revelacao", "nag hammadi"],
-        page: 412,
+        tags: ["gnose", "revelacao", "naghammadi"],
+        pages: { gnose: 412 },
       },
       {
         id: "b269_parafrase",
         num: "269d",
         name: "A Paráfrase de Shem",
         sub: "Revelação cosmogônica profunda sobre as forças da Luz e Trevas (NH VII, 1)",
-        tags: ["gnose", "nag hammadi"],
-        page: 292,
+        tags: ["gnose", "naghammadi"],
+        pages: { gnose: 292 },
       },
       {
         id: "b269_exposicao",
         num: "269e",
         name: "Uma Exposição Valentiniana",
         sub: "Tratado teológico e ritualístico sobre a Unção, Batismo e Eucaristia (NH XI, 2)",
-        tags: ["gnose", "nag hammadi"],
-        page: 405,
+        tags: ["gnose", "naghammadi"],
+        pages: { gnose: 405 },
       },
       {
         id: "b269_silvanus",
         num: "269f",
         name: "Os Ensinamentos de Silvanus",
         sub: "Instruções éticas e contemplativas de sabedoria cristã-gnóstica (NH VII, 4)",
-        tags: ["gnose", "nag hammadi"],
-        page: 322,
+        tags: ["gnose", "naghammadi"],
+        pages: { gnose: 322 },
       },
     ],
   },
