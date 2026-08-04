@@ -276,20 +276,21 @@ export const useCustomCanonStore = create<CustomCanonState>()(
       }),
 
       syncLanguage: (lang) => set((state) => {
+        const suggestionPhases = state.suggestionPhases || [];
         // Migration/Fix for Minor Prophets theme for existing users
-        const updatedSuggestion = state.suggestionPhases.map(p => {
-          if ((p.title.includes("PROFETAS MENORES") || p.title.includes("MINOR PROPHETS")) && p.theme === "prophets") {
+        const updatedSuggestion = suggestionPhases.map(p => {
+          if (p?.title && (p.title.includes("PROFETAS MENORES") || p.title.includes("MINOR PROPHETS")) && p.theme === "prophets") {
             return { ...p, theme: "minor_prophets" };
           }
           return p;
         });
 
-        const suggestionChanged = JSON.stringify(updatedSuggestion) !== JSON.stringify(state.suggestionPhases);
+        const suggestionChanged = JSON.stringify(updatedSuggestion) !== JSON.stringify(suggestionPhases);
 
         // Only auto-sync if the user hasn't made any edits to the suggestion phases
         // To keep it simple and performant, we check if it's identical to one of the defaults
-        const isDefaultPT = JSON.stringify(state.suggestionPhases) === JSON.stringify(CANON_DATA);
-        const isDefaultEN = JSON.stringify(state.suggestionPhases) === JSON.stringify(CANON_DATA_ENGLISH);
+        const isDefaultPT = JSON.stringify(suggestionPhases) === JSON.stringify(CANON_DATA);
+        const isDefaultEN = JSON.stringify(suggestionPhases) === JSON.stringify(CANON_DATA_ENGLISH);
         
         if (isDefaultPT || isDefaultEN || suggestionChanged) {
           const newCanon = lang.startsWith('pt') ? CANON_DATA : CANON_DATA_ENGLISH;
@@ -300,7 +301,7 @@ export const useCustomCanonStore = create<CustomCanonState>()(
           }
 
           // Only update if it's actually different from current
-          if (JSON.stringify(state.suggestionPhases) !== JSON.stringify(newCanon)) {
+          if (JSON.stringify(suggestionPhases) !== JSON.stringify(newCanon)) {
             return { suggestionPhases: newCanon };
           }
         }

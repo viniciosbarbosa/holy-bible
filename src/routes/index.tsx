@@ -38,10 +38,35 @@ const RootRedirect = () => {
   return <Navigate to="/my-personal-bible" replace />;
 };
 
+const RouteErrorBoundary = () => {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center">
+      <div className="p-8 rounded-3xl bg-bible-card border border-bible-border shadow-2xl max-w-md w-full">
+        <h2 className="font-cinzel text-xl text-bible-gold mb-3 uppercase tracking-wider">
+          Cânone em Atualização
+        </h2>
+        <p className="text-bible-muted font-serif text-sm mb-6">
+          Ocorreu uma inconsistência temporária nos dados salvos. Clique abaixo para recarregar a sessão.
+        </p>
+        <button
+          onClick={() => {
+            useCustomCanonStore.getState().clearStore();
+            window.location.reload();
+          }}
+          className="w-full py-3 px-6 rounded-xl bg-bible-gold text-white font-cinzel text-xs uppercase tracking-widest hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-bible-gold/20"
+        >
+          Resetar e Recarregar
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <RouteErrorBoundary />,
     children: [
       { index: true, element: <RootRedirect /> },
 
