@@ -47,10 +47,10 @@ export const EditBookModal = () => {
 
   // Select the actual book from the store to ensure reactivity
   const activeBook = useMemo(() => {
-    return activeBookId && activePhaseId
-      ? phases
-          .find((p: Phase) => p.id === activePhaseId)
-          ?.books.find((b: Book) => b.id === activeBookId)
+    if (!activeBookId || !activePhaseId || !Array.isArray(phases)) return null;
+    const phase = phases.find((p: Phase) => p && p.id === activePhaseId);
+    return phase && Array.isArray(phase.books)
+      ? phase.books.find((b: Book) => b && b.id === activeBookId)
       : null;
   }, [activeBookId, activePhaseId, phases]);
 
@@ -58,11 +58,19 @@ export const EditBookModal = () => {
   const allExistingTags = useMemo(() => {
     const tagsSet = new Set<string>();
     // Add built-in tags labels
-    Object.values(BUILT_IN_TAGS).forEach((t) => tagsSet.add(t.lbl));
+    Object.values(BUILT_IN_TAGS).forEach((t) => t?.lbl && tagsSet.add(t.lbl));
     // Add tags from all phases
-    phases.forEach((p) =>
-      p.books.forEach((b) => b.tags.forEach((t) => tagsSet.add(t))),
-    );
+    if (Array.isArray(phases)) {
+      phases.forEach((p) => {
+        if (p && Array.isArray(p.books)) {
+          p.books.forEach((b) => {
+            if (b && Array.isArray(b.tags)) {
+              b.tags.forEach((t) => t && tagsSet.add(t));
+            }
+          });
+        }
+      });
+    }
     return Array.from(tagsSet).sort();
   }, [phases]);
 
@@ -212,6 +220,60 @@ export const EditBookModal = () => {
                       placeholder={t("modal.book_sub")}
                       rows={2}
                     />
+
+                    {activeBook.tags && activeBook.tags.length > 0 ? (
+                      <div className="mt-4 space-y-2 border-l-2 border-bible-gold/20 pl-4 py-1">
+                        <label className="text-[10px] text-bible-gold uppercase tracking-[0.2em] font-cinzel ml-2">
+                          Páginas por Tag:
+                        </label>
+                        <div className="space-y-2 max-h-[120px] overflow-y-auto pr-2">
+                          {activeBook.tags.map((t) => {
+                            const lbl = BUILT_IN_TAGS[t]?.lbl || t.toUpperCase();
+                            return (
+                              <div key={t} className="flex items-center gap-2">
+                                <span className="text-[10px] font-cinzel text-bible-muted w-16 truncate">{lbl}:</span>
+                                <input
+                                  type="number"
+                                  value={activeBook.pages?.[t] !== undefined ? activeBook.pages[t] : ""}
+                                  onChange={(e) => {
+                                    const val = e.target.value;
+                                    const currentPages = activeBook.pages || {};
+                                    const newPages = { ...currentPages };
+                                    if (val) {
+                                      newPages[t] = Number(val);
+                                    } else {
+                                      delete newPages[t];
+                                    }
+                                    updateBook(activePhaseId, activeBook.id, {
+                                      pages: Object.keys(newPages).length > 0 ? newPages : undefined,
+                                    });
+                                  }}
+                                  className="bg-transparent text-sm font-serif text-bible-text border-b border-bible-border/30 focus:border-bible-gold outline-none pb-1 transition-all w-24"
+                                  placeholder="Nenhuma"
+                                />
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="mt-4 flex gap-4 items-center">
+                        <label className="text-[10px] text-bible-gold uppercase tracking-[0.2em] font-cinzel ml-2">
+                          Página:
+                        </label>
+                        <input
+                          type="number"
+                          value={activeBook.page !== undefined ? activeBook.page : ""}
+                          onChange={(e) =>
+                            updateBook(activePhaseId, activeBook.id, {
+                              page: e.target.value ? Number(e.target.value) : undefined,
+                            })
+                          }
+                          className="bg-transparent text-sm font-serif text-bible-text border-b border-bible-border/30 focus:border-bible-gold outline-none pb-1 transition-all w-24"
+                          placeholder="Nenhuma"
+                        />
+                      </div>
+                    )}
                   </header>
 
                   <div className="space-y-4">

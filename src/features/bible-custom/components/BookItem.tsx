@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import type { Book } from "../../../@types/bible";
 import { normalizeString } from "../../../lib/utils";
+import { BUILT_IN_TAGS } from "../constants/tags";
 
 export const BookItem = ({
   book,
@@ -39,28 +40,46 @@ export const BookItem = ({
     openEditBook(book.id, phaseId);
   };
 
-  return (
-    <motion.div
-      whileHover={{ y: -5 }}
-      className={`group relative flex flex-col justify-between rounded-3xl border p-7 transition-all duration-500 overflow-hidden cursor-pointer
-        ${isHighlighted ? "border-bible-gold shadow-[0_0_15px_rgba(201,168,76,0.2)] bg-bible-gold/[0.03]" : "border-bible-border/50"}
-        ${isRead ? "opacity-60" : "hover:border-bible-gold shadow-[0_4px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)]"}
-        ${isRead && !isHighlighted ? "bg-bible-card" : "bg-bible-card"}
-      `}
-      onClick={() => toggleRead(book.id)}
-    >
-      {/* Glow Effect on Hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-bible-gold/0 via-bible-gold/0 to-bible-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      const getPagesText = () => {
+        if (book.pages && Object.keys(book.pages).length > 0) {
+          const parts = Object.entries(book.pages)
+            .filter(([_, pageNum]) => pageNum !== undefined && pageNum !== null)
+            .map(([editionKey, pageNum]) => {
+              const key = editionKey === "etiope" ? "b201" : editionKey;
+              const lbl = BUILT_IN_TAGS[key]?.lbl || BUILT_IN_TAGS[editionKey]?.lbl || editionKey.toUpperCase();
+              return `${lbl}: p. ${pageNum}`;
+            });
+          if (parts.length > 0) return ` • ${parts.join(" | ")}`;
+        }
+        if (book.page !== undefined) {
+          return ` • p. ${book.page}`;
+        }
+        return "";
+      };
 
-      {!isRead && (
-        <div className="absolute -top-12 -right-12 w-32 h-32 bg-bible-gold/5 rounded-full blur-3xl group-hover:bg-bible-gold/10 transition-all duration-700 pointer-events-none" />
-      )}
-
-      {/* Header */}
-      <div className="flex justify-between items-start mb-4 relative z-10">
-        <span className="font-cinzel text-[9px] bg-bible-gold/10 px-2 py-0.5 rounded-md text-bible-gold uppercase tracking-widest border border-bible-gold/20">
-          {t("common.book_num", { num: String(book.num).padStart(3, '0') })}
-        </span>
+      return (
+        <motion.div
+          whileHover={{ y: -5 }}
+          className={`group relative flex flex-col justify-between rounded-3xl border p-7 transition-all duration-500 overflow-hidden cursor-pointer
+            ${isHighlighted ? "border-bible-gold shadow-[0_0_15px_rgba(201,168,76,0.2)] bg-bible-gold/[0.03]" : "border-bible-border/50"}
+            ${isRead ? "opacity-60" : "hover:border-bible-gold shadow-[0_4px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)]"}
+            ${isRead && !isHighlighted ? "bg-bible-card" : "bg-bible-card"}
+          `}
+          onClick={() => toggleRead(book.id)}
+        >
+          {/* Glow Effect on Hover */}
+          <div className="absolute inset-0 bg-gradient-to-br from-bible-gold/0 via-bible-gold/0 to-bible-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+    
+          {!isRead && (
+            <div className="absolute -top-12 -right-12 w-32 h-32 bg-bible-gold/5 rounded-full blur-3xl group-hover:bg-bible-gold/10 transition-all duration-700 pointer-events-none" />
+          )}
+    
+          {/* Header */}
+          <div className="flex justify-between items-start mb-4 relative z-10">
+            <span className="font-cinzel text-[9px] bg-bible-gold/10 px-2 py-0.5 rounded-md text-bible-gold uppercase tracking-widest border border-bible-gold/20">
+              {t("common.book_num", { num: String(book.num).padStart(3, '0') })}
+              {getPagesText()}
+            </span>
 
         <div className="flex gap-1.5">
           {currentStatus === "missing" && (

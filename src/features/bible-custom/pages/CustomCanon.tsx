@@ -31,12 +31,14 @@ export default function CustomCanon() {
   const phasesToExpand = useMemo(() => {
     if (!search) return [];
     const s = normalizeString(search);
-    return allPhases
+    return (allPhases || [])
       .filter((p) =>
-        p.books.some(
+        p && Array.isArray(p.books) && p.books.some(
           (b) =>
-            normalizeString(b.name).includes(s) ||
-            (b.sub && normalizeString(b.sub).includes(s)),
+            b && (
+              normalizeString(b?.name).includes(s) ||
+              (b?.sub && normalizeString(b?.sub).includes(s))
+            ),
         ),
       )
       .map((p) => p.id);
@@ -44,17 +46,21 @@ export default function CustomCanon() {
 
   const filteredPhases = useMemo(() => {
     const s = normalizeString(search);
-    return allPhases
+    return (allPhases || [])
       .map((p) => {
-        const phaseMatches = normalizeString(p.title).includes(s);
-        const filteredBooks = p.books.filter(
+        if (!p) return null;
+        const phaseMatches = p.title ? normalizeString(p.title).includes(s) : false;
+        const books = Array.isArray(p.books) ? p.books : [];
+        const filteredBooks = books.filter(
           (b) =>
-            normalizeString(b.name).includes(s) ||
-            (b.sub && normalizeString(b.sub).includes(s)),
+            b && (
+              normalizeString(b?.name).includes(s) ||
+              (b?.sub && normalizeString(b?.sub).includes(s))
+            ),
         );
 
         if (phaseMatches || filteredBooks.length > 0) {
-          return { ...p, books: phaseMatches ? p.books : filteredBooks };
+          return { ...p, books: phaseMatches ? books : filteredBooks };
         }
         return null;
       })
