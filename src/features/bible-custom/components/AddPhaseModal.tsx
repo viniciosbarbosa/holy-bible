@@ -21,8 +21,10 @@ export const AddPhaseModal = () => {
   const phases =
     activeProfile === "suggestion" ? suggestionPhases : personalPhases;
   const nextPhaseNum = useMemo(() => {
+    if (!Array.isArray(phases)) return 1;
     const nums = phases.map((p) => {
-      const match = p.num.match(/\d+/);
+      if (!p || !p.num) return 0;
+      const match = String(p.num).match(/\d+/);
       return match ? parseInt(match[0], 10) : 0;
     });
     return (nums.length > 0 ? Math.max(...nums) : 0) + 1;
@@ -41,10 +43,18 @@ export const AddPhaseModal = () => {
 
   const allExistingTags = useMemo(() => {
     const tagsSet = new Set<string>();
-    Object.values(BUILT_IN_TAGS).forEach((t) => tagsSet.add(t.lbl));
-    phases.forEach((p) =>
-      p.books.forEach((b) => b.tags.forEach((t) => tagsSet.add(t))),
-    );
+    Object.values(BUILT_IN_TAGS).forEach((t) => t?.lbl && tagsSet.add(t.lbl));
+    if (Array.isArray(phases)) {
+      phases.forEach((p) => {
+        if (p && Array.isArray(p.books)) {
+          p.books.forEach((b) => {
+            if (b && Array.isArray(b.tags)) {
+              b.tags.forEach((t) => t && tagsSet.add(t));
+            }
+          });
+        }
+      });
+    }
     return Array.from(tagsSet).sort();
   }, [phases]);
 

@@ -276,7 +276,18 @@ export const useCustomCanonStore = create<CustomCanonState>()(
       }),
 
       syncLanguage: (lang) => set((state) => {
-        const suggestionPhases = state.suggestionPhases || [];
+        let suggestionPhases = state.suggestionPhases || [];
+
+        // Auto-fix if state was persisted as a 2D array [[...]] or empty
+        if (Array.isArray(suggestionPhases[0])) {
+          suggestionPhases = (suggestionPhases[0] as unknown as Phase[]) || [];
+        }
+
+        if (!Array.isArray(suggestionPhases) || suggestionPhases.length === 0) {
+          const newCanon = lang.startsWith('pt') ? CANON_DATA : CANON_DATA_ENGLISH;
+          return { suggestionPhases: newCanon };
+        }
+
         const hasLegacyPage = suggestionPhases.some(p => p?.books?.some(b => 'page' in (b as any)));
 
         // Migration/Fix for Minor Prophets theme for existing users
@@ -307,6 +318,11 @@ export const useCustomCanonStore = create<CustomCanonState>()(
             return { suggestionPhases: newCanon };
           }
         }
+
+        if (suggestionPhases !== state.suggestionPhases) {
+          return { suggestionPhases };
+        }
+
         return state;
       }),
 

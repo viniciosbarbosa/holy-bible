@@ -42,11 +42,12 @@ export const BookItem = ({
 
       const getPagesText = () => {
         if (book.pages && Object.keys(book.pages).length > 0) {
-          const parts = book.tags
-            .filter((t) => book.pages?.[t] !== undefined)
-            .map((t) => {
-              const lbl = BUILT_IN_TAGS[t]?.lbl || t.toUpperCase();
-              return `${lbl}: p. ${book.pages?.[t]}`;
+          const parts = Object.entries(book.pages)
+            .filter(([_, pageNum]) => pageNum !== undefined && pageNum !== null)
+            .map(([editionKey, pageNum]) => {
+              const key = editionKey === "etiope" ? "b201" : editionKey;
+              const lbl = BUILT_IN_TAGS[key]?.lbl || BUILT_IN_TAGS[editionKey]?.lbl || editionKey.toUpperCase();
+              return `${lbl}: p. ${pageNum}`;
             });
           if (parts.length > 0) return ` • ${parts.join(" | ")}`;
         }

@@ -3,6 +3,7 @@ import {
   createBrowserRouter,
   RouterProvider,
   Navigate,
+  useRouteError,
 } from "react-router-dom";
 import { MainLayout } from "../layout/MainLayout";
 import { useCustomCanonStore } from "../store/use-custom-canon-store";

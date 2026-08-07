@@ -13,13 +13,18 @@ export const StatsHeader = () => {
   const { t } = useTranslation();
 
   const stats = useMemo(() => {
-    // Usar os livros reais das fases do Zustand
-    const allBooks = phases.flatMap((phase) => phase.books);
+    // Usar os livros reais das fases do Zustand de forma segura
+    const safePhases = Array.isArray(phases) ? phases : [];
+    const allBooks = safePhases.flatMap((phase) =>
+      phase && Array.isArray(phase.books) ? phase.books : [],
+    );
     const total = allBooks.length;
 
     // Contar lidos que pertencem aos IDs dos livros atuais
-    const bookIds = new Set(allBooks.map((b) => b.id));
-    const readCount = Object.entries(readStatus).filter(
+    const bookIds = new Set(
+      allBooks.filter((b) => b && b.id).map((b) => b.id),
+    );
+    const readCount = Object.entries(readStatus || {}).filter(
       ([id, isRead]) => isRead && bookIds.has(id),
     ).length;
 

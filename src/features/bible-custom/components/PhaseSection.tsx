@@ -70,14 +70,14 @@ export const PhaseSection = ({ phase, onOpen, forceOpen, searchQuery }: Props) =
         >
           <div className="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
             <div className="shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-bible-gold text-white font-cinzel text-[10px] md:text-xs font-bold rounded-full shadow-lg shadow-bible-gold/10 border border-bible-gold/20">
-              {phase.num.replace('Fase ', '').padStart(2, '0')}
+              {(phase?.num || '').replace('Fase ', '').padStart(2, '0')}
             </div>
             <div className="flex-1 min-w-0 flex flex-col justify-center">
               <h2 className="font-cinzel text-[13px] md:text-lg tracking-[0.05em] md:tracking-[0.1em] text-bible-gold group-hover:text-bible-gold-light transition-colors leading-tight mb-0.5 truncate">
-                {phase.title}
+                {phase?.title || ''}
               </h2>
               <p className="text-[8px] md:text-[9px] text-bible-muted font-cinzel uppercase tracking-[0.1em] md:tracking-[0.15em] opacity-60">
-                {t("stats.books_in_journey", { count: phase.books.length })}
+                {t("stats.books_in_journey", { count: (phase?.books || []).length })}
               </p>
             </div>
           </div>
@@ -128,7 +128,7 @@ export const PhaseSection = ({ phase, onOpen, forceOpen, searchQuery }: Props) =
               className="px-5 md:px-6 pb-6 overflow-hidden"
             >
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 pt-4 border-t border-bible-border">
-                {phase.books.map((book) => (
+                {(phase?.books || []).map((book) => (
                   <BookItem
                     key={book.id}
                     book={book}
@@ -136,7 +136,7 @@ export const PhaseSection = ({ phase, onOpen, forceOpen, searchQuery }: Props) =
                     searchQuery={searchQuery}
                   />
                 ))}
-                {phase.books.length === 0 && (
+                {(!phase?.books || phase.books.length === 0) && (
                   <div className="col-span-full py-12 text-center text-bible-muted font-serif italic border border-dashed border-bible-border rounded-2xl">
                     {t("empty.phase_empty")}
                   </div>

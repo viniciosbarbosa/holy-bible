@@ -47,10 +47,10 @@ export const EditBookModal = () => {
 
   // Select the actual book from the store to ensure reactivity
   const activeBook = useMemo(() => {
-    return activeBookId && activePhaseId
-      ? phases
-          .find((p: Phase) => p.id === activePhaseId)
-          ?.books.find((b: Book) => b.id === activeBookId)
+    if (!activeBookId || !activePhaseId || !Array.isArray(phases)) return null;
+    const phase = phases.find((p: Phase) => p && p.id === activePhaseId);
+    return phase && Array.isArray(phase.books)
+      ? phase.books.find((b: Book) => b && b.id === activeBookId)
       : null;
   }, [activeBookId, activePhaseId, phases]);
 
@@ -58,11 +58,19 @@ export const EditBookModal = () => {
   const allExistingTags = useMemo(() => {
     const tagsSet = new Set<string>();
     // Add built-in tags labels
-    Object.values(BUILT_IN_TAGS).forEach((t) => tagsSet.add(t.lbl));
+    Object.values(BUILT_IN_TAGS).forEach((t) => t?.lbl && tagsSet.add(t.lbl));
     // Add tags from all phases
-    phases.forEach((p) =>
-      p.books.forEach((b) => b.tags.forEach((t) => tagsSet.add(t))),
-    );
+    if (Array.isArray(phases)) {
+      phases.forEach((p) => {
+        if (p && Array.isArray(p.books)) {
+          p.books.forEach((b) => {
+            if (b && Array.isArray(b.tags)) {
+              b.tags.forEach((t) => t && tagsSet.add(t));
+            }
+          });
+        }
+      });
+    }
     return Array.from(tagsSet).sort();
   }, [phases]);
 
