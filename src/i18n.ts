@@ -64,7 +64,7 @@ const resources = {
           "Create everything from scratch. Add your own books, phases, and themes.",
         suggestion_title: "Guided Suggestion",
         suggestion_desc:
-          "Start with our curated canon of 250+ books across 19 historical phases.",
+          "Start with our curated canon of 550+ books across 29 historical phases.",
         conventional_title: "Conventional Canon",
         conventional_desc:
           "Access the traditional Bible with the standard 66 books and study tools.",
@@ -201,7 +201,7 @@ const resources = {
           "Crie tudo do zero. Adicione seus próprios livros, fases e temas.",
         suggestion_title: "Sugestão Guiada",
         suggestion_desc:
-          "Comece com nosso cânone curado de 250+ livros em 19 fases históricas.",
+          "Comece com nosso cânone curado de 550+ livros em 29 fases históricas.",
         conventional_title: "Cânone Convencional",
         conventional_desc:
           "Acesse a Bíblia tradicional com os 66 livros padrões e ferramentas de estudo.",

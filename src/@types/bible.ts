@@ -74,6 +74,16 @@ export const DEFAULT_WALLPAPERS = {
     "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/gettyimages-544273540?_a=BAVMn6DY0",
   conspiracy:
     "/wallpapers/conspiracy.png",
+  oriental_traditions:
+    "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1600&auto=format&fit=crop",
+  orthodox_schism:
+    "https://images.unsplash.com/photo-1548625361-18a7a8d59d18?q=80&w=1600&auto=format&fit=crop",
+  hellenism:
+    "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=1600&auto=format&fit=crop",
+  kabbalah_talmud:
+    "https://images.unsplash.com/photo-1461360370896-922624d12aa1?q=80&w=1600&auto=format&fit=crop",
+  mysticism_reformation:
+    "https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=1600&auto=format&fit=crop",
 } as const;
 
 export type BibleTheme = keyof typeof DEFAULT_WALLPAPERS | string;
